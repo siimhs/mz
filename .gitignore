@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.devcontainer/.env
+
+# Build output
+/mz
+/bin/
+/dist/
+*.exe
+*.test
+*.out
+coverage.*
+
+# Saved MZ pages (contain account data); used locally as parser fixtures
+testdata/*.html
+
+# Local data
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/launch.json
+*.swp
+.DS_Store
