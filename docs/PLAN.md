@@ -11,6 +11,13 @@ Working (tested live 2026-11-20):
 - `mz whoami`, `mz players [--json]`, `mz matches [tid] [--played] [--type friendly]`
 - `mz friendly candidates`, `mz friendly send <tid> --date …`, `mz friendly auto [--dry-run]`
   (`auto` = old `main.go`: invite all quick-challenge teams for each day without a friendly)
+- `mz forum list|topics|topic`: JSON for later storage. Notes on MZ's forum:
+  50 topics/posts per page (`offset=`); a topic page is empty unless `forum_id` is the
+  topic's own forum; pinned topics repeat the opening post on every page (deduped by id);
+  the list's "Posts" column counts replies and its date is the last post's; titles in
+  the list are cut with `..` (the full one is on the topic page); recent dates are
+  "Today", "Yesterday" or a weekday name. They are read in the local timezone. They are
+  not Stockholm time: at 23:00 Tallinn time a post already showed "Today 22:04".
 - hidden `mz raw <path>` dumps any logged-in page, for discovering endpoints
 
 Not yet verified after the rewrite: an actual live `send` (dry-run only). Open question:

@@ -26,6 +26,10 @@ mz friendly candidates                       # teams on the quick-challenge page
 mz friendly send <team-id> --date 2026-11-22 [--home 12 --away 20 --tactic a]
 mz friendly auto --dry-run                   # invite candidates for each free day
 mz friendly auto --days 5 --tactics tue=a,wed=a,default=b
+
+mz forum list [--lang en]                    # forums of a language section (JSON)
+mz forum topics <forum-id> [--pages N] [--offset N] [--since 2026-11-01]
+mz forum topic <forum-id> <topic-id> [--pages N] [--offset N]   # or: mz forum topic <url>
 ```
 
 End-to-end tests are described in [e2e/README.md](e2e/README.md).

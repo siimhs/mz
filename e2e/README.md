@@ -63,7 +63,7 @@ support it.
 
 ## Fixtures
 
-`testdata/mz/` holds real pages recorded on 2026-11-20 and scrubbed: the
+`testdata/mz/` holds real pages recorded on 2026-11-20 and scrubbed: forum pages (`forum-*`), the
 logged-out front page, the clubhouse, the players page, the upcoming and played
 match lists, and the quick-challenge page. `players-new-layout.html` is
 hand-made. The friendly-invite JSON is written inline in the tests; only
