@@ -401,7 +401,9 @@ func scrapePlayers(n *html.Node, players []FootballPlayer) (_ []FootballPlayer, 
 	weight, _ := strconv.Atoi(strings.Split(findByData(n, "Weight: ").NextSibling.FirstChild.Data, " ")[0]) // TODO err handling
 	v := strings.Split(findByData(n, "Value: ").NextSibling.FirstChild.Data, " ")
 	value, _ := strconv.Atoi(strings.ReplaceAll(v[0], "\u00a0", ""))
-	youthPlayer := findByData(n, "Youth Player")
+	// Search only this player's box: findByData(n, ...) also walks n's next
+	// siblings and would find "Youth Player" in a later player's box.
+	youthPlayer := findByData(n.FirstChild, "Youth Player")
 	var s []string
 	var salary int
 	var salaryCurrency string
