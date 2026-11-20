@@ -48,25 +48,16 @@ func join(groups ...Routes) Routes {
 
 // Forum pages, recorded 2026-11-20 23:07 (a Friday; "Today", "Yesterday" and
 // weekday names in them are relative to that day).
+
+// ForumIndex is the English section's index, which forum sync reads.
 func ForumIndex() Routes {
-	return Route("GET", "/?p=forum&sub=forums&sport=soccer", File("forum-index.html"))
+	return Route("GET", "/?p=forum&sub=forums&sport=soccer&forum_language=en", File("forum-index.html"))
 }
 
-// ForumTopics: page 1 (8 pinned topics on top) and page 2 of forum 10, 135 pages in all.
-func ForumTopics() Routes {
-	return join(
-		Route("GET", topicsURL+"0", File("forum-topics-10.html")),
-		Route("GET", topicsURL+"50", File("forum-topics-10-offset-50.html")),
-	)
-}
-
-// ForumTopicPinned: the last two of six pages of pinned topic 13032964.
-// Every page repeats the opening post on top.
-func ForumTopicPinned() Routes {
-	return join(
-		Route("GET", topicURL+"13032964&offset=200", File("forum-topic-13032964-offset-200.html")),
-		Route("GET", topicURL+"13032964&offset=250", File("forum-topic-13032964-offset-250.html")),
-	)
+// ForumOneTopic: forum 10's topic list cut down to one page holding only
+// topic 13143067 (hand-made from forum-topics-10.html).
+func ForumOneTopic() Routes {
+	return Route("GET", topicsURL+"0", File("forum-topics-10-one.html"))
 }
 
 // ForumTopicQuotes: a one-page topic of 5 posts; post 46574097 quotes 46574029.

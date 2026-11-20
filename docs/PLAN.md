@@ -11,7 +11,14 @@ Working (tested live 2026-11-20):
 - `mz whoami`, `mz players [--json]`, `mz matches [tid] [--played] [--type friendly]`
 - `mz friendly candidates`, `mz friendly send <tid> --date …`, `mz friendly auto [--dry-run]`
   (`auto` = old `main.go`: invite all quick-challenge teams for each day without a friendly)
-- `mz forum list|topics|topic`: JSON for later storage. Notes on MZ's forum:
+- `mz forum sync` scrapes forums 10 and 12 (by default) into SQLite (`store/`, schema in
+  `store/schema.sql`, FTS5 over post text); `mz forum list|topics|topic|search` and the
+  hidden `mz sql` read only the DB. Purpose: material for analysing what works in MZ
+  (player evaluation, tactics) with Claude. Sync is incremental: forums whose latest post
+  is unchanged are skipped; the topic list is walked down to the first unchanged topic;
+  changed topics are fetched oldest activity first (so an interrupted sync resumes
+  correctly) from the last page read before. Edited posts are only picked up by `--full`;
+  deleted posts stay in the DB. Notes on MZ's forum:
   50 topics/posts per page (`offset=`); a topic page is empty unless `forum_id` is the
   topic's own forum; pinned topics repeat the opening post on every page (deduped by id);
   the list's "Posts" column counts replies and its date is the last post's; titles in

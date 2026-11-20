@@ -65,8 +65,8 @@ support it.
 
 `testdata/mz/` holds real pages recorded on 2026-11-20 and scrubbed: forum pages (`forum-*`), the
 logged-out front page, the clubhouse, the players page, the upcoming and played
-match lists, and the quick-challenge page. `players-new-layout.html` is
-hand-made. The friendly-invite JSON is written inline in the tests; only
+match lists, and the quick-challenge page. `players-new-layout.html` and
+`forum-topics-10-one.html` (forum 10's list cut to one topic) are hand-made. The friendly-invite JSON is written inline in the tests; only
 `{"response": ...}` is known to matter.
 
 ### Recording

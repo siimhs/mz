@@ -2,6 +2,7 @@ package e2e
 
 import (
 	"encoding/json"
+	"strings"
 	"testing"
 	"time"
 )
@@ -54,8 +55,40 @@ func tallinn(s string) time.Time {
 	return t
 }
 
+// syncedForum syncs forum 10, served as a one-page list holding only topic 13143067.
+func syncedForum(t *testing.T) *MZ {
+	t.Helper()
+	mz := Start(t, Login(), ForumIndex(), ForumOneTopic(), ForumTopicQuotes())
+	res := mz.Run("forum", "sync", "--forum", "10", "--delay", "0")
+	res.WantExit(t, 0)
+	res.WantStderrContains(t, "1 topics", "5 posts")
+	return mz
+}
+
+func TestForumSync(t *testing.T) {
+	mz := syncedForum(t)
+	if n := len(mz.Find("GET", topicURL+"*&offset=*")); n != 1 {
+		t.Errorf("%d topic page requests, want 1", n)
+	}
+
+	// Nothing new on MZ: only the forum index is read.
+	before := len(mz.Requests())
+	res := mz.Run("forum", "sync", "--forum", "10", "--delay", "0")
+	res.WantExit(t, 0)
+	res.WantStderrContains(t, "up to date")
+	var after []string
+	for _, r := range mz.Requests()[before:] {
+		if r.Method == "GET" && r.URL != "/" && r.URL != "/?p=clubhouse" && r.URL != "/?p=players" {
+			after = append(after, r.URL)
+		}
+	}
+	if len(after) != 1 || after[0] != "/?forum_language=en&p=forum&sport=soccer&sub=forums" {
+		t.Errorf("second sync requested %q, want only the forum index", after)
+	}
+}
+
 func TestForumList(t *testing.T) {
-	mz := Start(t, Login(), ForumIndex())
+	mz := syncedForum(t)
 
 	res := mz.Run("forum", "list")
 
@@ -85,10 +118,10 @@ func TestForumList(t *testing.T) {
 	t.Error("forum 10 missing")
 }
 
-func TestForumTopicsPages(t *testing.T) {
-	mz := Start(t, Login(), ForumTopics())
+func TestForumTopics(t *testing.T) {
+	mz := syncedForum(t)
 
-	res := mz.Run("forum", "topics", "10", "--pages", "2", "--delay", "0")
+	res := mz.Run("forum", "topics", "10")
 
 	res.WantExit(t, 0)
 	got := decode[struct {
@@ -96,94 +129,27 @@ func TestForumTopicsPages(t *testing.T) {
 		Forum                  string
 		Topics                 []forumTopic
 	}](t, res)
-	if got.ForumID != 10 || got.Pages != 135 || got.Forum != "English » ManagerZone talk" {
-		t.Errorf("header: %+v", got)
+	if got.ForumID != 10 || got.Pages != 1 || got.Forum != "English » ManagerZone talk" || len(got.Topics) != 1 {
+		t.Fatalf("got %+v", got)
 	}
-	if len(got.Topics) != 100 {
-		t.Errorf("%d topics, want 50 per page", len(got.Topics))
+	tp := got.Topics[0]
+	if tp.ID != 13143067 || tp.Title != "What's happening on the transfer market ?" || tp.Views != 119 ||
+		tp.Replies != 4 || tp.LastPostID != 46574111 || !tp.LastPostAt.Equal(tallinn("2026-10-12 13:52")) ||
+		tp.Author.Name != "charef" || len(tp.Author.Roles) != 2 {
+		t.Errorf("topic: %+v", tp)
 	}
-	pinned := 0
-	for i, tp := range got.Topics {
-		if tp.Pinned {
-			pinned++
-			if i >= 8 {
-				t.Errorf("pinned topic %d at position %d", tp.ID, i)
-			}
-		}
-		if tp.ID == 0 || tp.ForumID != 10 || tp.Author.ID == 0 || tp.LastPostID == 0 || tp.LastPostAt.IsZero() {
-			t.Errorf("incomplete topic: %+v", tp)
-		}
-	}
-	if pinned != 8 {
-		t.Errorf("%d pinned topics, want 8", pinned)
-	}
-	first := got.Topics[0]
-	if first.ID != 13032964 || first.Title != "Stats Xente User Script" || first.Views != 5750 ||
-		first.Replies != 257 || first.LastPostOffset != 250 ||
-		first.Author.Name != "xente" || first.Author.Country != "es" || first.Author.FederationID != 2155 ||
-		len(first.Author.Roles) != 1 || first.Author.Roles[0] != "MA" {
-		t.Errorf("first topic: %+v", first)
-	}
-}
 
-// --since stops paging at the first page holding an older (unpinned) topic,
-// so page 2 is never requested (it has no route).
-func TestForumTopicsSince(t *testing.T) {
-	mz := Start(t, Login(), Route("GET", topicsURL+"0", File("forum-topics-10.html")))
-
-	res := mz.Run("forum", "topics", "10", "--pages", "0", "--since", "2026-10-01", "--delay", "0")
-
+	res = mz.Run("forum", "topics", "10", "--since", "2026-11-01")
 	res.WantExit(t, 0)
-	got := decode[struct{ Topics []forumTopic }](t, res)
-	if len(got.Topics) == 0 || len(got.Topics) >= 50 {
-		t.Fatalf("%d topics", len(got.Topics))
-	}
-	for _, tp := range got.Topics {
-		if tp.LastPostAt.Before(tallinn("2026-10-01 00:00")) {
-			t.Errorf("topic %d last post %v is before --since", tp.ID, tp.LastPostAt)
-		}
+	if got := decode[struct{ Topics []forumTopic }](t, res); len(got.Topics) != 0 {
+		t.Errorf("--since 2026-11-01: %d topics, want 0", len(got.Topics))
 	}
 }
 
-func TestForumTopicPages(t *testing.T) {
-	mz := Start(t, Login(), ForumTopicPinned())
+func TestForumTopic(t *testing.T) {
+	mz := syncedForum(t)
 
-	res := mz.Run("forum", "topic", "10", "13032964", "--offset", "200", "--delay", "0")
-
-	res.WantExit(t, 0)
-	got := decode[struct {
-		TopicID, ForumID, Offset, Pages int
-		Title                           string
-		Posts                           []forumPost
-	}](t, res)
-	if got.TopicID != 13032964 || got.ForumID != 10 || got.Offset != 200 || got.Pages != 6 ||
-		got.Title != "Stats Xente User Script" {
-		t.Errorf("header: %+v", got)
-	}
-	// 258 posts = opening post + 5*50 + 7. Each page repeats the opening post
-	// on top; the output has it once.
-	if len(got.Posts) != 1+50+7 {
-		t.Errorf("%d posts, want 58", len(got.Posts))
-	}
-	seen := map[int]bool{}
-	for i, p := range got.Posts {
-		if seen[p.ID] {
-			t.Errorf("post %d twice", p.ID)
-		}
-		seen[p.ID] = true
-		if i > 0 && p.ID < got.Posts[i-1].ID {
-			t.Errorf("post %d after %d: want oldest first", p.ID, got.Posts[i-1].ID)
-		}
-		if p.TopicID != 13032964 || p.Author.ID == 0 || p.PostedAt.IsZero() || p.HTML == "" {
-			t.Errorf("incomplete post: %+v", p)
-		}
-	}
-}
-
-func TestForumTopicQuotes(t *testing.T) {
-	mz := Start(t, Login(), ForumTopicQuotes())
-
-	res := mz.Run("forum", "topic", "https://www.managerzone.com/?p=forum&sub=topic&topic_id=13143067&forum_id=10&sport=soccer")
+	res := mz.Run("forum", "topic", "13143067")
 
 	res.WantExit(t, 0)
 	res.WantStdoutGolden(t, "forum-topic-13143067.json")
@@ -198,15 +164,69 @@ func TestForumTopicQuotes(t *testing.T) {
 		len(p.Quotes) != 1 || p.Quotes[0].Author != "nat-go" {
 		t.Errorf("post 3: %+v", p)
 	}
+
+	// A topic URL, or MZ's forum-id topic-id pair, work too.
+	for _, args := range [][]string{
+		{"https://www.managerzone.com/?p=forum&sub=topic&topic_id=13143067&forum_id=10&sport=soccer"},
+		{"10", "13143067"},
+	} {
+		res := mz.Run(append([]string{"forum", "topic"}, args...)...)
+		res.WantExit(t, 0)
+		res.WantStdoutGolden(t, "forum-topic-13143067.json")
+	}
+
+	res = mz.Run("forum", "topic", "13143067", "--offset", "3", "--limit", "1")
+	res.WantExit(t, 0)
+	if one := decode[struct{ Posts []forumPost }](t, res); len(one.Posts) != 1 || one.Posts[0].ID != got.Posts[3].ID {
+		t.Errorf("--offset 3 --limit 1: %+v", one.Posts)
+	}
+
+	res = mz.Run("forum", "topic", "999")
+	res.WantExit(t, 1)
+	res.WantStderrContains(t, "999", "not in the database")
 }
 
-// MZ shows no posts for a topic under another forum id, so a bare topic id is refused.
-func TestForumTopicNeedsForumID(t *testing.T) {
+func TestForumSearch(t *testing.T) {
+	mz := syncedForum(t)
+
+	res := mz.Run("forum", "search", "rubbish youth")
+
+	res.WantExit(t, 0)
+	hits := decode[[]struct {
+		PostID, TopicID int
+		Topic, Author   string
+		Snippet         string
+	}](t, res)
+	if len(hits) != 1 || hits[0].PostID != 46573641 || hits[0].TopicID != 13143067 || hits[0].Author != "charef" {
+		t.Fatalf("hits: %+v", hits)
+	}
+	if !strings.Contains(hits[0].Snippet, "[rubbish]") || !strings.Contains(hits[0].Snippet, "[youth]") {
+		t.Errorf("snippet: %q", hits[0].Snippet)
+	}
+
+	res = mz.Run("forum", "search", `"unclosed`)
+	res.WantExit(t, 1)
+	res.WantStderrContains(t, "search query")
+}
+
+func TestForumSQL(t *testing.T) {
+	mz := syncedForum(t)
+
+	res := mz.Run("sql", "SELECT topic_id, count(*) AS posts FROM posts GROUP BY topic_id")
+
+	res.WantExit(t, 0)
+	res.WantStdout(t, "[\n  {\"topic_id\": 13143067, \"posts\": 5}\n]\n")
+
+	res = mz.Run("sql", "DELETE FROM posts")
+	res.WantExit(t, 1)
+}
+
+func TestForumReadBeforeSync(t *testing.T) {
 	mz := Start(t)
 
-	res := mz.Run("forum", "topic", "13143067")
+	res := mz.Run("forum", "topics", "10")
 
 	res.WantExit(t, 1)
-	res.WantStderrContains(t, "forum")
+	res.WantStderrContains(t, "mz forum sync")
 	mz.WantRequests()
 }

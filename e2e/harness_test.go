@@ -79,6 +79,8 @@ func Start(t *testing.T, routes ...Routes) *MZ {
 			"MZ_NOW":      defaultNow,
 			"MZ_USERNAME": username,
 			"MZ_PASSWORD": password,
+			// Runs get a fresh HOME each; the database lives for the whole test.
+			"MZ_DB": filepath.Join(t.TempDir(), "mz.db"),
 		},
 	}
 }
