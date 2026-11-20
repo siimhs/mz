@@ -119,7 +119,62 @@ func (mz *MZHTTPClient) Login(username, password string) error {
 		return fmt.Errorf("login failed with status: %d", loginResp.StatusCode)
 	}
 
+	// MZ answers 200 even for bad credentials; check that a logged-in page loads.
+	if _, err := mz.Whoami(); err != nil {
+		mz.phpsessid = ""
+		return fmt.Errorf("login failed (wrong credentials?): %w", err)
+	}
 	return nil
+}
+
+// Me is the logged-in manager.
+type Me struct {
+	Username string
+	TeamID   string
+}
+
+var (
+	reHeaderUsername = regexp.MustCompile(`id="header-username">([^<]+)<`)
+	reOwnPlayerTeam  = regexp.MustCompile(`href="/\?p=players&pid=[0-9]+&tid=([0-9]+)"`)
+)
+
+// Whoami reads the username and own team id from the players page.
+func (mz *MZHTTPClient) Whoami() (Me, error) {
+	body, err := mz.Get("?p=players")
+	if err != nil {
+		return Me{}, err
+	}
+	u := reHeaderUsername.FindSubmatch(body)
+	if u == nil {
+		return Me{}, errors.New("not logged in: username not found on players page")
+	}
+	me := Me{Username: html.UnescapeString(string(u[1]))}
+	if t := reOwnPlayerTeam.FindSubmatch(body); t != nil {
+		me.TeamID = string(t[1])
+	}
+	return me, nil
+}
+
+// Get fetches a path relative to baseURL with the session cookie and returns the raw body.
+func (mz *MZHTTPClient) Get(path string) ([]byte, error) {
+	if mz.phpsessid == "" {
+		return nil, errors.New("not logged in: PHPSESSID is empty")
+	}
+	req, err := http.NewRequest("GET", mz.baseURL+strings.TrimPrefix(path, "/"), nil)
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("Cookie", fmt.Sprintf("PHPSESSID=%s", mz.phpsessid))
+	req.Header.Set("User-Agent", "Mozilla/5.0")
+	resp, err := mz.client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("GET %s: status %d", path, resp.StatusCode)
+	}
+	return io.ReadAll(resp.Body)
 }
 
 // https://www.managerzone.com/ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer
@@ -169,85 +224,51 @@ func (mz *MZHTTPClient) GetTeamIDsOnQuickChallengePage() ([]string, error) {
 	return tids, nil
 }
 
-func (mz *MZHTTPClient) GetMatches(teamId string) []Match {
-	if mz.phpsessid == "" {
-		return nil
-	}
-
-	req, err := http.NewRequest("GET", mz.baseURL+"xml/team_matchlist.php?team_id="+teamId+"&match_status=1", nil)
+// GetMatches returns the played or upcoming matches of a team (any team id).
+func (mz *MZHTTPClient) GetMatches(teamId string, status MatchStatus) ([]Match, error) {
+	body, err := mz.Get(fmt.Sprintf("xml/team_matchlist.php?team_id=%s&match_status=%d", url.QueryEscape(teamId), status))
 	if err != nil {
-		return nil
-	}
-
-	// req.Header.Set("Cookie", fmt.Sprintf("PHPSESSID=%s", mz.phpsessid))
-	// req.Header.Set("User-Agent", "Mozilla/5.0")
-
-	resp, err := mz.client.Do(req)
-	if err != nil {
-		return nil
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		return nil
+		return nil, fmt.Errorf("fetch match list: %w", err)
 	}
 
 	type xmlTeam struct {
-		Field  string `xml:"field,attr"`
-		TeamID string `xml:"teamId,attr"`
+		Field    string `xml:"field,attr"`
+		TeamID   string `xml:"teamId,attr"`
+		TeamName string `xml:"teamName,attr"`
+		Goals    string `xml:"goals,attr"`
 	}
-
 	type xmlMatch struct {
-		ID    string    `xml:"id,attr"`
-		Date  string    `xml:"date,attr"`
-		Type  string    `xml:"type,attr"`
-		Teams []xmlTeam `xml:"Team"`
+		ID     string    `xml:"id,attr"`
+		Date   string    `xml:"date,attr"`
+		Type   string    `xml:"type,attr"`
+		Status string    `xml:"status,attr"`
+		Teams  []xmlTeam `xml:"Team"`
 	}
-
-	type xmlMatchList struct {
+	var result struct {
 		Matches []xmlMatch `xml:"Match"`
 	}
-
-	body, err := io.ReadAll(resp.Body)
-
-	if err != nil {
-		return nil
-	}
-
-	var result xmlMatchList
 	if err := xml.Unmarshal(body, &result); err != nil {
-		return nil
+		return nil, fmt.Errorf("parse match list: %w", err)
 	}
 
-	var matches []Match
+	matches := make([]Match, 0, len(result.Matches))
 	for _, m := range result.Matches {
-
-		parsedDate, err := time.Parse("2006-01-02 15:04", m.Date)
+		d, err := time.ParseInLocation("2006-01-02 15:04", m.Date, time.Local)
 		if err != nil {
-			return nil
+			return nil, fmt.Errorf("match %s: bad date %q: %w", m.ID, m.Date, err)
 		}
-
-		match := Match{
-			Id:         m.ID,
-			MatchType:  m.Type,
-			Date:       parsedDate,
-			HomeTeamId: "", // will be filled next
-			AwayTeamId: "",
-		}
-
+		match := Match{Id: m.ID, MatchType: m.Type, Status: m.Status, Date: d}
 		for _, t := range m.Teams {
 			switch t.Field {
 			case "home":
-				match.HomeTeamId = t.TeamID
+				match.HomeTeamId, match.HomeTeamName, match.HomeGoals = t.TeamID, t.TeamName, t.Goals
 			case "away":
-				match.AwayTeamId = t.TeamID
+				match.AwayTeamId, match.AwayTeamName, match.AwayGoals = t.TeamID, t.TeamName, t.Goals
 			}
 		}
-
 		matches = append(matches, match)
 	}
-
-	return matches
+	return matches, nil
 }
 
 // Note: This sent friendly requests to days where I already had a friendly.
@@ -271,11 +292,6 @@ func (mz *MZHTTPClient) SendFriendlyRequest(teamId string, dateTimeHome time.Tim
 	data.Set("tactic_home", tacticHome)
 	data.Set("date_away", fmt.Sprintf("%d,%d", a.Unix(), awaysrvtime.Hour()))
 	data.Set("tactic_away", tacticAway)
-
-	d := dateTimeHome.Day()
-	if d == 12 {
-		println("asdf")
-	}
 
 	req, err := http.NewRequest("POST", mz.baseURL+"ajax.php?p=challenge&sub=handle-challenge&action=create&tid="+teamId+"&country_id=123&sport=soccer", strings.NewReader(data.Encode()))
 	if err != nil {
@@ -368,7 +384,14 @@ func (mz *MZHTTPClient) GetMyPlayers() ([]FootballPlayer, error) {
 	}
 }
 
-func scrapePlayers(n *html.Node, players []FootballPlayer) ([]FootballPlayer, error) {
+func scrapePlayers(n *html.Node, players []FootballPlayer) (_ []FootballPlayer, err error) {
+	// The scraper assumes an exact page layout and dereferences freely; turn a
+	// layout change into an error instead of a crash until it is hardened.
+	defer func() {
+		if r := recover(); r != nil {
+			err = fmt.Errorf("players page layout not recognised: %v", r)
+		}
+	}()
 
 	name := findByTagAndAttr(n, atom.Span, "class", "player_name").FirstChild.Data                          // TODO err handling
 	age, _ := strconv.Atoi(findByData(n, "Age: ").NextSibling.FirstChild.Data)                              // TODO err handling
