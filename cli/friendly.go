@@ -118,7 +118,7 @@ This is the old main.go behaviour, made safer. It is a stepping stone towards
 		}
 		fmt.Printf("%d candidate teams: %s\n", len(tids), strings.Join(tids, ", "))
 
-		today := truncateDay(time.Now())
+		today := truncateDay(now())
 		sent, failed := 0, 0
 		for i := 1; i <= autoDays; i++ {
 			day := today.AddDate(0, 0, i)

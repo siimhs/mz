@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagerZone_MatchList>
+<Match id="1638748045" date="2026-11-21 12:00" status="scheduled" type="friendly" typeName="" typeId="">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="103861" teamName="KoPiDia" countryShortname="gr"/>
+</Match><Match id="1638748046" date="2026-11-21 20:00" status="scheduled" type="friendly" typeName="" typeId="">
+ <Team field="home" goals="0" teamId="103861" teamName="KoPiDia" countryShortname="gr"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637452822" date="2026-11-21 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="348367" teamName="Doctor" countryShortname="ee"/>
+</Match><Match id="1637236174" date="2026-11-21 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="723273" teamName="西昌市美居堡家居" countryShortname="cn"/>
+</Match><Match id="1637130054" date="2026-11-21 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="37502" teamName="Milan" countryShortname="se"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1623437371" date="2026-11-22 14:00" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="364130" teamName="Vaesed Sugulased" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637452832" date="2026-11-23 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="346980" teamName="FC Ritsu" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637236182" date="2026-11-23 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="731043" teamName="≮王者归来≯恒方FC" countryShortname="cn"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637130059" date="2026-11-23 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="384556" teamName="Kyno Team" countryShortname="pl"/>
+</Match><Match id="1637130064" date="2026-11-24 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="719931" teamName="天津市滨海新区汉沽老男孩足球队" countryShortname="cn"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637236185" date="2026-11-24 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="990943" teamName="AgroVet United" countryShortname="ar"/>
+</Match><Match id="1623437380" date="2026-11-25 18:45" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="369580" teamName="FC Pirita Jalgpalliklubi" countryShortname="ee"/>
+</Match><Match id="1637452837" date="2026-11-26 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="364264" teamName="JK ValgeHaigla" countryShortname="ee"/>
+</Match><Match id="1637130071" date="2026-11-26 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="370447" teamName="Zonguldak" countryShortname="tr"/>
+</Match><Match id="1637236197" date="2026-11-26 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="1170596" teamName="TOCO Y ME VOY F.C. -DMZ-" countryShortname="br"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637452844" date="2026-11-28 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="368957" teamName="FC Tarbja" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637130080" date="2026-11-28 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="128840" teamName="C.A. MILO" countryShortname="ar"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637236199" date="2026-11-28 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="44954" teamName="Newcastle United F.C." countryShortname="se"/>
+</Match><Match id="1623437384" date="2026-11-29 13:15" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="367129" teamName="JK Salme" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637452847" date="2026-11-30 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="346621" teamName="JK VOLUME" countryShortname="ee"/>
+</Match><Match id="1637236211" date="2026-11-30 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="1048135" teamName="Alba FC" countryShortname="it"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637130086" date="2026-11-30 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="996219" teamName="Falckner FC" countryShortname="ar"/>
+</Match><Match id="1637130093" date="2026-12-01 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="255537" teamName="Paysanduba" countryShortname="br"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1623437389" date="2026-12-02 12:00" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="367476" teamName="JK Ässad" countryShortname="ee"/>
+</Match><Match id="1637452856" date="2026-12-03 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="346547" teamName="CSKA Tallinn" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637236219" date="2026-12-03 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="721426" teamName="【INTER】≮蓝黑≯星星点灯RealMadrid" countryShortname="cn"/>
+</Match><Match id="1637130101" date="2026-12-03 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="146439" teamName="FK Tornado" countryShortname="lv"/>
+</Match><Match id="1637452859" date="2026-12-05 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="346929" teamName="Elva FC" countryShortname="ee"/>
+</Match><Match id="1637236228" date="2026-12-05 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U21 Edition" typeId="34524">
+ <Team field="home" goals="0" teamId="1132627" teamName="Spurs Academia" countryShortname="pt"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637130108" date="2026-12-05 23:00" status="scheduled" type="cup_group" typeName="MZ 25 Years - U18 Edition" typeId="34523">
+ <Team field="home" goals="0" teamId="57410" teamName="Ralles Bollklubb" countryShortname="se"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1623437397" date="2026-12-06 11:30" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="367491" teamName="Tallinna raudteejaam FC" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1637452868" date="2026-12-07 21:00" status="scheduled" type="cup_group" typeName="Eesti Tasuta Karikas 2026" typeId="34530">
+ <Team field="home" goals="0" teamId="347995" teamName="JK Koljala" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match><Match id="1623437403" date="2026-12-09 15:30" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="367834" teamName="Valga 1860" countryShortname="ee"/>
+</Match><Match id="1623437410" date="2026-12-13 17:30" status="scheduled" type="league" typeName="div2.6" typeId="18543">
+ <Team field="home" goals="0" teamId="368706" teamName="FC Mustamäe" countryShortname="ee"/>
+ <Team field="away" goals="0" teamId="100001" teamName="Test United" countryShortname="ee"/>
+</Match></ManagerZone_MatchList>

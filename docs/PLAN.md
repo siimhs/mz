@@ -15,7 +15,10 @@ Working (tested live 2026-11-20):
 
 Not yet verified after the rewrite: an actual live `send` (dry-run only). Open question:
 the hour sent to MZ is converted to Europe/Stockholm; check that a 12:00 local invite
-shows up as 12:00 in MZ.
+shows up as 12:00 in MZ. (e2e `TestFriendlySend` pins the current behaviour: 12:00 in
+Europe/Tallinn is sent as `date_home=<Stockholm midnight>,11`.)
+
+End-to-end tests: `make e2e`, see [e2e/README.md](../e2e/README.md).
 
 ## Next steps
 
