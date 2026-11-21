@@ -1,0 +1,42 @@
+{
+  "_comment": "Hockey player evaluation model, docs/hockey-eval/RESULTS.md (v1). Every number is an unvalidated prior: no source gives numeric weights. Skills: POW power, STA stamina, SKA skating, QUI quickness, SHO shooting, CHK checking, PC puck control, PI play intelligence, PAS passing, KEE keeping. Base rows are re-normalised after modifiers. Modifiers are per line: mentality, pressing, and slot kind (L regular line, PP powerplay, BP boxplay).",
+  "base": {
+    "GK": {"STA": 0.13, "SKA": 0.03, "QUI": 0.07, "PC": 0.02, "PI": 0.11, "PAS": 0.02, "KEE": 0.62},
+    "D":  {"POW": 0.28, "STA": 0.15, "SKA": 0.12, "QUI": 0.11, "SHO": 0.06, "CHK": 0.18, "PC": 0.03, "PI": 0.05, "PAS": 0.02},
+    "C":  {"POW": 0.25, "STA": 0.14, "SKA": 0.10, "QUI": 0.09, "SHO": 0.13, "CHK": 0.12, "PC": 0.09, "PI": 0.06, "PAS": 0.02},
+    "W":  {"POW": 0.28, "STA": 0.15, "SKA": 0.12, "QUI": 0.12, "SHO": 0.18, "CHK": 0.05, "PC": 0.03, "PI": 0.05, "PAS": 0.02}
+  },
+  "modifiers": {
+    "mentality": {
+      "attacking": {
+        "D": {"SHO": 1.6, "QUI": 1.1, "STA": 1.1, "CHK": 0.9},
+        "C": {"SHO": 1.1}
+      },
+      "balanced": {},
+      "defensive": {
+        "D": {"CHK": 1.1},
+        "C": {"CHK": 1.1},
+        "W": {"CHK": 2.0, "QUI": 1.1, "STA": 1.1, "SHO": 0.9}
+      }
+    },
+    "pressing": {
+      "passive": {"D": {"STA": 0.85}, "C": {"STA": 0.85}, "W": {"STA": 0.85}},
+      "normal": {},
+      "committed": {"D": {"STA": 1.25}, "C": {"STA": 1.25}, "W": {"STA": 1.25}}
+    },
+    "slot": {
+      "L": {},
+      "PP": {"D": {"SHO": 1.5}, "C": {"SHO": 1.3, "PC": 1.1}, "W": {"SHO": 1.3}},
+      "BP": {"D": {"CHK": 1.2, "POW": 1.1}, "C": {"CHK": 1.3, "SHO": 0.7}, "W": {"CHK": 1.5, "SHO": 0.7}}
+    }
+  },
+  "lines": {
+    "_comment": "Fewer regular lines filled -> more ice time each -> Stamina weighs more. The GK plays all 60 min regardless, so it is not listed.",
+    "staminaFactor": {"2": 1.6, "3": 1.3, "4": 1.0},
+    "positions": ["D", "C", "W"]
+  },
+  "shapeExponent": 0.8,
+  "powerFloor": {"threshold": 8, "perPoint": 0.04, "positions": ["D", "C", "W"]},
+  "condition": {"formTarget": 9, "formPerPoint": 0.05},
+  "trainedBonus": 0.1
+}

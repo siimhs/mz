@@ -336,8 +336,29 @@ func (mz *MZHTTPClient) SendFriendlyRequest(teamId string, dateTimeHome time.Tim
 }
 
 // GetMyPlayers scrapes players from "/?p=players" page returns slice of players or error.
-// Login() must be called before.
+// Login() must be called before. For a hockey client use GetMyHockeyPlayers.
 func (mz *MZHTTPClient) GetMyPlayers() ([]FootballPlayer, error) {
+	doc, err := mz.getPlayersPage()
+	if err != nil {
+		return nil, err
+	}
+	playersContainerDiv := findByTagAndAttr(doc, atom.Div, "id", "players_container")
+	var players []FootballPlayer
+
+	if playersContainerDiv == nil || playersContainerDiv.FirstChild == nil {
+		return nil, nil
+	}
+
+	players, err = scrapePlayers(playersContainerDiv.FirstChild, players)
+	if err != nil {
+		return nil, err
+	} else {
+		return players, nil
+	}
+}
+
+// getPlayersPage fetches and parses "/?p=players" for the client's sport.
+func (mz *MZHTTPClient) getPlayersPage() (*html.Node, error) {
 	if mz.phpsessid == "" {
 		return nil, errors.New("not logged in: PHPSESSID is empty")
 	}
@@ -366,23 +387,10 @@ func (mz *MZHTTPClient) GetMyPlayers() ([]FootballPlayer, error) {
 	}
 
 	doc, err := html.Parse(strings.NewReader(string(body)))
-
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse response body: %w", err)
 	}
-	playersContainerDiv := findByTagAndAttr(doc, atom.Div, "id", "players_container")
-	var players []FootballPlayer
-
-	if playersContainerDiv.FirstChild == nil {
-		return nil, nil
-	}
-
-	players, err = scrapePlayers(playersContainerDiv.FirstChild, players)
-	if err != nil {
-		return nil, err
-	} else {
-		return players, nil
-	}
+	return doc, nil
 }
 
 func scrapePlayers(n *html.Node, players []FootballPlayer) (_ []FootballPlayer, err error) {

@@ -16,8 +16,8 @@ make e2e                  # end-to-end tests: the binary against a fake MZ
 `mz` reads credentials from the environment or `./.env`.
 
 The sport is football unless `--sport hockey` (any command) or `MZ_SPORT=hockey`
-says otherwise; the flag wins over the variable. So far `whoami`, `mz friendly …`
-and `mz forum …` are tested with hockey; `players` and `eval` assume football.
+says otherwise; the flag wins over the variable. `whoami`, `players`, `eval`,
+`mz friendly …` and `mz forum …` are tested with hockey.
 
 ## Usage
 
@@ -29,6 +29,9 @@ mz matches [team-id] [--played] [--type friendly]
 mz eval [--passing short|long|wings] [--pressing passive|normal|committed]
         [--opponent short|long|wings] [--pos GK|CD|FB|DM|CM|W|ST]
         [--no-condition] [--json] [--weights file] [--dump-weights]
+mz eval --sport hockey [--mentality defensive|balanced|attacking]
+        [--pressing passive|normal|committed] [--slot L1-L4|PP1-PP2|BP1-BP2]
+        [--lines 2-4] [--pos GK|D|C|W | --team] [--no-condition] [--json]
 
 mz friendly candidates                       # teams on the quick-challenge page
 mz friendly send <team-id> --date 2026-11-22 [--home 12 --away 20 --tactic a]
@@ -55,6 +58,17 @@ scores, or with `--pos` the squad ranked for one position. The model is
 unvalidated priors**. They live in `eval/weights.json` (embedded). To tune
 without rebuilding, `mz eval --dump-weights > w.json`, edit it, and pass
 `--weights w.json` or set `$MZ_EVAL_WEIGHTS`.
+
+Hockey (`--sport hockey`) uses its own model,
+[docs/hockey-eval/RESULTS.md](docs/hockey-eval/RESULTS.md), in
+`eval/hockey/weights.json` (`$MZ_EVAL_HOCKEY_WEIGHTS` to override). Its
+weights are **unvalidated priors** too, and no source gives numbers at all.
+Hockey tactics are per line, so `--mentality`, `--pressing` and `--slot`
+describe the line the player is on. `--lines` is how many regular lines are
+filled (fewer lines → Stamina counts more). `--team` suggests lines L1..Ln
+greedily and shows each line's strength (sum of its five skater scores); ice
+time is a lineup property and is not in any player's score. Football flags
+(`--passing`, `--opponent`) are rejected under hockey and vice versa.
 
 End-to-end tests are described in [e2e/README.md](e2e/README.md).
 

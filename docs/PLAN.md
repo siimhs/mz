@@ -44,6 +44,18 @@ Working (tested live 2026-11-20):
   weights are unvalidated priors.** First look at our squad: outfield scores for one
   player are close together (often < 0.2 apart), so the best position is decided by
   small, unmeasured differences. `mz players` now also reports the player `ID`.
+- `mz eval --sport hockey [--mentality …] [--pressing …] [--slot L1-L4|PP1-2|BP1-2]
+  [--lines 2-4] [--pos GK|D|C|W | --team]`: the hockey model in
+  [hockey-eval/RESULTS.md](hockey-eval/RESULTS.md), in the pure `eval/hockey` package
+  with its own `eval/hockey/weights.json` (`$MZ_EVAL_HOCKEY_WEIGHTS`). Power floor for
+  skaters, form condition, no experience term, optional trained-skill bonus (package
+  only, no flag yet: the players page does not show training). The `nLines` Stamina
+  factor is applied to skaters only (the GK plays all 60 min); RESULTS.md's pseudo code
+  applies it to all, and `lines.positions` in the JSON switches it. `--team` picks lines
+  greedily (a suggestion, not an optimum). **Hockey weights are unvalidated priors;**
+  no source gives numbers. `mz players --sport hockey` reads the hockey squad (skills by
+  label, quarter pucks from the exact bar). In our squad, youth players with weak skills
+  come out best at GK only because skaters get the Power floor and keepers do not.
 - hidden `mz raw <path>` dumps any logged-in page, for discovering endpoints
 
 Not yet verified after the rewrite: an actual live `send` (dry-run only). Open question:
@@ -71,6 +83,11 @@ End-to-end tests: `make e2e`, see [e2e/README.md](../e2e/README.md).
    vs SHO against the opposing KEE; test the core term, the size of Experience and
    whether Speed flattens above 8 (RESULTS.md "Next steps" / "Still open"). Then use the
    scores for lineups and **training plans**.
+   **Hockey**: calibrate the same way from per-player match stats: face-offs won/lost vs
+   centre PC/PI/CHK, shots and goals vs SHO/POW against the GK's KEE, TOI and shifts vs
+   line stamina (tests the rotation rule and `--lines`), and +/- and Rating vs the
+   position scores; test the Power knee at 8 and Skating vs Quickness
+   (hockey-eval/RESULTS.md "Next steps").
 5. **Scraping + storage** — `mz training`, `mz transfers search …`,
    `mz sync players|matches|training` into SQLite.
 

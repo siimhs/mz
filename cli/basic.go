@@ -39,6 +39,9 @@ var playersCmd = &cobra.Command{
 		if err != nil {
 			return err
 		}
+		if c.Sport() == mzhttpclient.Hockey {
+			return printHockeyPlayers(c)
+		}
 		players, err := c.GetMyPlayers()
 		if err != nil {
 			return err
@@ -111,6 +114,25 @@ var matchesCmd = &cobra.Command{
 		}
 		return w.Flush()
 	},
+}
+
+func printHockeyPlayers(c *mzhttpclient.MZHTTPClient) error {
+	players, err := c.GetMyHockeyPlayers()
+	if err != nil {
+		return err
+	}
+	if playersJSON {
+		return printJSON(players)
+	}
+	w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, ' ', tabwriter.AlignRight)
+	fmt.Fprintln(w, "Name\tAge\tPI\tPow\tSka\tPas\tQui\tSho\tKee\tPC\tChk\tSta\tFrm\t")
+	for _, p := range players {
+		fmt.Fprintf(w, "%s\t%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t\n",
+			p.Name, p.Age, sk(p.PlayIntelligence), sk(p.Power), sk(p.Skating), sk(p.Passing),
+			sk(p.Quickness), sk(p.Shooting), sk(p.Keeping), sk(p.PuckControl), sk(p.Checking),
+			sk(p.Stamina), sk(p.Form))
+	}
+	return w.Flush()
 }
 
 // sk formats a skill like 7, 7.25, 7.5.
