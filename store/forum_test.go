@@ -1,7 +1,9 @@
 package store
 
 import (
+	"fmt"
 	"path/filepath"
+	"sort"
 	"testing"
 	"time"
 
@@ -25,13 +27,13 @@ func TestTopicRoundTripAndSearch(t *testing.T) {
 			Text: "Only for youngsters.", HTML: "<quote>..</quote>Only for youngsters.",
 			Quotes: []mzhttpclient.Quote{{Author: "Charef", Text: "Are training camps worth the money?"}}},
 	}
-	if err := db.SaveForums("en", []mzhttpclient.Forum{{ID: 10, Name: "ManagerZone talk", LatestPostID: 2}}); err != nil {
+	if err := db.SaveForums(mzhttpclient.Football, "en", []mzhttpclient.Forum{{ID: 10, Name: "ManagerZone talk", LatestPostID: 2}}); err != nil {
 		t.Fatal(err)
 	}
 	if err := db.SaveTopic(topic, "Training camps", posts, 0, at); err != nil {
 		t.Fatal(err)
 	}
-	if err := db.MarkForumSynced(10, "English » ManagerZone talk", 2, at); err != nil {
+	if err := db.MarkForumSynced(mzhttpclient.Football, 10, "English » ManagerZone talk", 2, at); err != nil {
 		t.Fatal(err)
 	}
 	// Saving again (a re-sync) updates in place, including the FTS index.
@@ -89,5 +91,89 @@ func TestTopicRoundTripAndSearch(t *testing.T) {
 	}
 	if _, err := db.Exec(`DELETE FROM posts`); err == nil {
 		t.Error("read-only database accepted a write")
+	}
+}
+
+func TestForumsBySport(t *testing.T) {
+	db, err := Open(filepath.Join(t.TempDir(), "mz.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer db.Close()
+	at := time.Date(2026, 11, 21, 12, 0, 0, 0, time.UTC)
+	for _, f := range []struct {
+		sport string
+		id    int
+	}{{mzhttpclient.Football, 10}, {mzhttpclient.Hockey, 138}} {
+		if err := db.SaveForums(f.sport, "en", []mzhttpclient.Forum{{ID: f.id, Name: "ManagerZone talk"}}); err != nil {
+			t.Fatal(err)
+		}
+		topic := mzhttpclient.ForumTopic{ID: f.id * 100, ForumID: f.id, Title: "Tactics"}
+		post := mzhttpclient.ForumPost{ID: f.id * 1000, Text: "which tactic?", HTML: "which tactic?", PostedAt: at}
+		if err := db.SaveTopic(topic, "", []mzhttpclient.ForumPost{post}, 0, at); err != nil {
+			t.Fatal(err)
+		}
+	}
+	// A forum synced by id without being in the index gets its sport too
+	// (it has no lang or position, so it lists first).
+	if err := db.MarkForumSynced(mzhttpclient.Hockey, 999, "English » Other", 0, at); err != nil {
+		t.Fatal(err)
+	}
+
+	for sport, want := range map[string]string{mzhttpclient.Football: "[10]", mzhttpclient.Hockey: "[999 138]"} {
+		fs, err := db.Forums(sport)
+		if err != nil {
+			t.Fatal(err)
+		}
+		var ids []int
+		for _, f := range fs {
+			ids = append(ids, f.ID)
+		}
+		if fmt.Sprint(ids) != want {
+			t.Errorf("Forums(%s) = %v, want %s", sport, ids, want)
+		}
+	}
+	for sport, want := range map[string]string{mzhttpclient.Football: "[10000]", mzhttpclient.Hockey: "[138000]", "": "[10000 138000]"} {
+		hits, err := db.Search(SearchQuery{Match: "tactic", Sport: sport})
+		if err != nil {
+			t.Fatal(err)
+		}
+		var ids []int
+		for _, h := range hits {
+			ids = append(ids, h.PostID)
+		}
+		sort.Ints(ids)
+		if fmt.Sprint(ids) != want {
+			t.Errorf("Search sport %q = %v, want %s", sport, ids, want)
+		}
+	}
+}
+
+// A version 1 database (before forums.sport) held only football forums.
+func TestMigrateV1(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "mz.db")
+	db, err := Open(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := db.Exec(`ALTER TABLE forums DROP COLUMN sport;
+		INSERT INTO forums (id, name) VALUES (10, 'ManagerZone talk');
+		PRAGMA user_version = 1`); err != nil {
+		t.Fatal(err)
+	}
+	db.Close()
+
+	db, err = Open(path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer db.Close()
+	var v int
+	var sport string
+	if err := db.QueryRow(`PRAGMA user_version`).Scan(&v); err != nil || v != schemaVersion {
+		t.Errorf("user_version = %d, %v; want %d", v, err, schemaVersion)
+	}
+	if err := db.QueryRow(`SELECT sport FROM forums WHERE id = 10`).Scan(&sport); err != nil || sport != mzhttpclient.Football {
+		t.Errorf("forum 10 sport = %q, %v; want %q", sport, err, mzhttpclient.Football)
 	}
 }

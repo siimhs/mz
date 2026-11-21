@@ -14,24 +14,24 @@ import (
 // ErrNotFound means the forum or topic is not in the database.
 var ErrNotFound = errors.New("not in the database")
 
-// SaveForums upserts the forum index of a language section. Sync state is kept.
-func (db *DB) SaveForums(lang string, forums []mzhttpclient.Forum) error {
+// SaveForums upserts the forum index of a sport's language section. Sync state is kept.
+func (db *DB) SaveForums(sport, lang string, forums []mzhttpclient.Forum) error {
 	tx, err := db.Begin()
 	if err != nil {
 		return err
 	}
 	defer tx.Rollback()
 	for i, f := range forums {
-		_, err := tx.Exec(`INSERT INTO forums (id, name, lang, position, description, total_posts, total_topics,
+		_, err := tx.Exec(`INSERT INTO forums (id, sport, name, lang, position, description, total_posts, total_topics,
 				latest_topic_id, latest_topic, latest_post_id, latest_post_by, latest_post_at)
-			VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-			ON CONFLICT (id) DO UPDATE SET name = excluded.name, lang = excluded.lang,
+			VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+			ON CONFLICT (id) DO UPDATE SET sport = excluded.sport, name = excluded.name, lang = excluded.lang,
 				position = excluded.position, description = excluded.description,
 				total_posts = excluded.total_posts, total_topics = excluded.total_topics,
 				latest_topic_id = excluded.latest_topic_id, latest_topic = excluded.latest_topic,
 				latest_post_id = excluded.latest_post_id, latest_post_by = excluded.latest_post_by,
 				latest_post_at = excluded.latest_post_at`,
-			f.ID, f.Name, nullStr(lang), i, nullStr(f.Description), f.TotalPosts, f.TotalTopics,
+			f.ID, nullStr(sport), f.Name, nullStr(lang), i, nullStr(f.Description), f.TotalPosts, f.TotalTopics,
 			nullInt(f.LatestTopicID), nullStr(f.LatestTopic), nullInt(f.LatestPostID),
 			nullStr(f.LatestPostBy), fmtTime(f.LatestPostAt))
 		if err != nil {
@@ -53,11 +53,11 @@ func (db *DB) ForumSyncedPostID(forumID int) (int, error) {
 
 // MarkForumSynced records a completed sync: every topic active up to latestPostID is stored.
 // path is the forum's breadcrumb from the topic list ("English » ManagerZone talk").
-func (db *DB) MarkForumSynced(forumID int, path string, latestPostID int, at time.Time) error {
-	_, err := db.Exec(`INSERT INTO forums (id, name, path, synced_post_id, synced_at) VALUES (?, ?, ?, ?, ?)
-		ON CONFLICT (id) DO UPDATE SET path = coalesce(excluded.path, path),
+func (db *DB) MarkForumSynced(sport string, forumID int, path string, latestPostID int, at time.Time) error {
+	_, err := db.Exec(`INSERT INTO forums (id, sport, name, path, synced_post_id, synced_at) VALUES (?, ?, ?, ?, ?, ?)
+		ON CONFLICT (id) DO UPDATE SET sport = coalesce(excluded.sport, sport), path = coalesce(excluded.path, path),
 			synced_post_id = excluded.synced_post_id, synced_at = excluded.synced_at`,
-		forumID, lastSegment(path), nullStr(path), nullInt(latestPostID), fmtTime(at))
+		forumID, nullStr(sport), lastSegment(path), nullStr(path), nullInt(latestPostID), fmtTime(at))
 	return err
 }
 
@@ -161,12 +161,12 @@ func saveUser(tx *sql.Tx, u mzhttpclient.User) error {
 
 // --- reading ---
 
-// Forums returns the stored forum index in page order.
-func (db *DB) Forums() ([]mzhttpclient.Forum, error) {
+// Forums returns a sport's stored forum index in page order.
+func (db *DB) Forums(sport string) ([]mzhttpclient.Forum, error) {
 	rows, err := db.Query(`SELECT id, name, coalesce(description, ''), coalesce(total_posts, 0),
 			coalesce(total_topics, 0), coalesce(latest_topic_id, 0), coalesce(latest_topic, ''),
 			coalesce(latest_post_id, 0), coalesce(latest_post_by, ''), latest_post_at
-		FROM forums ORDER BY lang, position, id`)
+		FROM forums WHERE sport = ? ORDER BY lang, position, id`, sport)
 	if err != nil {
 		return nil, err
 	}
@@ -314,6 +314,7 @@ func (db *DB) Topic(topicID, offset, limit int) (mzhttpclient.ForumTopicPage, er
 // SearchQuery is a full-text search over posts.
 type SearchQuery struct {
 	Match   string // FTS5 query: words, "a phrase", tactic*, a OR b, NEAR(a b, 5), text:word
+	Sport   string // only posts in this sport's forums; "" = all
 	ForumID int
 	Author  string // name, case-insensitive
 	Since   time.Time
@@ -333,6 +334,10 @@ type SearchHit struct {
 
 func (db *DB) Search(q SearchQuery) ([]SearchHit, error) {
 	where, args := `posts_fts MATCH ?`, []any{q.Match}
+	if q.Sport != "" {
+		where += ` AND p.forum_id IN (SELECT id FROM forums WHERE sport = ?)`
+		args = append(args, q.Sport)
+	}
 	if q.ForumID != 0 {
 		where += ` AND p.forum_id = ?`
 		args = append(args, q.ForumID)

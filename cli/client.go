@@ -36,8 +36,9 @@ func loadDotEnv(path string) {
 	}
 }
 
-// sport returns the MZ sport name from --sport, else MZ_SPORT, else football.
+// sport returns the MZ sport name from --sport, else MZ_SPORT (env or ./.env), else football.
 func sport() (string, error) {
+	loadDotEnv(".env")
 	s := sportFlag
 	if s == "" {
 		s = os.Getenv("MZ_SPORT")

@@ -127,6 +127,22 @@ func ForumTopicQuotes() Routes {
 	return Route("GET", topicURL+"13143067&offset=0", File("forum-topic-13143067.html"))
 }
 
+// HockeyForum is what 'mz --sport hockey forum sync --forum 140' reads, recorded
+// Saturday 2026-11-21 12:43 (testdata/mz/hockey, scrubbed): the hockey English
+// index (7 forums, 136-142) and Questions & Answers (140) cut down to one page
+// holding only topic 13147751, a single post written "Thursday 16:23".
+func HockeyForum() Routes {
+	return join(
+		HockeyLogin(),
+		Route("GET", "/?p=forum&sub=forums&sport=hockey&forum_language=en", File("hockey/forum-index.html")),
+		Route("GET", "/?p=forum&sub=topics&forum_id=140&sport=hockey&offset=0", File("hockey/forum-topics-140-one.html")),
+		Route("GET", "/?p=forum&sub=topic&forum_id=140&sport=hockey&topic_id=13147751&offset=0", File("hockey/forum-topic-13147751.html")),
+	)
+}
+
+// hockeyForumNow is when the hockey forum pages were recorded.
+const hockeyForumNow = "2026-11-21T12:45:00+02:00"
+
 const (
 	topicsURL = "/?p=forum&sub=topics&forum_id=10&sport=soccer&offset="
 	topicURL  = "/?p=forum&sub=topic&forum_id=10&sport=soccer&topic_id="

@@ -19,9 +19,16 @@ import (
 //go:embed schema.sql
 var schemaSQL string
 
-// schemaVersion is stored in PRAGMA user_version. Bump it with a migration
-// step in migrate when schema.sql changes.
-const schemaVersion = 1
+// schemaVersion is stored in PRAGMA user_version. Bump it with a step in
+// migrations when schema.sql changes.
+const schemaVersion = 2
+
+// migrations[i] takes a database from version i+1 to i+2. A new database
+// gets schema.sql instead.
+var migrations = []string{
+	// 2: forums.sport; everything synced before was football.
+	`ALTER TABLE forums ADD COLUMN sport TEXT; UPDATE forums SET sport = 'soccer';`,
+}
 
 type DB struct {
 	*sql.DB
@@ -90,21 +97,29 @@ func (db *DB) migrate() error {
 		return nil
 	case v > schemaVersion:
 		return fmt.Errorf("database schema version %d is newer than this mz (%d)", v, schemaVersion)
-	case v == 0:
-		tx, err := db.Begin()
-		if err != nil {
-			return err
-		}
-		defer tx.Rollback()
+	case v != 0 && v-1 >= len(migrations):
+		return fmt.Errorf("no migration from schema version %d", v)
+	}
+	tx, err := db.Begin()
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback()
+	if v == 0 {
 		if _, err := tx.Exec(schemaSQL); err != nil {
 			return fmt.Errorf("create schema: %w", err)
 		}
-		if _, err := tx.Exec(fmt.Sprintf("PRAGMA user_version = %d", schemaVersion)); err != nil {
-			return err
+	} else {
+		for i := v - 1; i < len(migrations); i++ {
+			if _, err := tx.Exec(migrations[i]); err != nil {
+				return fmt.Errorf("migrate schema to version %d: %w", i+2, err)
+			}
 		}
-		return tx.Commit()
 	}
-	return fmt.Errorf("no migration from schema version %d", v)
+	if _, err := tx.Exec(fmt.Sprintf("PRAGMA user_version = %d", schemaVersion)); err != nil {
+		return err
+	}
+	return tx.Commit()
 }
 
 const timeFormat = "2006-01-02T15:04:05Z"

@@ -26,7 +26,10 @@ Working (tested live 2026-11-20):
   is unchanged are skipped; the topic list is walked down to the first unchanged topic;
   changed topics are fetched oldest activity first (so an interrupted sync resumes
   correctly) from the last page read before. Edited posts are only picked up by `--full`;
-  deleted posts stay in the DB. Notes on MZ's forum:
+  deleted posts stay in the DB. Hockey (`--sport hockey`) syncs its own talk and Q&A
+  (138, 140) into the same DB; `forums.sport` (schema v2) says which sport a forum is,
+  and `list`/`search` are scoped to the current sport. Notes on MZ's forum:
+  a forum's pages are empty unless `sport=` is the forum's own sport;
   50 topics/posts per page (`offset=`); a topic page is empty unless `forum_id` is the
   topic's own forum; pinned topics repeat the opening post on every page (deduped by id);
   the list's "Posts" column counts replies and its date is the last post's; titles in

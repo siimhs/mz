@@ -19,6 +19,7 @@ type forumSource interface {
 type forumSyncer struct {
 	src   forumSource
 	db    *store.DB
+	sport string // the source's sport (mzhttpclient.Football or Hockey), recorded with its forums
 	lang  string // forum index section whose forums are recorded
 	full  bool   // re-fetch every topic from its first page
 	delay time.Duration
@@ -54,7 +55,7 @@ func (s *forumSyncer) sync(forumIDs []int) (syncStats, error) {
 	if err != nil {
 		return total, fmt.Errorf("forum index: %w", err)
 	}
-	if err := s.db.SaveForums(s.lang, index); err != nil {
+	if err := s.db.SaveForums(s.sport, s.lang, index); err != nil {
 		return total, err
 	}
 	latest := map[int]int{}
@@ -99,7 +100,7 @@ func (s *forumSyncer) syncForum(fid, latestPostID int) (syncStats, error) {
 		st.posts += n
 		fmt.Fprintf(s.log, "  [%d/%d] topic %d: %d posts fetched  %s\n", len(changed)-i, len(changed), t.ID, n, t.Title)
 	}
-	if err := s.db.MarkForumSynced(fid, path, latestPostID, s.now()); err != nil {
+	if err := s.db.MarkForumSynced(s.sport, fid, path, latestPostID, s.now()); err != nil {
 		return st, err
 	}
 	return st, nil

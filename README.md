@@ -16,8 +16,8 @@ make e2e                  # end-to-end tests: the binary against a fake MZ
 `mz` reads credentials from the environment or `./.env`.
 
 The sport is football unless `--sport hockey` (any command) or `MZ_SPORT=hockey`
-says otherwise; the flag wins over the variable. So far only `whoami` and
-`mz friendly …` are tested with hockey; `players` and `eval` assume football.
+says otherwise; the flag wins over the variable. So far `whoami`, `mz friendly …`
+and `mz forum …` are tested with hockey; `players` and `eval` assume football.
 
 ## Usage
 
@@ -44,8 +44,10 @@ mz sql 'SELECT …'                                 # read-only SQL, JSON rows (
 ```
 
 The database is `$MZ_DB`, else `~/.local/share/mz/mz.db`. `sync` defaults to
-English » ManagerZone talk (10) and Questions & Answers (12); the first sync
-fetches all of a forum, later ones only topics with new posts.
+the sport's English » ManagerZone talk and Questions & Answers (football 10 and
+12, hockey 138 and 140); the first sync fetches all of a forum, later ones only
+topics with new posts. `forum list` and `forum search` show the sport's forums
+only; `topics` and `topic` take ids, which are unique across sports.
 
 `mz eval` scores the squad per position for a tactic: best position and all
 scores, or with `--pos` the squad ranked for one position. The model is

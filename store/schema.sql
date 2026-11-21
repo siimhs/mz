@@ -1,6 +1,8 @@
--- Forums from the forum index, plus sync bookkeeping.
+-- Forums from the forum index, plus sync bookkeeping. Forum ids are unique
+-- across sports; topics and posts belong to a sport through their forum.
 CREATE TABLE forums (
     id              INTEGER PRIMARY KEY,
+    sport           TEXT,               -- MZ's name: "soccer" (football) or "hockey"
     name            TEXT NOT NULL,      -- "ManagerZone talk"
     path            TEXT,               -- "English » ManagerZone talk" (from the topic list)
     lang            TEXT,               -- index section the forum was listed in, e.g. "en"

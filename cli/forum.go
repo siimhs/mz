@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/siimhs/mz/mzhttpclient"
 	"github.com/siimhs/mz/store"
 	"github.com/spf13/cobra"
 )
@@ -21,11 +22,18 @@ var forumCmd = &cobra.Command{
 database, so it is fast and works offline. The database is $MZ_DB, or
 ~/.local/share/mz/mz.db. For queries of your own see 'mz sql'.
 
+Football and hockey have their own forums (--sport / $MZ_SPORT picks one).
+'sync', 'list' and 'search' work on the sport's forums; 'topics' and 'topic'
+take ids, which are unique across sports.
+
 Dates are read in the local timezone, which must match the account's MZ setting.`,
 }
 
-// Forums synced by default: English » ManagerZone talk, English » Questions & Answers.
-var defaultSyncForums = []int{10, 12}
+// Forums synced by default, per sport: English » ManagerZone talk, English » Questions & Answers.
+var defaultSyncForums = map[string][]int{
+	mzhttpclient.Football: {10, 12},
+	mzhttpclient.Hockey:   {138, 140},
+}
 
 var (
 	syncForums []int
@@ -41,8 +49,12 @@ var forumSyncCmd = &cobra.Command{
 The first sync of a forum fetches all of it, which takes a while (one request
 per page of 50 topics or posts, --delay apart). Later syncs fetch only topics
 with new posts, from the last page read before. An interrupted sync can simply
-be run again. Progress goes to stderr.`,
+be run again. Progress goes to stderr.
+
+Without --forum it syncs the sport's English ManagerZone talk and Questions &
+Answers: forums 10 and 12 for football, 138 and 140 for hockey.`,
 	Example: `  mz forum sync                    # ManagerZone talk and Questions & Answers
+  mz forum sync --sport hockey     # the same for hockey (or MZ_SPORT=hockey)
   mz forum sync --forum 10 --forum 13
   mz forum sync --full             # re-read everything, e.g. to pick up edited posts`,
 	Args: cobra.NoArgs,
@@ -56,9 +68,13 @@ be run again. Progress goes to stderr.`,
 		if err != nil {
 			return err
 		}
-		s := &forumSyncer{src: c, db: db, lang: "en", full: syncFull, delay: syncDelay, now: now, log: os.Stderr}
+		forums := syncForums
+		if !cmd.Flags().Changed("forum") {
+			forums = defaultSyncForums[c.Sport()]
+		}
+		s := &forumSyncer{src: c, db: db, sport: c.Sport(), lang: "en", full: syncFull, delay: syncDelay, now: now, log: os.Stderr}
 		start := time.Now()
-		st, err := s.sync(syncForums)
+		st, err := s.sync(forums)
 		fmt.Fprintf(os.Stderr, "synced %d topics, %d posts fetched in %s\n",
 			st.topics, st.posts, time.Since(start).Round(time.Second))
 		return err
@@ -67,15 +83,19 @@ be run again. Progress goes to stderr.`,
 
 var forumListCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List the forums of the English section",
+	Short: "List the sport's forums of the English section",
 	Args:  cobra.NoArgs,
 	RunE: func(cmd *cobra.Command, args []string) error {
+		sp, err := sport()
+		if err != nil {
+			return err
+		}
 		db, err := openDB(true)
 		if err != nil {
 			return err
 		}
 		defer db.Close()
-		fs, err := db.Forums()
+		fs, err := db.Forums(sp)
 		if err != nil {
 			return err
 		}
@@ -113,7 +133,7 @@ var forumTopicsCmd = &cobra.Command{
 		defer db.Close()
 		p, err := db.Topics(q)
 		if errors.Is(err, store.ErrNotFound) {
-			return fmt.Errorf("%w (sync it with 'mz forum sync --forum %d')", err, id)
+			return fmt.Errorf("%w (sync it with 'mz forum sync --forum %d', adding --sport hockey for a hockey forum)", err, id)
 		}
 		if err != nil {
 			return err
@@ -159,7 +179,8 @@ var (
 var forumSearchCmd = &cobra.Command{
 	Use:   "search <query>",
 	Short: "Full-text search over posts, best matches first",
-	Long: `Full-text search over the posts' own text (quotes excluded) and titles.
+	Long: `Full-text search over the posts' own text (quotes excluded) and titles,
+in the sport's forums.
 
 The query is SQLite FTS5 syntax: words (all must match; "tactics" also
 matches "tactic"), "an exact phrase", prefix*, a OR b, NOT, NEAR(a b, 5),
@@ -169,8 +190,11 @@ title:word. Snippets mark matches with [brackets].`,
   mz forum search 'offside OR "high line"' --forum 12 --limit 50`,
 	Args: cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		q := store.SearchQuery{Match: args[0], ForumID: searchForum, Author: searchAuthor, Limit: searchLimit}
-		var err error
+		sp, err := sport()
+		if err != nil {
+			return err
+		}
+		q := store.SearchQuery{Match: args[0], Sport: sp, ForumID: searchForum, Author: searchAuthor, Limit: searchLimit}
 		if q.Since, err = sinceFlag(); err != nil {
 			return err
 		}
@@ -229,7 +253,7 @@ func parseSince(s string) (time.Time, error) {
 }
 
 func init() {
-	forumSyncCmd.Flags().IntSliceVar(&syncForums, "forum", defaultSyncForums, "forum ids to sync (repeat or comma-separate)")
+	forumSyncCmd.Flags().IntSliceVar(&syncForums, "forum", nil, "forum ids to sync (repeat or comma-separate; default: the sport's talk and Q&A)")
 	forumSyncCmd.Flags().BoolVar(&syncFull, "full", false, "re-fetch every topic from its first page")
 	forumSyncCmd.Flags().DurationVar(&syncDelay, "delay", 500*time.Millisecond, "pause between requests to MZ")
 

@@ -132,7 +132,7 @@ func testDB(t *testing.T) *store.DB {
 func runSync(t *testing.T, f *fakeForum, db *store.DB) ([]string, error) {
 	t.Helper()
 	f.requests = nil
-	s := &forumSyncer{src: f, db: db, lang: "en", now: func() time.Time { return t0 }, log: io.Discard}
+	s := &forumSyncer{src: f, db: db, sport: mzhttpclient.Football, lang: "en", now: func() time.Time { return t0 }, log: io.Discard}
 	_, err := s.sync([]int{10})
 	return f.requests, err
 }

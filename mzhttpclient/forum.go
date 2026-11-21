@@ -96,9 +96,11 @@ type ForumTopicPage struct {
 	Posts   []ForumPost
 }
 
-// ForumPath builds a forum URL path: sub is "forums", "topics" or "topic".
-func ForumPath(sub string, params url.Values) string {
-	q := url.Values{"p": {"forum"}, "sub": {sub}, "sport": {Football}}
+// ForumPath builds a forum URL path for sport (Football or Hockey): sub is
+// "forums", "topics" or "topic". A forum's pages are empty unless sport is the
+// forum's own.
+func ForumPath(sport, sub string, params url.Values) string {
+	q := url.Values{"p": {"forum"}, "sub": {sub}, "sport": {sport}}
 	for k, v := range params {
 		q[k] = v
 	}
@@ -112,7 +114,7 @@ func (mz *MZHTTPClient) GetForums(lang string, now time.Time) ([]Forum, error) {
 	if lang != "" {
 		params.Set("forum_language", lang)
 	}
-	body, err := mz.Get(ForumPath("forums", params))
+	body, err := mz.Get(ForumPath(mz.sport, "forums", params))
 	if err != nil {
 		return nil, err
 	}
@@ -121,7 +123,7 @@ func (mz *MZHTTPClient) GetForums(lang string, now time.Time) ([]Forum, error) {
 
 // GetForumTopics returns one page of a forum's topic list.
 func (mz *MZHTTPClient) GetForumTopics(forumID, offset int, now time.Time) (ForumTopicsPage, error) {
-	body, err := mz.Get(ForumPath("topics", url.Values{
+	body, err := mz.Get(ForumPath(mz.sport, "topics", url.Values{
 		"forum_id": {strconv.Itoa(forumID)}, "offset": {strconv.Itoa(offset)}}))
 	if err != nil {
 		return ForumTopicsPage{}, err
@@ -137,7 +139,7 @@ func (mz *MZHTTPClient) GetForumTopics(forumID, offset int, now time.Time) (Foru
 // GetForumTopic returns one page of a topic. MZ shows no posts unless
 // forumID is the topic's forum.
 func (mz *MZHTTPClient) GetForumTopic(forumID, topicID, offset int, now time.Time) (ForumTopicPage, error) {
-	body, err := mz.Get(ForumPath("topic", url.Values{"forum_id": {strconv.Itoa(forumID)},
+	body, err := mz.Get(ForumPath(mz.sport, "topic", url.Values{"forum_id": {strconv.Itoa(forumID)},
 		"topic_id": {strconv.Itoa(topicID)}, "offset": {strconv.Itoa(offset)}}))
 	if err != nil {
 		return ForumTopicPage{}, err
