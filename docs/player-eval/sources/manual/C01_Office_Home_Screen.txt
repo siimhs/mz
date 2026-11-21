@@ -1,0 +1,5 @@
+
+C01: Office Home Screen
+
+The Office Home screen provides a summary of the latest situation at your club, including your team's current [link:./?p=manual_faq&cat_id=1377] Rank, Form (for more information on Form, see "Form and Experience" in [link:./?p=manual_faq&cat_id=1361] Training), [link:./?p=manual_faq&cat_id=1374] Finances, [link:./?p=manual_faq&cat_id=1369] cup and [link:./?p=manual_faq&cat_id=1370] Friendly League invites and Team News.
+

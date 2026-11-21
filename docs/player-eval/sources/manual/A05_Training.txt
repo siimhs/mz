@@ -1,0 +1,224 @@
+
+A05: Training
+Introduction
+
+There are three main ways to improve your team in ManagerZone: buying new players, bringing promising youngsters through from your Academy and improving your current squad by training them up. Players can train in any of their eleven core attributes: Speed, Stamina, Play Intelligence, Passing, Shooting, Heading, Keeping, Ball Control, Tackling, Aerial Passing and Set Plays. Experience and Form can't be influenced by training. Unless they are at Training Camps (see below), players train on Monday, Tuesday, Thursday, Friday and Saturday.
+Player Attributes
+
+The skill a player shows in each attribute is indicated visually by skill balls. He can have between 0 and 10 balls and this total can increase or decrease at different rates depending on his training efficiency, injuries, age and how close he is to reaching his limit in an attribute (an event known as maxing). The eleven trainable attributes are:
+
+Speed: How fast a player can run, both with and without the ball.
+
+Stamina: A player's physical endurance levels. Those with high Stamina skill levels are less likely to tire towards the end of games and less prone to injury.
+
+Play Intelligence: Players with high Play Intelligence skills are more likely to be in the right place at the right time, whether defending or attacking.
+
+Passing: A player with good Passing skills is more likely to retain possession for his team as he has an increased likelihood of finding his team-mates with accurate passes.
+
+Shooting: Players with high Shooting skills are more likely to get into goal scoring positions and find the back of the net when going for goal.
+
+Heading: A player with good Heading skills is comfortable when dealing with aerial balls.
+
+Keeping: Although good goalkeepers need other attributes as well, without high Keeping skill levels they will be less effective shot stoppers.
+
+Ball Control: Players with good Ball Control are more likely to trap incoming passes and are less likely to lose possession once they have the ball at their feet.
+
+Tackling: Good tacklers are more likely to win the ball from opposition players and less likely to foul them in doing so.
+
+Aerial Passing: A player with high skill levels in this attribute is adept at finding team-mates with long, aerial balls from anywhere on the pitch.
+
+Set Plays: Teams containing a player with good skill ratings in this attribute will be more effective from corners, free kicks and penalties.
+
+Form and Experience
+
+Although neither can be increased by training, Form and Experience can both help to maximise a player's other attributes.
+
+Form increases with the number of matches a player takes part in, whether on the pitch or on the bench. However, if a player plays too many [link:./?p=manual_faq&cat_id=1367] League and [link:./?p=manual_faq&cat_id=1368] Friendly matches, it will start to decrease as a result of exhaustion (other games can only positively affect Form). For more information on how to track your players' Form, see “Icons and Buttons” in [link:./?p=manual_faq&cat_id=1359] Squad.
+
+Match typeForm influence
+Senior League (including play-off matches)Yes*
+Youth League (U18/U21/U23)Yes*
+World LeagueYes*
+Prize or Friendly CupOnly positive**
+Friendly LeagueOnly positive**
+FriendlyYes
+Official CupOnly positive**
+
+* = The two first league matches (regardless of type) will influence the players' form.
+
+** = A player that have the status tired will not loose form, but a player that needs to play will improve his form.
+
+Although it increases over a longer term than Form, Experience is also affected by the number of games a player takes part in as well as his age. On top of maximising a player's other attributes, it ensures a player is more comfortable on the pitch and less likely to make mistakes.
+
+Partial Skill Bar
+
+In matches Players benefit from each part of their skill, not only the full skill balls displayed on the Player's card or the Squad Page. 
+
+When Players train and improve in the Attribute they are training, each partial skill is aggregated and as they reach or pass a whole ball your Head of Training and Club Secretary note that improvement and an additional ball is displayed. 
+
+In addition to this some information is shown through the Partial Skill Bar. This is a visual representation of a fraction of a skill and is rounded down to the nearest quarter. 
+
+Every time a Player improves in a Skill, he will use the improvement in future matches, sadly the same goes when a Player deteriorates in a Skill. 
+
+Whilst not showing every level of detail, the partial skill display help differentiate between the different levels within a whole ball.
+Training Players
+
+To train a Player, head to the Training Field screen, drag his shirt into the zone of the Field that corresponds to the attribute you wish him to learn and click SAVE. You can view his current attribute skills by hovering over his shirt and see how he fits into your tactics by selecting a Tactics Slot from the dropdown above the Field.
+
+There are eleven zones on the Training Field, each representing a different playing attribute. The Senior Training Field has a limit of 42 Players.
+
+Training Youth Players
+
+To train your youth Players, click the YOUTH-button above the Training Field. Youth training works in the same way as senior training, although the youth Training Field has a limit of 23 Players (equal to the maximum number of Youths). As youth Players start from a lower skill base and come to your club eager to learn, their skills will generally improve more quickly than those of senior Players.
+
+Training Boost
+
+Every time a Player is moved to a new zone on the Training Field, he receives a short-term boost in that attribute, which is represented by a small green ball next to his skill balls.
+
+Deteriorations
+
+At the age of 30 the Players will start to deteriorate in the affected attributes (Speed and Stamina). The deterioration will start slowly, and will increase by every Season based on the Player's age. The deterioration rate will be at its peak when a Player turns 34. A Player can lose a maximum of 2 balls in each attribute affected by deterioration (a total of 4 balls).
+
+Each training day, one of the two affected attributes will be picked at random and the Player will then deteriorate in that attribute if possible. If he's already at or below his new maximum level, he will not deteriorate at all that day. 
+
+Players with maxed out attributes who start deteriorating will quickly lose a ball in both attributes. While this may look dramatic, the attribute is still very close to the previous level and the Player will performance almost as good on the field.
+
+The SIM recognise the partial skills and Players benefit from each part of the skill.
+
+Training during deterioration
+
+During the deterioration period, you will be able to gain skill balls in attributes other than Speed and Stamina. You will then see two entries in the daily Training Report, one for the deterioration and one for any improvement in the other skill trained. It will not help the Player if you try to train him in Speed or Stamina at this time.
+Training Reports Screen
+
+To check how well a Player is training, view his training efficiency meter in the Training Reports screen. This shows how quickly he is improving (green segments) or deteriorating (red segments) in his currently-trained attribute. The more segments on the meter, the greater the rate of change. When a Player has improved enough to reach the next skill level in an attribute, a ball appears on his Training meter and a green ball is shown next to his total skill balls. When he has deteriorated enough for his attribute skill level to decrease, a red ball is shown next to his total skill balls. Note that each daily change is reflected in a Player's match performances – not just when his number of skill balls changes.
+
+Sorting Training Results
+
+By default, your squad's training results are based on the current day and sorted by the level of improvement or degradation. Click on one of the top screen options to view another day's – or a summary of the current week's – results. To sort by Player name, squad number, the currently-trained attribute, total skill balls or training type choose the relevant option just below the screen's top menu. You can also limit your results to Players on the Training Field and Players at Training Camp.
+Training Camp Screen
+
+One way to increase a player's training efficiency is to send him to a Training Camp. Camps employ intensive training sessions that concentrate on multiple attributes over the course of 1-5 weeks. There are four categories of regular Training Camps; Defender, Midfielder, Striker and Wild Card (a random package from any of the other categories). In addition to the regular Camps there are up to three special Training Camp offers;
+
+Youth Package
+
+Tries to pinpoint the most probable role for your Youth Player and trains him in three useful skills for that role.
+
+Youth Conditioning Camp
+
+Allows Youth Players to accelerate their training and catch up with training they have missed during their first season (before they arrived at your team). This package will appear on Day 7 of the Season and remain to the Season end. You are allowed to send up to 6 new Youths to this Camp (Managers who have been playing ManagerZone for 14 days or less can send 15 Youths).
+
+Form Package
+
+The Form Package give players the option to instantly receive Form 7 and the status "match fit". Players that already have Form 7 or better cannot use the package. The package cost [link:./?p=manual_faq&cat_id=1387] Power Tokens and can be bought once per Season. The package can improve the Form for a maximum of 11 players.
+
+Exchange Training Camp
+
+Once per season you have the possibility to purchase the Exchange Training Camp feature. This feature will allow you to exchange the active Training Camp for the selected player, with any of the Training Camps in ManagerZone. You can buy 1 Package per Season that each include 4 players. Unused spots will be available the following seasons.
+
+The cost of sending a Player to a Training Camp varies, depending on his salary and how many weeks his placement is due to last. Players train every day except Sunday. Players cannot attend more than one regular Camp or Youth Package per season (Players who have been to a Camp during the current season are indicated by an orange cone). A Player can however attend a Youth Conditioning Camp and a regular Training Camp or Youth Package. 
+
+Regular Training Camp offers rotate twice per week, every Monday and Friday, and you can always preview the upcoming four packages to better plan your Players training. The existing training camps are presented in the tables below.
+
+Striker Packages:
+
+NumberAttributes trained
+1Speed, Stamina, Shooting
+2Shooting, Ball Control, Play Intelligence
+3Ball Control, Passing, Aerial Passing
+4Shooting, Ball Control, Speed
+5Shooting, Heading, Ball Control
+6Speed, Ball Control
+7Stamina, Ball Control, Aerial Passing
+8Stamina, Shooting, Play Intelligence
+9Heading, Shooting, Speed
+10Shooting, Passing, Heading
+11Shooting, Passing, Speed
+12Shooting, Passing, Play Intelligence
+13Shooting, Ball Control
+
+Midfielder Packages:
+
+NumberAttributes trained
+1Passing, Ball Control, Play Intelligence
+2Tackling, Aerial Passing, Stamina
+3Shooting, Play Intelligence, Speed
+4Passing, Play Intelligence, Aerial Passing
+5Passing, Play Intelligence, Speed
+6Passing, Play Intelligence, Stamina
+7Aerial Passing, Play Intelligence, Speed
+8Aerial Passing, Play Intelligence, Stamina
+9Passing, Aerial Passing, Speed
+10Passing, Aerial Passing, Stamina
+11Aerial Passing, Ball Control, Play Intelligence
+12Aerial Passing, Ball Control, Speed
+13Passing, Ball Control, Speed
+14Passing, Ball Control, Stamina
+15Speed, Ball Control, Tackling
+16Heading, Set Plays, Passing
+
+Defender Packages:
+
+NumberAttributes trained
+1Speed, Tackling, Aerial Passing
+2Speed, Stamina, Ball Control
+3Speed, Stamina, Tackling
+4Tackling, Stamina, Heading
+5Tackling, Play Intelligence, Passing
+6Tackling, Play Intelligence, Speed
+7Tackling, Play Intelligence, Stamina
+8Tackling, Passing, Stamina
+9Tackling, Passing, Speed
+10Tackling, Speed, Heading
+11Tackling, Aerial Passing, Play Intelligence
+12Tackling, Aerial Passing, Passing
+13Tackling, Aerial Passing, Heading
+14Ball Control, Tackling
+15Set Plays, Passing, Aerial Passing
+
+Wild Card Packages:
+
+NumberAttributes trained
+1Speed, Stamina
+2Play Intelligence, Ball Control, Speed
+3Play Intelligence, Ball Control, Stamina
+4Ball Control, Play Intelligence
+5Keeping, Stamina, Play Intelligence
+6Stamina, Keeping, Speed
+7Stamina, Passing, Keeping
+
+Sending Players to Training Camps
+
+You can send up to 10 Players (including Youth Players) to the regular Training Camps or Youth Package at one time. While they are there, they won't be able to take part in any of your matches (they are automatically removed from all of your Tactics Slots on entry - see [link:./?p=manual_faq&cat_id=1360] Tactics). Note that Players sent to Youth Conditioning Camp may still play matches while attending these Camps. 
+
+For the Youth Conditioning Camp other limits are applied. You can send up to 9 new Youths to the Youth Conditioning Camp per season. If you are new to this game (registered for less than 14 days) you are allowed to send 15 fresh Youths to the Youth Conditioning Camp. Players sent to Youth Conditioning Camp may play in matches while attending the Camps. 
+
+To send a Player to a Training Camp, select him from one of the dropdowns on the Training Home screen (those Players who have already attended one in the current season are not available for selection), choose how many weeks you want to send him for, review the cost and click SEND TO TRAINING CAMP. While he is away, his profile will include the number and icon of the Training Camp package he's undertaking.
+
+Recalling Players from Training Camps
+
+If you wish to recall a player from a Training Camp before it has ended, click his REPORT-icon in the Training Camp screen and then select CANCEL CAMP. Although he will not “lose” any of the new skills he has picked up, you will not receive a refund for withdrawing him early. 
+
+Free Youth places on the Training Camps
+
+As your Club's Chairman really want you to focus on your Youth Academy; your team is allowed 6 free placements at any time. 
+
+Training Speed in Training Camps
+
+The longer a player stays at a Training Camp, the faster he will train. Training Speed increases as follows:
+
+WeekTraining Speed
+1+100% (normal Training Speed x 2.0)
+2+150% (normal Training Speed x 2.5)
+3+200% (normal Training Speed x 3.0)
+4+250% (normal Training Speed x 3.5)
+5+300% (normal Training Speed x 4.0)
+Training Graphs 
+
+ [link:./?p=manual_faq&cat_id=1386] Club Members can study their players' training histories with the Training Graphs feature.
+
+Training Graph data is available from December 25th, 2011, and includes players' histories with previous clubs.You may also view a player's Training Graph on the Transfer Market if the selling manager is a Club Member and chooses to provide it. 
+
+The Training Graph is the only place where you can check whether a Player have attended any of the special Training Camps; Intensive Training Camp or Youth Conditioning Camp.
+
+On the Training Graph page, select a player using the dropdown menu located in the top left corner of your screen. You can zoom in and out on the Graph for varied levels of detailed information. 
+

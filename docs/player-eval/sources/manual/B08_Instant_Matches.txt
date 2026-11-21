@@ -1,0 +1,5 @@
+
+B08: Instant Matches
+
+If you want to test your team against an opponent that doesn't feature in the Challenges screens, you can set up an Instant Match against them. To do so, simply head to their manager's [link:./?p=manual_faq&cat_id=1381] Profile screen and click INSTANT MATCH. Then select which of your [link:./?p=manual_faq&cat_id=1360] tactics you want to use in the match and click GET IT. Your opponent will use the tactic they employed in their last League match, so you can be sure you're taking on their best team. To view your Instant Match, click one of the viewing buttons next to it in the Fixtures screen or, if you're viewing it later on, the Results screen (see "Viewing a Match" in [link:./?p=manual_faq&cat_id=1366] Fixtures and Results).
+

@@ -1,0 +1,99 @@
+
+B03: Youth Leagues
+Introduction
+
+Youth Leagues offer competitive league formats outside of the Senior League, and provide a valuable venue for developing young players. Currently, three Youth Leagues are available - the U18 League, U21 League and U23 League. In these Leagues teams compete in divisions of 12, playing each opponent both at home and away during the course of a 22-game season. Four League seasons are played each calendar year.
+Groups
+
+ManagerZone runs Youth Leagues in all countries. While many countries have their own Leagues, some countries are grouped together to ensure that all Leagues are active.
+
+The groups are as follows:
+
+Southern Europe
+
+Turkey
+
+Sweden
+
+Romania
+
+Poland
+
+Northern Europe
+
+Mediterranean
+
+Iberia
+
+Central Europe
+
+Brazil
+
+Argentina
+
+The Americas
+
+World (all countries not included in the above groups)
+Season Tickets
+
+To participate in an Extra League you will need a season ticket. Season tickets can be bought in the Youth League page (Club Members get a discount). After a ticket is purchased, you can opt in/out of all Leagues for the next season (one season ticket grants entry to the U18, U21 and the U23 League for one season).
+
+Once you have entered a League, you will stay in that League until you opt out or run out of season tickets.
+
+Season Day 2 is the last day to sign up for all Youth Leagues.
+
+Table Screen
+
+You can see your team's current position in your division in the Table screen, as well as their recently-completed and upcoming matches. 
+
+In the league table the following columns are presented, in addition to a team's position and name:
+
+MMatches played
+WWins
+DDraws
+LLosses
++Goals scored
+-Goals conceded
+=Goal difference
+PPoints
+Last 6The results in the last six league games (green = win, yellow = draw, red = loss)
+
+Three points are awarded for a win, one point for a draw and no points for a defeat. When two teams finish the season on the same number of points, their positions are calculated using a number of "tie breakers" in the following order of importance: goal difference, goals scored, most victories, results between the two tied teams, random draw.
+
+Promotion and Relegation
+
+Promotion and relegation works slightly different in the Youth Leagues compared to the Senior League. There are no playoffs in the Youth Leagues. Only the winner of each division is guaranteed promotion, but more teams have a chance to advance, depending on how many teams sign up for the league next season.
+
+In the same way four teams risk relegation, but could in some cases remain in their present division.
+Walk Overs
+
+If a team loses on walk over, they will not earn any income from the match (for further information see section "Line-Up Requirements" in [link:./?p=manual_faq&cat_id=1360] A04: Tactics. It is easy to check if your your players are eligible for a tournament by visiting the [link:./?p=manual_faq&cat_id=5748] Availability screen.
+League Schedule Screen
+
+View the matches, both completed and upcoming, played by all the teams in your division. 
+Top Scorers Screen
+
+View the current season's top goal scorers (to view only your team's scorers, click the MY TEAM button at the top of the screen). In addition to the place in the list, name of the player and team abbreviation, the table contain the following columns:
+
+GPNumber of league games the players have participated in
+GNumber of goals scored
+YCNumber of yellow cards received
+RCNumber of red cards received
+
+All these four columns are sortable.
+Injuries/Suspensions Screen
+
+View all players due to miss future League games as a result of injury or suspension. A player that is suspended in a certain Extra League can still compete in other Leagues and Cups, however an injured player cannot compete in any competitions until he is fully recovered. 
+Message Board
+
+View messages from other managers in your division and type your own by using the text box at the bottom of the screen and clicking the POST button.
+Prize Money 
+
+For each Home Match played in the U18, U21 and U23 Leagues you will earn Team Money. You can earn additional Team Money if you finish as one of the top four in your division (see below; amounts are displayed in EUR):
+
+PositionTop DivisionDiv 1.xDiv 2.xDiv 3.xDiv 4.xDiv 5.x
+1st72 79958 23953 38643 67933 97324 267
+2nd58 23953 38643 67933 97324 26714 560
+3rd48 53338 82633 97324 26714 5609707
+4th38 82629 12024 26719 41397074854
+

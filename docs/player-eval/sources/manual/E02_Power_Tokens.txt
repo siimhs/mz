@@ -1,0 +1,16 @@
+
+E02: Power Tokens
+Introduction
+
+Power Tokens are ManagerZone's unique currency. They can be used to purchase a wide variety of exclusive items and services within the game. For a full list of features that can be purchased using Power Tokens, click POWER TOKENS in the Store secondary menu. For more information on how to become a Club Member using Power Tokens, see "Paying Using Power Tokens" in [link:./?p=manual_faq&cat_id=1386] Club Membership.
+Purchasing Power Tokens
+
+Power Tokens can be purchased using a number of different payment methods. To make a purchase, click the GET POWER TOKENS button. Then, if you wish to use standard payment methods (e.g. credit card, bank transfer, PayPal etc.), click the button corresponding to the amount of Power Tokens you wish to purchase (the more you buy, the cheaper each Token costs) and follow the on-screen instructions.
+
+You can also buy Tokens using PayPal Buy With Mobile.
+Power Token Gifting
+
+To give Power Tokens to a fellow manager, enter their Username (see [link:./?p=manual_faq&cat_id=1381] Profile) into the text box in the Power Token Gifting section of the Power Tokens screen, add the number of Tokens that you wish to give them and click SEND POWER TOKEN GIFT.
+
+Please note that only purchased Power Tokens can be given away (you can see how many you have available for transfer in the box at the top of the section) and that a maximum of 100 can be given in any seven-day period (you can view how many you've given in the last week in the second box). You can also only give Power Tokens to managers in your own country.
+

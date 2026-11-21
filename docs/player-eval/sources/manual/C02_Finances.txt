@@ -1,0 +1,70 @@
+
+C02: Finances
+Introduction
+
+In ManagerZone, a healthy bank balance is as important as a healthy League position; if your team goes bankrupt, you could lose your job. You can check on your club's financial health by selecting FINANCES in the Office secondary menu. On the Finances Overview screen you are able to view your team's financial situation graphically and in numbers with you current balance and projected weekly expenses at the very top.
+
+Finances graph
+
+The finances graph shows your account balance over the last 30 days, or 91 days if you are a [link:./?p=manual_faq&cat_id=1386] Club Member. The bottom part show the complete time period while the top one show a section of the period in more detail (you can select this by zoom in and out). By hoovering the mouse pointer over the graph you will see your daily account balance at the end of any single day.
+
+Income and expenses
+
+Below the graph the present week's income and expenses so far are shown, followed by the projected weekly expenses in more detail. 
+
+Revenue generating matches
+
+In the Finance Overview screen you can also see how many of the maximum number of revenue generating matches you have played this and last week. A good tool for optimising your team's income.
+
+[/i]Weekly Reports[/i]
+
+At the bottom of the screen you will find the weekly financial reports for your team, including summaries of all your income and outgoings. You can browse the 2 recent weekly financial reports, while [link:./?p=manual_faq&cat_id=1386] Club Members can browse the reports for the last 5 weeks.
+
+Transaction History
+
+The transaction history screen lists all your latest dealings, with the most recent at the top. Income transactions are displayed in green while expenses are shown in red. You are able to view the 25 latest economic transactions, or 100 if you are a [link:./?p=manual_faq&cat_id=1386] Club Member).
+Income
+
+You can earn money for your club by playing games, [link:./?p=manual_faq&cat_id=1362] selling players, performing well in competitions and demolishing areas of your stadium (see "Demolishing your Stadium" in [link:./?p=manual_faq&cat_id=1375] Stadium). Games provide your club with money in two ways: ticket sale takings and income from your stadium's facilities (see "Capacity and Facilities" in [link:./?p=manual_faq&cat_id=1375] Stadium). With the exception of Official Cup matches, you can only earn money from home games and, in the interest of fairness, there are limits on the amount of income teams can earn from matches outside their League fixtures.
+
+Match typeNumber of matches with income
+Senior Leagueunlimited
+Youth League (U18/U21/U23)unlimited
+Friendly Match2
+Official Cup**unlimited
+Private Cup (group stage)5
+Private Cup (play off)5
+Friendly League5
+Special match (Top teams, Crew team, National team)5
+Scout match5
+
+* Both teams split ticket income and the home team receives facility income.
+
+Expenses
+
+There are many ways to spend money in ManagerZone. Club expenses may include stadium upkeep, transfer fees, player and [link:./?p=manual_faq&cat_id=1365] staff salary and contract costs and various [link:./?p=manual_faq&cat_id=1361] training expenses (including [link:./?p=manual_faq&cat_id=1364] youth training and Training Camp fees). A club's regular weekly expenses are taken from their account every Saturday.
+Bankruptcy Proceedings
+
+The most important figure on the Finances screens is that of your Current Balance. If this figure sinks below zero for five Saturdays in a row (the day of ManagerZone's bankruptcy checks), your club will be declared bankrupt. 
+
+During this five-week period, ManagerZone's bankruptcy proceedings will issue warnings every week to remind you to get out of financial trouble. If your team goes back into positive territory on the day of a bankruptcy check, the five-week check is cancelled until the next time your Balance falls below zero, when it will start from the first week once more. However, if your Current Balance figure is still in negative territory in the fifth week, your club will be declared bankrupt and your management reign will come to an end. 
+
+If your team goes bankrupt, you will be presented with two options:
+
+Option 1: Try to Recover 
+
+You’ll get an additional five weeks to turn the club around, starting with the same state it was in at the time of bankruptcy. If you choose this option and later change your mind, you’ll still have the option to reset your team as long as your balance remains negative. If you’re unsure which option to pick, we recommend starting with this one. 
+
+Note: This option is only available if your team has been bankrupt for less than one year. 
+
+Option 2: Full Reset 
+
+You keep your team name, records, trophies, achievements, and any customizations—but everything else is reset. This means: 
+
+A brand new squad of players 
+A closed youth academy 
+A basic stadium 
+No coaches 
+
+Your club’s finances will be reset to the standard starting point, as if a new manager had just taken over the club.
+

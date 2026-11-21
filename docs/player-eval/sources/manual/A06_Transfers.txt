@@ -1,0 +1,118 @@
+
+A06: Transfers
+Introduction
+
+On top of hiring youth players and training up your current squad, another way to strengthen your team is to bring brand new senior players in via the transfer market.
+Transfer Market Restrictions
+
+New managers cannot use the transfer market until they've been in their job for two weeks or more (Club Members are given instant access to the transfer market). They will be notified via the Team News feed (see "My Team Home Screen" in [link:./?p=manual_faq&cat_id=1358] My Team) when they are able to start buying and selling players. Clubs are restricted to having three foreign players (players born outside the country in which the club is based) in their squad. Managers cannot make a bid for a player that is greater than the value of their current squad.
+
+When a new Manager transfer lists a Player, the option to show Training Graph will be forced to 'Yes'. When the Manager have played ManagerZone for 182 days, they will be able to choose whether or not to show Training Graph. 
+Selling a Player
+
+To sell a player, click the SELL-icon on his profile (see "Icons and Buttons" in [link:./?p=manual_faq&cat_id=1359] Squad), input your asking price (this must be no more than three times his value, which is also displayed on his profile), use the dropdown to choose how many days you wish to offer him for and click SELL. You will have to pay a fee of 1.25% of the asking price (the minimum and maximum allowable charges are detailed at the bottom of the screen), which will be charged whether or not your player is successfully sold.
+
+You can view the progress of your sale on the Transfer Monitor screen. Note that, once you put a player on the transfer market, you cannot reverse your decision and if your asking price is met, he will be sold. If your player is sold, he will leave your club – and you will receive his transfer fee (minus the relevant sales fees and taxes) – 24 hours after the transfer deadline passes. Any players who remain unsold also return to your club at this point. You will be updated via the Team News feed. Note that you cannot sell [link:./?p=manual_faq&cat_id=1364] youth players.
+
+Sales Taxes
+
+As well as paying a fee to add players to the transfer market, you will also have to pay tax on any profits you make when you sell a player.
+
+However, if you decide to sell a player soon after buying him, you will be penalised with higher taxes. You will also incur higher taxes if you sell a youth player within three years of him graduating to your senior team. 
+
+The tax rates on own products are calculated on the birth season of the player. The tax rate is calculated when the player joins the new club.
+
+AgeTax Rate
+19 (or turning 19 during the current season)25%
+20 (or turning 20 during the current season)20%
+21 (or turning 21 during the current season) (or older)15%
+
+Tax rate on bought players: 
+
+Days Since PurchaseTax Rate
+≤ 28 days95%
+≤ 70 days50%
+> 70 days 15%
+
+Please note that profits on players who were a part of your club when you became manager, and youth players who began at your Academy, are calculated using their current value rather than purchase price.
+Buying a Player
+
+Searching for New Players
+
+To search for a new player, input your requirements (e.g. Nationality, Age and preferred attributes) in the form at the top of the Transfer Market screen and click the SEARCH button. The resulting list of matching players displays each one's profile information as well as their club's asking price, bids that have already been made and the transfer deadline. To follow a player's progress without making a bid of your own, click the SHORTLIST-icon on his profile. This adds him to your [link:./?p=manual_faq&cat_id=1363] Shortlist, allowing you to quickly join the bidding at a later stage by clicking the PLACE BID-icon on his profile.
+
+To avoid having to repeatedly input the same information, [link:./?p=manual_faq&cat_id=1386] Club Members can save custom searches by clicking MY SEARCHES in the Transfer Market sub-menu, clicking the CREATE SEARCH button, naming their search, inputting their requirements and clicking SAVE. To use the saved search, all they need to do is select it in the My Searches dropdown of the Transfer Market screen form and click SEARCH.
+
+Bidding for a Player
+
+The MangerZone transfer market is based on an auction system where the largest bid entered before the deadline purchases the player. To bid for a player, click the PLACE BID-icon on his profile and type your offer into the box, which is already pre-populated with the minimum amount you can offer (as a result of either the initial asking price or subsequent bids). Once entered, an indication of your target's potential salary based on your offer is shown at the bottom of the window. If you're happy with your offer and the player's salary, click BID. You can view the progress of your bid on the Transfer Monitor screen (see below). Note that once you make a bid, you cannot reverse your decision and if you win the auction, you will have to pay the money offered.
+
+If a team bids for a player within three minutes of the transfer deadline, it is extended by three minutes in order to allow other managers to lodge counter bids. This process continues until there are no more late bids. When the transfer deadline passes, the team that has made the biggest offer purchases the player. To find out who tabled the highest bid, see the Transfer Monitor screen. The team who won the auction is shown at the top of the Bid History section.
+
+Your player will join your team – and become available for [link:./?p=manual_faq&cat_id=1361] training and [link:./?p=manual_faq&cat_id=1360] selection – around 24 hours after the deadline has passed. You will be updated via the Team News feed (see “My Team Home Screen” in [link:./?p=manual_faq&cat_id=1358] My Team). At this point, the transfer fee for the player will also be taken from your funds. Until this time, his previous team can continue to play him in their matches.
+Transfer Monitor Screen
+
+The Transfer Monitor screen displays those players you are currently selling as well as those you have made offers for. It shows all the latest bids that have been made for each player along with their transfer deadline. From this screen, [link:./?p=manual_faq&cat_id=1386] Club Members can also activate the Transfer Monitor window, which sits on the left-hand side of all ManagerZone screens providing a summary of the latest relevant transfer market information. As well as displaying all the players a manager is currently selling or bidding for, it also shows all of their [link:./?p=manual_faq&cat_id=1363] Shortlisted players that are currently for sale.
+Transfer History Screen
+
+Here you can review all your team's ins and outs, including previous transfers, [link:./?p=manual_faq&cat_id=1364] youth intake and players you’ve released. There’s also a summary of all your dealings at the top of the screen, including your most expensive purchases and sales.
+Transfer Rules Screen
+
+In order to keep ManagerZone a competitive and enjoyable environment to play in, we have to lay down some basic rules for players to abide by. Transfer market-related rules are shown in point 4 of the Transfer Rules screen. These should be read before any manager buys or sells their first player, as not abiding by them can result in severe sanctions.
+
+Any transfer that arouses suspicion, especially bids for players that are well over their value, will be checked by a Game Assistant (see "ManagerZone Assistants" in [link:./?p=manual_faq&cat_id=1383] Community) and, while this check is ongoing, the player's profile will display an exclamation mark. Until the Assistant is happy that the transfer is legal, the player will not be allowed to join his new club.
+Bidding and Team Value
+
+There are two rules to bidding on the market. First, any team can make a bid of at least 950.000 SEK (+/- 102.222 €) regardless of their team value. Second, teams with a team value over 25.000.000 SEK (+/- 2.724.054 €) can bid any amount they wish to.
+Foreign limits
+
+There are limitations for how many non domestic players your team can have at any given time. Based on how busy the transfer market is in your country it belongs to a region, deciding how many foreign players you can employ.
+
+Region A
+
+Teams in Region A may have 5 foreign Players and 2 foreign Players with a Work Permit, for a total of 7 foreign Players.
+
+Region B
+
+Teams in Region B may have 5 foreign Players and 5 foreign Players with a Work Permit, for a total of 10 foreign Players.
+
+Region C
+
+Teams in Region C may have 5 foreign Players and 7 foreign Players with a Work Permit, for a total of 12 foreign Players.
+
+The foreign Player limits will be reviewed periodically and only if we see that the transfer market for a country changes significantly, it is not our intent to make regular changes.
+Transfer Regions
+
+Managers in countries with larger transfer markets generally have access to more domestic Players and Managers in countries with small transfer markets generally have fewer opportunities to buy domestic Players.
+
+Each country in ManagerZone is assigned to a Transfer Region. The Transfer Regions were determined by:
+
+Analysing the total activity in the transfer market.
+
+Analysing how many domestic players were bought by teams.
+
+Analysing how many foreign players were bought by teams.
+
+Players began to gain residency days from June 17th 2013
+
+Region A – These countries generally have a strong and active domestic transfer market. 
+
+Argentina, Brazil, China, Poland, Sweden and Turkey
+
+Region B – These countries generally have an active domestic transfer market, but there are times when the market is slow or limited.
+
+Belgium, Bulgaria, Chile, Colombia, Denmark, Ecuador, England, Estonia, France, Germany, Greece, Hungary, Italy, Indonesia, Mexico, Netherlands, Norway, Peru, Portugal, Romania, Spain, United States, Uruguay
+
+Region C – These countries generally have an inactive or very limited domestic transfer market.
+
+Albania, Algeria, Andorra, Angola, Australia, Austria, Azerbaijan, Bangladesh, Belarus, Bolivia, Bosnia and Hercegovina, Canada, Czech Republic, Costa Rica, Croatia, Cyprus, Dominican Republic, Egypt, El Salvador, Faroe Islands, Finland, Georgia, Guatemala, Honduras, Iceland, India, Iran, Ireland, Israel, Jordan, Kazakhstan, Kenya, Kuwait, Kyrgyzstan, Latvia, Lebanon, Lithuania, Liechtenstein, Luxembourg, Macedonia, Malaysia, Malta, Moldova, Montenegro, Morocco, MZ Country, Nigeria, Northern Ireland, Pakistan, Panama, Paraguay, Philippines, Russia, Saudi Arabia, Scotland, Senegal, Serbia, Singapore, Slovakia, Slovenia, South Africa, South Korea, Switzerland, Switzerland, Thailand, Trinidad & Tobago, Tunisia, Ukraine, United Arab Emirates, Venezuela, Vietnam, Wales
+Work Permit
+
+A player may qualify for a Work Permit that allows him to play in a foreign country by residing in that country. A Work Permit costs 10 times the Player's current weekly salary. 
+
+Region ARegion BRegion C
+Foreigners555 
+Work Permit(s)257 
+
+A work permit may be purchased for existing foreign Players by clicking on the WORK PERMIT-icon. A work permit may also be purchased at the time of bidding on the transfer market.
+

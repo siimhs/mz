@@ -1,0 +1,310 @@
+ 
+
+ Navigation
+
+ Seasons, Rounds and Days
+
+ In-game currency and Club Members
+
+ Meet your Players
+
+ Explore your team
+
+ Economy basics
+
+ Your Stadium
+
+ The Senior League
+
+ Get social
+
+Chapter I: Getting started
+ManagerZone began in 2001 and many of the first Managers remain in the game You can easily identify them by their Legends Badges .
+
+To help you begin your potentially legendary career, we will guide you through theg game’s essential over the next four chapters. You can ask for further help in the Forums or via our Support Team. Remember, never to share your account details or password with anyone!
+
+ManagerZone is a long-term challenge and you should think and plan long term as you develop your team. Competing in Leagues with real people from around the world makes this a tough but extremely enjoyable game!
+
+Navigation
+ManagerZone contains many different features and it might seem difficult to find your way around at first. Don't worry though, once you learn the structure, navigation is quick and easy. To begin with, lets have a look at the header panel, which contains several shortcuts to the most-used game features.
+Countdown to the next match
+Current Season and Round
+In-game Search
+Theme and menu selection
+Select language for the site
+Read Game Notifications
+Read Notifications
+Read Club Notifications
+Check your Guestbook posts
+Read news related to your team
+Go to the latest match
+Challenges
+Friendly Leagues
+Cups
+Read The Zone, created by your fellow Managers
+Logout from the Game
+The site is divided into six main menu sections; Clubhouse, Matches, Office, Community, Store and Help. Each section has several related sub-menus. See below for a summary of each main section.
+Clubhouse: This is where you prepare your squad, personalize your Club, plan Tactics, train and transfer Players and develop your Youth Academy.
+Matches: This contains everything you need to know about your team’s on-field activities. The different ManagerZone competitions are found here and you can view your team’s fixtures and results.
+Office: The Office covers all the off-field aspects of management, including Stadium maintenance and financial updates. It also displays a variety of Club-related information, from team honours to current statistics.
+Community: The Community tab allows you to keep up with the wider ManagerZone world through Forums, the game’s “The Zone” magazine, the MZ Wiki and more.
+Store: This is where you can enhance your ManagerZone experience, buy items for your Players on the pitch, purchase new in-game features and become a Club Member.
+Help: Here you can search for answers in our Manual, submit a ticket to our Support Team or have another look at this Beginners Guide. 
+ Back to top
+
+Seasons, Rounds and Days
+ManagerZone Seasons last 91 days (the current Season can be seen in the header panel). Each game week consist of two "Rounds" and there are 22 Rounds per Season.
+
+League Matches occur automatically each Wednesday and Sunday, with additional Play Off matches scheduled at the end of the Season.
+
+There are other types of competitions in ManagerZone, which are described in Chapter III. 
+ Back to top
+
+In-game currency and Club Members
+
+Power Tokens
+
+Power Tokens are ManagerZone’s unique currency. They can be used to purchase a wide variety of items and features (like Club Membership and entry to exclusive tournaments) within the game.
+
+Club Members
+
+Club Members receive a range of extra services and features that greatly enhance the ManagerZone experience. If you feel that ManagerZone offers a lot of fun and entertainment, we definitely recommend you become one. Visit the Store to learn more about the benefits and to become a Club Member.
+
+ Back to top
+
+Meet your Players
+ Clubhouse Squad 
+
+ Element
+ Icon(s)
+
+ Form
+
+ Injury
+
+ This Player has started planning his retirement.
+
+ Training Camp
+
+ Youth Conditioning Camp
+
+ Sell
+
+ Send to Training Camp
+
+ Player Notes 
+
+ Share skills and flags
+
+ Shortlist Player
+
+ Training Graphs 
+
+ Toggle Pinyin/Chinese 
+
+ Extend playing career
+
+ Scout report
+
+ Release Player
+
+ Youth Exchange
+
+ Work Permit
+
+ Loyal Player
+
+You will meet all your Players on the Squad Screen. Each Player has different strengths and weaknesses, indicated by the number of "skill balls" (), next to their various attributes. You can also view Players' personal information including their age, height, weight, nationality, current market value, salary and strongest Foot.
+
+Players age once per Season and from the age of 31 they may decide to retire at the end of that Season. Former Players may be persuaded to become Coaches to help train your current team and develop the next generation of Players.
+
+On the left-hand side of each Player profile there are a number of icons, providing you with additional information or links to further game features. Each has a tooltip providing more information.
+
+Player Attributes
+
+Attribute listing
+
+ Speed
+
+How fast a Player can walk or run. Faster Players will be able to intercept more passes if they see them in time.
+
+ Stamina
+
+How far a Player can run before they are tired or exhausted. This includes goalkeepers. At half time, Players will regain some stamina. When Players become tired or exhausted their performance will drop.
+
+ Play Intelligence
+
+A Player’s ability to make footballing decisions and to avoid making tackles that result in a card. Intelligent Players will see more passes. Intelligence helps Players adapt to different roles on the field.
+
+ Passing
+
+A Player with good Passing skills is more likely to retain possession for his team as he has an increased likelihood of finding his team-mates with accurate passes
+
+ Shooting
+
+A Player’s ability to strike the ball accurately with their feet.
+
+ Heading
+
+A Player’s ability to pass or shoot accurately with their head.
+
+ Keeping
+
+A Player’s ability to stop shots and anticipate an opposing Player’s actions, and therefore make better saves.
+
+ Ball Control / Technique
+
+A Player’s ability to control incoming passes with their feet. This is an important attribute for all Players.
+
+ Tackling
+
+A Player’s ability to apply pressure to a ball-carrying opponent and to win the ball in a 1 vs. 1 situation.
+
+ Aerial Passing / Crossing
+
+A Player’s ability to pass the ball through the air to a teammate and to cross the ball into the opposition’s penalty area.
+
+ Set Plays
+
+Teams containing a Player with good skill ratings in Set Plays will be more effective from corners, free kicks and penalties.
+
+A Player can have between 0 and 10 skill balls and this can increase or decrease at different rates during Training depending on his training efficiency, injuries, age and how close he is to reaching his limit in an attribute (an event known as “maxing”). The eleven trainable attributes can be found in the information box to the right.
+Form and Experience
+Your Players’ Form and Experience levels, which are both affected by the number of matches they play, have as much of an impact on their performances as the attributes mentioned above.
+
+Form is an important part of ManagerZone and you should try to maintain good Form for all your Players. To stay “match fit” a Player should be playing 5 or 6 matches per gameweek. Friendly, Friendly League, Official Cup and Prize/Friendly Cup matches can be arranged to help maintain the Form of Players not getting enough game time. 
+
+Be aware though that too many League and Friendly matches can negatively affect your Players’ Form. Friendly League, Official Cup and Prize/Friendly Cup matches, on the other hand, can only positively affect it.
+
+An indication of the number of competitive matches a Player has been involved in during their career, contributes to a Player’s overall footballing ability and is therefore an important factor for all Players. High Experience levels can, for instance, enable Players to avoid making bad tackles.
+Loyal Players
+Loyal Players are Players that have been part of your Club since they were kids. They are very passionate about the Club and would never agree to being transferred. They can be fired, but never sold.
+
+Loyal Players are identified by a different background colour and the icon.
+
+These Players form the core of any new team and are most likely the Players around which you will build. Over time they may be replaced by Youths you have trained via your Youth Academy or supplemented by purchases from the Transfer Market.
+
+Tip: Don’t rush into the Transfer Market immediately. Remember you need to balance your Club’s Finances as well as performing in matches. 
+ Back to top
+
+Explore your team
+ Clubhouse My Team
+On the My Team Home screen you will find a summary of your team’s status. This includes its current ManagerZone ranking and Form trend, the League(s) and cup competitions in which it is participating, and the trophies it has won. From here you can also personalise your team.
+
+Change your team name
+
+You can change your team name at the top of the Edit Team Info screen (not everyone does but, as Manager, the team is yours to rename).
+
+As a new Manager you are entitled to one free name change if you have been playing 14 days or less. Any further changes will require Team Money to cover the costs of new stationary, stadium signage etc.
+
+Create a word from the owner
+
+The Word From the Owner (WFO) is your message to fellow Mangers and is displayed on the My Team Home screen. You can use this message to keep the ManagerZone world updated on what is happening at your Club or anything else you wish to share (as long as it is within the rules!).
+
+Create a team badge
+
+Use the editing tool on the Design Badge screen to create your own badge, using different backgrounds, images and texts to fine-tune the look and produce a unique crest. You can also import your own designs via XML. Once you’ve created your new badge, you can save it for future use, but only Club Members can display it on their My Team Home screen.
+
+Choose Player kits
+
+You can customise your home, away and goalkeeping kits in the Change Kit screen by selecting the strip you want to change (Home, Away, Keeper Home or Keeper Away) and choosing an available kit (Club Members have access to the premium kits marked with the Club Member logo).
+
+ Back to top
+
+Economy basics
+ Office Finances
+In ManagerZone, a healthy bank balance is as important as a good league position. If you go bankrupt, you will lose your job and your whole Club. That means all the hours spent building your team would have been in vain; your results, trophies and Players all lost! To ensure this doesn’t happen, you need to earn Team Money.
+
+Income
+
+Team Money is earned by playing matches, selling Players and performing well in competitions. Matches provide your Club with Team Money in two ways: ticket sales and income from your Stadium’s facilities. With the exception of Official Cup matches, you can only earn Team Money from home matches and, in the interests of fairness, there are limits on the amount of income teams can earn from matches outside their League fixtures.
+
+Expenses
+
+There are many ways to spend money in ManagerZone. Club expenses may include Stadium upkeep, transfer fees, Player and staff salaries, contract costs and various training expenses (including Youth Training and Training Camp fees). A Club’s regular weekly expenses are automatically debited from their account every Saturday.
+
+Matches with income 
+
+ Match type Number of matches with income 
+
+Senior LeagueUnlimited
+Youth LeaguesUnlimited
+Friendly match2
+Official CupUnlimited
+Friendly/Prized Cup group play5
+Friendly/Prized Cup play off5
+Friendly League5
+Scout Matches5
+Special Challenge5 
+
+Bankruptcy
+
+Each Saturday the auditor checks your Current Balance. If it is negative, they will alert you by issuing warnings. After 5 
+consecutive Saturday's with a negative balance, your club will file for bankruptcy
+
+Important: During your first 60 days as a Manager, the auditor will not take action against your team even if you have a negative balance. However, with no money you will struggle to operate your Club effectively.
+
+Be warned, the auditor runs the bankruptcy program with ruthless efficiency!
+
+"How can you earn more Team Money?
+ Check out our useful hints for a healthy economy in [link:/?p=beginners_guide&chapter=your_first_season] Chapter IV - Your first season."
+
+ Back to top
+
+Your Stadium
+ Office Stadium
+You can view your current Stadium, including its name, capacity and facilities in the My Stadium screen. The higher your team climbs in the League, the more people will want to use your facilities and support you, both of which provide income for your Club.
+
+The Stadium’s capacity comprises terracing, seating and VIP seats. Bear in mind that different spectators have different requirements, so ensure you provide enough of each of these elements in order to maximise attendance. The bigger your Stadium becomes, the grander it will look in the My Stadium screen.
+You can choose to change the Stadium's name, increase its capacity by adding more terracing, seating and VIP seats or build new facilities (e.g. hotdog stands) for fans to visit while they’re watching matches. Like any investment, the more money you put into your Stadium, the more you’re likely to get out of it.
+
+By hiring extra construction workers your new constructions will be completed faster. If you want to entirely change the look of your home venue, and impress other Managers, it is also possible to get a magnificent new Premium Stadium, and chose its color scheme.
+
+You need to ensure your redevelopments don’t outpace your team’s performances and stature because, without a winning team, you won’t attract enough extra fans to pay for the increased upkeep costs. Teams in higher Divisions attract more fans than those in the lower reaches of the League.
+"Read more in [link:/?p=beginners_guide&chapter=your_first_season] Chapter IV - Your first season about how you should expand your Stadium at the start of your career."
+
+ Back to top
+
+The Senior League
+ Matches League
+There are nearly 100 different countries represented in ManagerZone. Each country has their own Senior League. Managers of countries not represented will play in the ubiquitous “MZ Country”.
+
+Each league comprises Divisions and Series. Below the top Division, each tier comprises 3 sub Divisions and this is repeated tier-by-tier. Teams are promoted and relegated up and down the tree at the end of each Season, based on the final positions in their Division .
+
+Some countries have more than 7 tiers that comprise tens of thousands of teams. Even if you are not competing in the top Division, there are plenty of teams around you to compete with.
+
+Senior League Divisions consist of 12 teams that play each other twice, resulting in a total of 22 Rounds per Season. League matches occur on Wednesdays and Sundays and the fixture list can be found under Matches->League Schedule.
+
+All teams belong to a Senior League and you can also join a number of fantastic premium Leagues, including Youth Leagues, to extend your experience. 
+ Back to top
+
+Get social
+One of the greatest things in ManagerZone is the Community. Managers from all over the world meet to chat, help each other and exchange hints and tips about the game. Many of our users have created new friendships through our Community, over the Internet and in real life! You’ll be surprised how many people there are out there sharing the same passion as you do.
+"Follow ManagerZone on social media!" 
+
+In-game communication channels
+
+ManagerZone offers three main channels through which our Managers can interact; Forums, Guestbooks (GB) and Message Boards (MB).
+
+Our Forums are open to everyone who accepts their rules, with sections for over 20 different world languages. It is here that the Community comes together to chat, discuss, make suggestions, ask questions and share knowledge about the game.
+
+Guestbooks give Managers the opportunity to communicate directly with each other, whether they’re debating who has the best Players or inviting each other to competitions.
+
+Message Boards are found in the Leagues (U18, U21, U23 and Senior), Friendly Leagues and Federations. Here Managers can discuss their successes, frustrations and aspirations with other entrants and members! 
+
+You can track new Message Board posts by subscribing via the notification system ().
+
+Federations
+
+Similar to a clan or guild, a Federation is a social group within which Managers with common interests can compete. Many ManagerZone Federations organize internal competitions through Friendly Leagues and Cups, while some will compete in Friendly competitions with other Federations. 
+
+You can join Federations by purchasing a silver or gold Federation Pass. The silver pass allows you to be member of 5 Federations while the gold pass allows you to enter up to 20 Federations at the same time.
+
+If you cannot find the Federation you are looking for you can purchase a Federation Charter which allows you to create your very own Federation and become its President.
+
+ Back to top
+
+With this basic knowledge of the game you are now one step closer to becoming a great manager. In the next Chapter, you can find out how to set your Tactics and train your Players. [link:/?p=beginners_guide&chapter=manager_basics] 
+ Next Chapter: Manager Basics 
+
+

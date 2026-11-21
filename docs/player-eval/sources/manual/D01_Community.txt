@@ -1,0 +1,41 @@
+
+D01: Community
+Introduction
+
+ManagerZone's Community is the heart of the game. It's where managers from all over the world meet to chat, help each other and swap hints and tips.
+Community Home Screen
+
+This screen provides a snapshot of what's going on in ManagerZone's worldwide Community, including the latest [link:./?p=manual_faq&cat_id=1377] Rankings, stats from your country, uploaded photos (see below), [link:./?p=manual_faq&cat_id=1385] Forum statistics and Press Releases (see [link:./?p=manual_faq&cat_id=1358] My Team). The right of the screen, meanwhile, details the managers and players of the week along with the latest [link:./?p=manual_faq&cat_id=1369] cup winner.
+MZ World Screen
+
+The MZ World screen allows managers to find out more about all the local communities in ManagerZone. To select a country, click its continent on the map and then click on its name in the pop-up window. Data including links to its Support (see [link:./?p=manual_faq&cat_id=1391] Help) address and top divisions, its community statistics, its top [link:./?p=manual_faq&cat_id=1377] Ranked team and a list of its Assistants (see "ManagerZone Assistants", below) appears at the bottom of the screen. Note that the "MZ Country" island on the map refers to those teams who don't have their own Leagues and, instead of playing in their own national competitions, compete against each other.
+
+ManagerZone Assistants
+
+To function properly, ManagerZone relies on a vast number of contributors who help with the smooth running of many different aspects of the game. Known as "Assistants", these helpers are highlighted within each country's information on the MZ World screen. To fully understand what each of these do, see the list below:
+
+Master Assistant (MA): Appoint and manage all the Assistants in their country, as well as carrying out the same day-to-day tasks as Game Assistants.
+
+Game Assistant (GA): Help to run ManagerZone Support and prevent cheating as well as aiding the Forum Assistants.
+
+Language Assistant (LA): Translate ManagerZone into other languages.
+
+Forum Assistant (FA): Monitor and moderate ManagerZone's [link:./?p=manual_faq&cat_id=1385] Forums. Responsible for editing, deleting and moving posts and, in some cases, issuing Forum bans. They can also answer Q&A Forum posts.
+
+Reporter Assistant (RA): Help to produce and publish their country's " [link:./?p=manual_faq&cat_id=1384] The Zone" magazine.
+Photo Album Screen
+
+Managers can upload their own photographs and share them with the Community on the Photo Album screen, which is divided into four categories: General Photos, Meeting Photos, Sporting Event Photos and Team Photos.
+
+Uploading an Image
+
+To share an image with the Community, click the UPLOAD PHOTO button in the Photo Album sub-menu, click BROWSE to find it, add a caption to describe it, select which of the above categories it belongs to using the radio buttons and click UPLOAD. Note that in order to be successfully uploaded, images must be JPGs and be 100 KB or less in size.
+
+Your newly-uploaded image will be added to the Pending section of the My Uploaded Photos screen. If it is accepted it will then be moved to the Approved section of the screen and added to the public Photo Album. If it is deemed inappropriate for publication on the Photo Album, it will be added to the Deleted section. To remove an approved image yourself, tick the box next to it and then click the REMOVE SELECTED button at the bottom of the My Uploaded Photos screen.
+XML Content Screen
+
+The XML Content screen provides you with the tools to add the latest ManagerZone information to your home page. To add a feature, scroll down the screen to find it, then click its MORE INFO button, enter the required information and click GENERATE URL. The URL that you will need to display the feature on your home page is displayed at the bottom of the screen.
+Social media sharing
+
+A number of popular social channels can be found in various areas of the game. Why not share your ManagerZone experience with friends?
+

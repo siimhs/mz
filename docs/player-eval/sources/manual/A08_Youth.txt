@@ -1,0 +1,48 @@
+
+A08: Youth
+Introduction
+
+Creating a successful Youth Academy can be a good alternative to buying new players. When youth players arrive at your club they will be 15 or 16 years old and will undergo three years of training before graduating to your senior squad. During this time they are available to play for your senior team, but cannot be sold.
+
+There are two times each season when you can hire youth players, between Day 1-11 and Day 41-46. New managers are also given an opportunity to start an Academy when joining a club. You can reduce the number of youth players on your team at any point during the season. 
+
+If you have been a Manager for 14 days or less and invest in a Youth Academy; your first batch of Youths will arrive instantly as the locals have been waiting for a chance to try and impress the new Manager.
+
+Recruiting and Releasing Youth Players
+
+To add youth players to your squad, or change the number you currently have on your books, use the radio buttons in the Youth screen to select a number. You can have up to 23 at your club at any one time. Note that the number you select refers to the total number of youth players you wish to have at your club, not the number of new players you want to add. If you have chosen to discard youth players, you cannot select which ones will leave your club.
+
+Whether you've increased or decreased the size of your youth squad, the changes will take effect the Saturday following your selection (if you amend your youth numbers on a Saturday, the changes will take place a week later).
+Youth Academy Costs
+
+Every youth player you hire costs a flat weekly fee to train. Depending on how many you add to your squad, the Weekly Cost column displays how high your weekly outgoings will be. Reducing your number of youth players to zero will close down your Academy and you will no longer have to pay the weekly fee until you reopen it again.
+Youth Player Graduation
+
+Youth players graduate to your senior team during the first season break following their 18th birthday. Unless you change the number of youth players in your Academy (see above), graduates will be replaced by an identical number of new young recruits between weeks 1 and 2 of the new season.
+Youth Competitions
+
+ManagerZone provides many competitions specifically for youth players in order to give them regular matches and provide them with competitive experience. These include the Youth (U18) League and special age-restricted cups. For more information on U18 cups, see "Uxx and Oxx Cups" in [link:./?p=manual_faq&cat_id=1369] Cups.
+Youth Training Camp
+
+You may use some of your training camp spots, you have a total of 12 places, to improve the skills of your youth players.
+
+Your team sponsor will fund up to 6 youth places for free.
+Youth Conditioning Camps
+
+Youth Conditioning Camps (YCC) allows Youth Players to accelerate their training and catch up with what they have missed during their first season, before they arrived at your team. This package will appear on Day 7 of the Season and remain to the Season end. Players that are sent to a Youth Conditioning Camp will catch up on the regular training they have missed from day 7 of the season, until the day they arrive at your team. You are allowed to send up to 9 new Youths to this Camp, if you have been a Managers for 14 days or less you can send up to 15 Youths.
+Youth Custom Setup
+
+A Youth Custom Setup can either be bought in the Youth Academy page, or received as a part of the Kickstart package. 
+
+With a Youth Custom Setup your Head of Youth Development offers you the opportunity to fully customise your team's Youth Academy, allowing you to pick first, second or third season Players. 
+
+All of those Players will have received full regular training up to yesterday and second and third season Youths will have benefited from one Training Camp per season.
+
+All the new Youths will be found at your training ground once you confirm their training contract.
+
+Because of the investment made by your Chairman, all Youths ordered via Custom Youth Setup must stay in your team for three seasons before you can sell them. The Youths can be exchanged as normal and once graduated they can be fired, if you feel that they do not have a future in the game.
+
+Please note that if you order first season Youths and it's past season day 6, you will lose Youth Conditioning Camp slots accordingly.
+
+This feature can only be used once every other season.
+

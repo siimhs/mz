@@ -1,0 +1,7 @@
+
+C06: Statistics
+
+The Statistics screen displays a variety of data about your team, including graphs plotting recent Ranking and Form trends (for more information on Form, see "Form and Experience" in [link:./?p=manual_faq&cat_id=1361] Training), [link:./?p=manual_faq&cat_id=1367] League and [link:./?p=manual_faq&cat_id=1369] cup goal-scoring records and the current League season's top scorer and most-carded player.
+
+The Ranking graph displays the daily fluctuations in your MZ Ranking while the Form graph plots your team's average player Form on each League match day. All the other statistics on the screen are updated once a week.
+

@@ -1,0 +1,72 @@
+
+C03: Stadium
+Introduction
+
+You can view your current stadium, including its name, capacity and facilities, in the My Stadium screen. The better your team becomes and the higher they climb in the League, the more people will want to use your facilities and watch them, both of which will provide income for your club.
+Capacity and Facilities
+
+A stadium's capacity is made up of terracing, seating and VIP seats. Bear in mind that different spectators have different requirements, so make sure you provide enough of each of these elements in order to maximise attendance. The bigger your stadium becomes, the grander it will look in the My Stadium screen.
+
+Facilities that can be added to your stadium include restaurants, hot dog stands, fast food outlets, pubs, souvenir shops, clinics and hotels. While these buildings cost money to build and run, they also can provide higher match day income for your club. The exception is the clinic that does not provide higher income, but instead speed up he recovery time for your injured players.
+
+Quotas and costs
+
+All the costs are in EUR.
+
+Spectator/Facility quotaConstruction costWeekly cost
+Terracing75/100*111
+Seating23/100*335
+VIP seats2/100*16411
+Restaurants801/144 00082
+Hot dog Stand404/1220055
+Fast Food Outlet627/133109
+Pub857/133 000109
+Souvenir Shop850/15500137
+Hotel2290/193 000164
+
+*Of the total amount of spectators, 75% will chose Terracing, 23% will choose Seating and 2% will chose VIP seats. 
+
+The Spectator/Facility quotas will help you understand how to optimise your facilities for a given number of spectators. 
+
+Change Stadium Screen
+
+Like any investment, the more money you put into your stadium, the more you're likely to get out of it. However you need to ensure your redevelopments don't outpace your performances because, without a winning team, you won't attract enough extra fans to pay for the increased upkeep costs.
+
+To make changes to your stadium, select CHANGE STADIUM in the Stadium sub-menu. Here, you can change its name by entering a new one into the text box at the top of the screen and clicking CHANGE.
+Upgrading your Stadium
+
+You can choose to increase your stadium's capacity by adding more terracing, seating and VIP seats, or build new facilities (e.g. hotdog stands) for fans to visit while they're watching games. You can see how many of each you currently have in brackets on the left of the screen.
+
+To make changes, input the number of terraces, seats, VIP seats and other buildings you wish to add in the boxes on the order form (the cost per unit is displayed in brackets to the right). The cost of your proposed development appears, as well as the date on which they will be completed is shown.
+
+To go ahead with the building, click ORDER CONTRACT. Click RESET to clear the order form. You also have the option of hiring extra construction workers to complete the builds faster (see paragraph about extra workers below). 
+
+All constructions in progress will be shown in the My Stadium Screen. Here you can see the completion dates for the various projects, and if you haven't already ordered extra workers for your build, it is possible to add them here as well.
+
+The different construction types progress in parallel with each other, and as soon as one unit is completed it will be added to your Stadium. If you for example order one Fast Food Outlet that will take 6 days to finish and a Hotel that will take 10 days to finish, the construction of both buildings will progress parallel with each other. After six days the Fast Food Outlet will be ready, and will immediately be added to your stadium. The construction work on the hotel will however continue for another four days.
+
+Optimum expansion
+
+These are calculations of optimum stadium expansions at lower division levels based on the facts from "Quotas and costs". Note that the total number of spectators is an approximate estimate for every division.
+
+Div 3Div 4Div 5Div 6
+Total number of spectators8 2007 9007 7007 500
+Terracing (75%)6 1505 9255 7755 625
+Seating (23%)1 8861 8171 7711 725
+VIP seats (2%)164158154150
+Restaurant10.29.99.69.4
+Hot dog Stand20.319.619.118.6
+Fast Food Outlet13.112.612.312.0
+Pub9.69.29.08.8
+Souvenir Shop9.69.39.18.8
+Hotel3.63.43.43.3
+Demolishing your Stadium
+
+You can gain a modest immediate income (equivalent to 25% of the original buildings costs) and save money on regular upkeep costs by demolishing areas of your stadium. You demolish buildings by filling in the same form as for ordering, but click the Demolish radio button, instead of the one for Build. Demolishing of existing facilities are executed immediately.
+Extra construction workers
+
+In order to increase the building speed of a stadium upgrade you can hire extra construction workers, either when a construction is ordered, or at a later time during the building process. By requesting extra workers you can increase the construction speed in increments of 5% up to the maximum of 50%. Be careful thought, and check the estimated ready date when preparing the ordering of extra workers. For very small builds ordering extra workers might not necessarily increase the building speed!
+Premium Stadium Packages
+
+Managers have the option of customising their Stadiums with different sets of Premium Stadium Packages. The packages cost [link:./?p=manual_faq&cat_id=1387] Power Tokens and once bought, a package will belong to the Manager forever. If a team goes bankrupt the Manager's new Team will inherit the Premium Stadium Package. As the capacity of your Stadium increases, so will the Premium Stadium. The manager can choose the colour scheme and pattern of the Premium Stadiums, and change these an unlimited number of times.
+

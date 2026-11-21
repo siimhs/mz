@@ -1,0 +1,267 @@
+ 
+
+ Set your first Tactic
+
+ Train your Players
+
+ Coaches
+
+ Youths – Your next star Players
+
+ Transfer Market
+
+Chapter II: Manager Basics
+Your success as a Manager is heavily dependent upon your Players, so it is important you get the most out of them. Spending extra time on Player Training, analysing your Tactics and investing in the next generation of Players through your Youth Academy will prove a wise investment. In this chapter we will walk you through these management essentials.
+Set your first Tactic
+ Clubhouse Tactics
+Even with good Players, poor Tactics can lead to defeat after defeat, so you need to make sure you get yours right. Tactics can be set in the My Tactics screen well in advance of matches and may be applied to multiple games, so even though your super-fit Players are able to play many matches per day, you don’t have to go online to prepare for every one of them!
+
+You can set up to three separate Tactics, storing them in the available “A”, “B” and “C” Tactics Slots (Club Members have access to a further six Tactic Slots), and apply one of them to each of your upcoming matches.
+
+To see which Tactic will be used for each upcoming match, look at the Fixtures Page.
+
+Two hours before a match kick offs, its associated Tactic is locked, so be sure to set it in time!
+Tactics screen overview
+
+Players in Tactic 
+
+ Position Shirt 
+
+Goalkeeper
+Defender
+Midfielder
+Striker 
+
+Substitutions
+
+ Position Shirt 
+
+Goalkeeper
+Defender
+Midfielder
+Striker
+Extra 
+
+Formations: The quick way
+
+If you are in a hurry, you can choose a default formation (4-4-2, 4-3-3 or 5-3-2) from the standard Formation dropdown. However, these formations may not be the best ones for your Players and you should look at alternatives when you have time.
+
+Formations: The good way
+
+Start by reviewing your Players' attributes, either through the hover tooltip on the Tactics screen, or in detail on your Squad Page.
+
+You can create a custom formation by dragging Player shirts from the right-hand side of the My Tactics screen onto the Tactics Field. As seen in the Tactics screen overview, the field is divided into goalkeeper-, defender-, midfielder- and striker areas. Any Player you drag into an area will automatically adopt its associated position to the best of their abilities.
+Walkover rules
+
+If a Player is injured or suspended, your Club Secretary will arrange for them to be swapped with the first available Player in your Squad. 
+
+If you start a match with six or fewer eligible Players, your opponent will be awarded a 5-0 walkover victory. If either team ends up with seven or fewer Players on the pitch during a match, due to injuries or red cards, the match is abandoned and a walkover is awarded to their opponent.
+
+You will also lose by walkover if you select a Tactic that includes an ineligible Player in an age restricted Competition (see more in [link:/?p=beginners_guide&chapter=competitions] Chapter III - Competitions).
+
+Important: Age-ineligible Players are not automatically replaced by your Club Secretary.
+
+If your team forfeits by walkover, you will not usually earn ticket or facility income for that particular match. This rule is applied as follows: 
+
+ Match type If walk over 
+
+Senior LeagueNo income
+Youth LeaguesNo income
+Friendly matchIncome
+Official CupNo income
+Prized/Friendly CupsIncome
+Friendly LeagueIncome
+Scout MatchesIncome
+Special ChallengeIncome 
+
+Mentality
+The Mentality you choose for your team (Defensive, Balanced or Attacking) affects their positioning and how they react to different in-game circumstances.
+
+Defensive
+
+Your team is more conservative and rarely attack. They focus on retaining the ball, and keep more Players between their goal and the ball.
+
+Balanced
+
+Your Players will position themselves neutrally on the field (compared to Defensive or Attacking Mentalities) and try to keep a good balance between attack and defence. They will try to score goals when good opportunities present themselves. If they are losing, they will be more likely to attack, but without taking excessive risks in defence.
+
+Attacking
+
+Your team will move forward when it can. Defenders will support attacks, even if it means leaving gaps in defence. With this Mentality, your Players are more likely to create chances, but it also increases the likelihood of conceding, so use it carefully!
+
+Pressing
+
+Decide how much pressure you wish your team to exert on the opposition. A Committed approach means that your Players will harass the ball carrier more but they will also use up more Stamina and run the risk of committing more fouls. A Passive policy, meanwhile, will save on Stamina and reduce the chance of disciplinary problems.
+Passing styles
+There are three different Passing Styles available for selection. Choose one to decide how your team tries to play when in possession of the ball.
+
+Short passing
+
+Your Players will prefer to use shorter passing and embark on more runs on and off the ball. This style may have higher possession and shooting stats, but the positions from which the shots occur may not be ideal.
+
+Long balls
+
+Your Players will prefer to use longer ground and air passes to Players closest to the opposition’s goal.
+
+Wings
+
+Your Players will prefer to pass to their attacking colleagues who operate on the wings.
+
+Remember, Players and Tactics are equally important if you want to succeed in ManagerZone. Make sure you chose the best Player for each position in your team and a Tactic that suits both your playing style and the strengths of your Players.
+
+In-play tactical Rules
+
+For increased tactical flexibility, you can also preset “Rules” that trigger actions during each match. These can be substitutions, alternative Tactics or changes to your Passing Style. They can be set at five-minute intervals throughout each match and triggered by match events, including certain scorelines and the issuing of cards.
+
+Injuries and suspensions
+
+Seriously injured or suspended Players cannot play in matches (lightly injured Players can still play in matches, but risk more serious injuries if they do). If you don’t replace them before a match, your Club Secretary will arrange for them to be swapped with the first available Player in your Squad. Players at Training Camps are not available for selection until they return to your team.
+
+"Two good ways to find the perfect Tactic are scouting your opponents and watching how your own Players perform in matches."
+
+ Back to top
+
+Train your Players
+ Clubhouse Training 
+
+To train your team, you must drag each of your Players to the zone of the field that corresponds to the attribute you wish them to improve. Your Youth Players have their own Training Field, which can be accessed by clicking the YOUTH button above the senior team’s Training Field.
+
+The main Training Field has room for 42 senior Players. If more are added, only the first 42 Players will train. Up to 23 Youth Players may be trained on their Training Field.
+
+Players must be in position by midnight CET for the day’s training to have any effect – the results can be viewed the next day.
+
+Training does not occur during days on which official League matches take place (Wednesday and Sunday).
+Training Camps
+One way to increase the amount of training a Player receives is to send him to a Training Camp. Camps employ intensive training sessions that concentrate on multiple attributes over duration of one to five weeks. You can send up to 10 Players to Camps at any one time.
+
+Four regular Training Camp offers, aimed at different Player positions, are available for selection and these packages rotate twice per week (Mondays and Fridays). In addition to this you will find two special Training Camps:
+
+Youth Training Camp Package (YP):In order to give you full control of your academy, a Youth Training Camp section is installed exclusively for your Youth Players. These contain of only two attributes per package, which makes it easier to establish roles for your players. Please note that you can also use the other Training Camp packages for your Youth Players if you wish. 
+
+Youth Conditioning Camp (YCC): Allows Youth Players to accelerate their training and catch up with training they have missed during their first season (before they arrived at your team). This package will appear on Day 7 of the Season and remain to the Season end.
+
+Form Package: Quickly get your Players in shape. By sending your Player to this premium, and instant, package the Player’s form will be restored to 9 with the status "match fit". This package can be bought once per Season and allows you to get up to 11 Players in shape.
+
+Players at Training Camps train every day except Sunday. 
+
+Your board encourages you to focus on Youth training and therefore subsidises up to 6 free training camp places for your Youth Players at any one time.
+Training Report
+To check how well a Player is training, you can look at his “training efficiency” meter in the Training Reports screen. This shows how quickly he is improving (green segments: ) or deteriorating (red segments: ) in his currently-trained attribute. The more segments filled on the meter, the greater the rate of change. When a Player has improved enough to reach the next skill level in an attribute, a white ball appears on his meter (). When he has deteriorated enough for his attribute skill level to decrease, a white ball will appear within red segments (). Note that each daily change is reflected in a Player’s match performances – not just when his number of skill balls changes.
+
+Players who are better at training will regularly have more green segments in their meter. If they reach 7 or 8 segments in normal training with the help of a Coach, you know you have a great trainer! 
+ Back to top
+
+Coaches
+ Clubhouse Staff
+Coaches use their expertise to improve your Players’ training efficiency in their attributes. Like Players, they have different skill levels in each attribute. Their training effects are magnified if their skill level in the attribute they are teaching is greater than that of the Players under their guidance. Each Coach can assist 5 Senior Players and 6 Youth Players. You can only make use of one Coach per Training Field position - having more in place will not benefit the Players.
+
+Club boards stress the importance of signing Coaches and therefore help all new Managers sign one, ready to assist with training from day one. This Coach only has a 14-day contract however, so make sure you renegotiate with him in time if you want him to stay!
+Choosing an available Coach
+To hire a Coach, you can browse the Available Coaches list, review the profiles on display and click on the Coach with whom you would like to begin negotiations. Next, offer a contract to the Coach. He will immediately let you know if he is interested in entering into negotiations with your Club or not. Your initial offer will start the first of three rounds of negotiations.
+
+Negotiating with a Coach
+Once you have decided to negotiate with a Coach, his profile will appear in the Current Negotiations screen. You can negotiate with up to three Coaches at the same time, if you open more than one tab in your browser.
+
+To begin negotiating a contract, click on a Coach and set both the salary and length of their proposed contract. You have only five minutes to close the deal, so make sure your offers are within his expected range (shown in brackets). That doesn’t necessarily mean that you must offer figures at the upper end of his expectations – prospective Coaches take into account more than just finances when they consider job opportunities.
+
+After each round, the Coach will provide their feedback on your latest offer. You do not necessarily have to amend your initial offer, especially if they are happy with it!
+
+If a Coach agrees to join your Club, he will arrive to the Training Field instantly. You can then move him into your desired attribute zone.
+
+Renegotiating a Contract
+If one of your current Coaches is in the last 14 days of his contract, you can offer him a new deal before the current one expires. Renegotiating a Coach’s contract works in exactly the same way as negotiating their initial contract. Note, however, that their salary expectations may have changed since then!
+
+If you know you want to keep the Coach indefinitely, you can use the "auto renew" feature (exclusive to Club Members). When a Coach contract is set to "auto renew" it will automatically renew with the same conditions as the current contract each time it expires.
+
+Retired Player as Coach
+
+Retired players can become Coaches for your team! The retired players will work just like existing Coaches and follow the same rules when training your Players.
+
+The first time you hire a retired Player as a Coach, there is no need to negotiate the contract details (salary and contract length) as your Player will have certain demands in mind. If you do not hire them immediately then each week the Player will state their new contract requirements (which may have increased or decreased) and you can decide to accept or decline their terms. A one off administration fee is charged to convert a Player to a Coach. Club Members are offered one conversion for free.
+
+After their first appointment, the retired Player coach will follow the normal procedure for contract renegotiation.
+"Remember, a Coach will always improve a Player, even if his skill level is lower than that of the Player's. Therefore it is always a good idea to hire one!"
+
+ Back to top
+
+Youths – Your next star Players
+ Clubhouse Youths
+Creating a successful Youth Academy is vital for all teams in ManagerZone. When first year Youth Players arrive at your Club they will be 16 years old and will undergo three years (equal to three seasons) of training before graduating to your senior squad. During this time they are available to play for your Senior team, but cannot be sold.
+
+As Youth Players start from a lower skill base and come to your Club eager to learn, their skills will generally improve more quickly than those of senior Players.
+
+The number of Players at your Youth Academy can only be increased between days 1 to 11 and days 41 to 46 in each Season. Any changes to the Youth Academy are enacted by your Head of Youth Development on Saturdays; if you change your mind you can still alter the funding before then. If you have been a Manager for 14 days or less and invest in a Youth Academy; your first batch of Youths will arrive immediately.
+Exchange Youths
+Each season you will have a limited amount of opportunities to exchange Players from your Youth Academy for new ones. You will be able to see and compare the current skills of each existing Youth and their potential replacement. There is also a possibility to get a scout report, which will pinpoint the main strengths and weaknesses of the potential replacement
+
+The report is only visible for players who were youths during or after season 70/62 (football/hockey), when the new Youth Scout Report feature was released.
+
+If you decide to proceed with an exchange, the new Youth will arrive immediately (at the same time the replaced Youth will leave your Club).
+Custom Youth Setup
+Your Head of Youth Development offers you the opportunity to customise your team's Youth Academy, allowing you to pick first, second or third Season Players. All of those Players will have received full regular training up to yesterday and second and third Season Youths will have benefited from one Training Camp per full Season. All the new Youths will be found at your training ground once you confirm their training contract.
+
+Check out the Youth Academy page if you want to learn more.
+Player Quality
+All Players are different and therefore respond differently to training. Some Players will train more quickly than others during their time as Youths and this may extend into their first few years as senior Players.
+
+Faster training does not always mean that the Player will become a super star, just as slower early training does not mean their full potential won't be realised later in their careers. 
+ Back to top
+
+Transfer Market
+ Clubhouse Transfer Market
+In addition to hiring Youth Players and training your current squad, another way to strengthen your team is to bring in brand new senior Players via the Transfer Market. As a new Manager, you may not access the Transfer Market until you have gained 14 days of game experience. This is based on the advice of your Club’s Chairman; at the beginning of your career it is more important to focus on your Youth Academy and Stadium to have the best possible conditions for the future. However, you can win the confidence of your Chairman by becoming a Club Member and this will gain you immediate access to the Transfer Market.
+
+Selling a Player
+To sell a Player, view their profile and click the 
+
+ icon. Then input your asking price (this cannot be more than three times the value displayed on the profile), use the dropdown to choose how many days you wish to offer him for and decide if you want to publicise his training graph before sending him to the Transfer Market.
+
+If your Player is sold, he will leave your Club and you will receive his transfer fee, minus the relevant sales fees and taxes (see table on the right-hand side), 24 hours after the transfer deadline passes. Unsold Players return to your Club immediately.
+
+Sales Taxes
+Taxes occur everywhere in life and the tax authorities are eager to tax any profits you may have made on your Player transfer.
+
+The profit is calculated by taking the selling price minus the purchase price and the tax is then applied based on the Player type. One for traded Players (left) and one for homegrown (right), as depicted below.
+
+ Days since traded Tax 
+
+<2895%
+<7050%
+>=7115% 
+
+ Age of Player Tax 
+
+1925%
+2020%
+2115% 
+
+Buying a Player
+ManagerZone's Transfer Market is based on an auction system where the largest bid submitted prior to the deadline purchases the Player for that price.
+
+To bid for a Player, click the 
+
+ icon on a Player's profile and type your offer into the box. The next minimum acceptable bid is already shown. Once entered, an indication of your target’s potential salary based on your offer is shown at the bottom of the window together with any potential work permit fee (see below). If you are happy with your offer and the Player’s salary, place your bid.
+
+You cannot reverse your decision and if you win the auction, you will have to pay the Team Money you offered.
+
+You cannot bid more Team Money than you have available (this takes into account any Team Money committed to other bids).
+
+Each time a team bids for a Player within three minutes of the transfer deadline, that deadline automatically extends by three minutes. This process continues until there are no further bids. A purchased Player will join your team and become available for training and matches around 24 hours after the deadline has passed. At this point, the transfer fee for the Player will also be taken from your Team Money. Until that moment, he continues to play for his previous team.
+Foreign limit and Work Permits
+All teams are allowed to employ up to 5 foreigners at any given time. However all Players may qualify for a Work Permit which allows them to play in a foreign country as a result residing in that country. That means they will not be counted towards the foreign Player limit. A Work Permit may be purchased for existing foreign Players by clicking on the Work Permit icon (). A Work Permit may also be purchased at the time of bidding on the Transfer Market.
+
+In your Region every Manager is allowed to purchase 5 Work Permit(s), which costs 10 times the associated Player's weekly salary. Below, you can see Work Permit limits in each Region.
+
+ Region A Region B Region C 
+
+Foreigners555
+Work Permit(s)257 
+
+ Back to top
+
+Now you are ready to start playing matches with your team - the most exciting part of the game! In the following chapter, we will look at the different competitions available for your team and how you can follow your matches. [link:/?p=beginners_guide&chapter=competitions] 
+ Next Chapter: Competitions 
+ [link:/?p=beginners_guide&chapter=get_started] 
+ Previous Chapter: Get Started 
+
+

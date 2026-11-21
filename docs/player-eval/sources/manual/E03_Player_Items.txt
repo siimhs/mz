@@ -1,0 +1,15 @@
+
+E03: Player Items
+Introduction
+
+You can purchase a wide range of items for each player in your ManagerZone team, from clothes and hairstyles to individual goal celebrations. To select a player to customise, click the CHANGE LOOK button on his profile (see "Icons and Buttons" in [link:./?p=manual_faq&cat_id=1359] Squad) or select PLAYER ITEMS in the Store secondary menu and click the arrows under Player View to select him.
+Browsing Player Items
+
+Click the buttons at the top of the right-hand page to choose what type of item you are looking for (e.g. HAIRSTYLES, TATTOOS etc.) and then review each item's description by hovering the cursor over it (the cost is also displayed). To have your player try your selected item on, drag it towards him (or click on it). He can try out one of each item type (or two tattoos) at any one time. To stop a player trying an item on, either click on it or drag it back to the right-hand page.
+Buying Player Items
+
+To purchase the items the player is currently trying on and apply them to him, click the SAVE button at the bottom of the screen, review the cost and click GET AND SAVE. To buy an item without applying it to a particular player, click its GET IT! button or drag it over to the Unused Items page, then review the cost and click GET IT once more. It is added to the Unused Items page (see below).
+Unused Items
+
+The Unused Items page on the left of the Player Items screen contains all the items you've bought but have not yet applied to a player (and those you've applied to players who have since left your club). You can filter items shown on the Unused Items page using the radio buttons at the top. To apply an Inventory item to a current player in your squad, select him under Player View at the top of the centre page, drag the item towards him (or click on it) and click SAVE.
+

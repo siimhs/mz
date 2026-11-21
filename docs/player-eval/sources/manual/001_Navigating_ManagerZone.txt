@@ -1,0 +1,43 @@
+
+001: Navigating ManagerZone
+Header
+
+On top of displaying the current time and season information (see [link:./?p=manual_faq&cat_id=1367] League), the ManagerZone site's header also features a countdown to the next game, a Shortcut Bar which lets managers move quickly between the most popular areas of the game (when a certain aspect of management requires attention, its icon will light up) and a link allowing them to swap between their football and hockey teams.
+
+Search field
+
+In this field you can search for Managers, Clubs, Players etc. Remember that the search will only cover the active sport.
+
+Site settings
+
+The icon next to the search field gives you the possibility to customise a number of settings for the site. Here you can chose if the main Site menu should be compact or extended, if the flash images of the Players should autoload, and select what graphic theme the site should have.
+
+Change language
+
+By clicking the flag-icon you can chose your preferred language.
+Main Menu
+
+As well as providing a range of Help options, the main menu features the five main pillars of ManagerZone: 
+
+Clubhouse
+
+This is where managers prepare their squad, whether they're personalising their club, [link:./?p=manual_faq&cat_id=1360] planning tactics, [link:./?p=manual_faq&cat_id=1361] training players or bringing new ones in via the [link:./?p=manual_faq&cat_id=1362] transfer market or [link:./?p=manual_faq&cat_id=1364] Youth Academy. For more information on the Clubhouse, view Manual topics beginning with "A".
+
+Matches
+
+This contains everything a manager needs to know about their team's on-field activities. It highlights all of ManagerZone's competitions and allows managers to view their team's [link:./?p=manual_faq&cat_id=1366] fixtures and results. For more information on Matches, view Manual topics beginning with "B".
+
+Office
+
+The Office covers all the off-field aspects of management, including [link:./?p=manual_faq&cat_id=1375] stadium maintenance and [link:./?p=manual_faq&cat_id=1374] financial updates. It also displays a variety of club-related information, from team honours to current statistics. For more information, view Manual topics beginning with "C".
+
+Community
+
+The Community tab allows managers to keep up with the wider ManagerZone world through [link:./?p=manual_faq&cat_id=1385] Forums, deliveries of the game's regular magazine [link:./?p=manual_faq&cat_id=1384] The Zone and the MZ World tool that highlights managers across the globe. For more information, view Manual topics beginning with "D".
+
+Store
+
+This is where managers can enhance their ManagerZone experience, by using [link:./?p=manual_faq&cat_id=1387] Power Tokens (ManagerZone's unique currency) to buy [link:./?p=manual_faq&cat_id=1388] items for their players on the pitch and purchase new features off it and by becoming [link:./?p=manual_faq&cat_id=1386] Club Members. For more information, view Manual topics beginning with "E".
+
+To view – and select from – the secondary menu, either click on or hover over one of the main menu tabs.
+

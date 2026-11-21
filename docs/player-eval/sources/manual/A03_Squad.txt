@@ -1,0 +1,127 @@
+
+A03: Squad
+Introduction
+
+The Squad screens display detailed information on all the players currently at your club as well as providing updates on current injuries and suspensions and impending retirements. If you wish, you can also rearrange your squad numbers here. To find a player quickly, click his name in the squad list on the right of the screen. 
+Player Profiles Screen
+
+The Player Profiles screen lists all the players in your squad along with their skills (see "Player Attributes" in [link:./?p=manual_faq&cat_id=1361] Training for an explanation of these) and personal information including their age, strongest foot, height, weight, birth season, nationality, current market value and salary (a sortable summary of this information can be seen by selecting "Squad Summary" in the Squad sub-menu). You can also view their goals and cards for the current League season and discover further information about them, or perform actions on them, using the icons and buttons (see below) at the bottom of their profile. If a Player is currently for sale he will have the text "On transfer market" in yellow after his name.
+
+Filtering
+
+It is possible to filter the Player Profiles by using the options at the top of the list. The profiles can be filtered by age, tactic, form, nationality and if they have been sent to a training camp this season or not.
+
+By clicking the + sign next to the text "Extended filters" a whole range of new options will be revealed. Here it is possible to filter Player Profiles according to Flags, Injuries, Suspensions, Sharing skills, Tactic positions and value ranges for all the Attributes.
+
+Player Ages
+
+A player's age increases on the first day of every season.
+
+Values and Salaries
+
+Players' values are recalculated and their salaries (which are based on their value) renegotiated at the start of each season, unless they are sold to another club in the middle of a campaign, in which case there is an extra recalculation based on their transfer fee. 
+
+Icons and Buttons
+
+The top four icons at the bottom-left of a player's profile indicate: 
+
+His current physical state: A barbell suggests that he needs more games in order to improve his Form, a sleeping icon implies that he needs a break from playing matches in order to stop his Form dropping and a happy face means that he is playing the right number of games to maintain his Form (for more information about Form, see "Form and Experience" in [link:./?p=manual_faq&cat_id=1361] Training).
+
+His present injury status: A red cross denotes that he is unavailable for selection while an orange cross indicates that he is recovering from his ailment and can take part in games, but with an increased risk of further injury.
+
+Whether he's been to a Training Camp: If the cone is orange, he has already been to a Training Camp in the current season and cannot go to another until the next season begins (for more information, see "Training Camp Screen" in [link:./?p=manual_faq&cat_id=1361] Training).
+
+The eleven other icons allow you to perform certain actions on the player.
+
+Sell: Put him up for sale (see "Selling a Player" in [link:./?p=manual_faq&cat_id=1362] Transfers).
+
+Send to Training Camp: Send a Player to any available Training Camp (see "Training Camp Screen" in [link:./?p=manual_faq&cat_id=1361] Training) without leaving the Squad Page. If the Player cannot be sent to a Training Camp the icon will not be shown.
+
+Notes: Write yourself a note about him, flagging the attributes you need to address in future training sessions ( [link:./?p=manual_faq&cat_id=1386] Club Members only).
+
+Share skills and flags: Share the Player's Skills and or Flags for all other Managers to see.
+
+Shortlist: Add him to your [link:./?p=manual_faq&cat_id=1363] Shortlist of players you wish to follow.
+
+Training Graphs: Review the training and injury history of the Player, including when he has been attending training camps (requires Club Membership).
+
+Release: Terminate his contract (note that you can release 99 players every 24 hours).
+
+Youth Exchange: Takes you to the [link:./?p=manual_faq&cat_id=1364] youth exchange page.
+
+Pinyin: The Pinyin icon provides [link:./?p=manual_faq&cat_id=1386] Club Members with the option to translate the names of Chinese players to Pinyin (a phonetic system for transcribing the Mandarin pronunciations of Chinese characters into the Latin alphabet). You can toggle between the Chinese and Pinyin names as often as you wish.
+
+Extend playing career: Lets you extend the career of a Player that has decided to retire at the end of the season by paying an extension bonus.
+
+Below these icons there are two buttons with the following functions:
+
+Change Look: When clicking this button you will be redirected to the Player Items page, where you can by various items to customize the look of your players (see [link:./?p=manual_faq&cat_id=1288] Player Items).
+
+Change Name: [link:./?p=manual_faq&cat_id=1386] Club Members are given the opportunity to rename up to three youth players. Both first and surnames can be chosen freely from ManagerZones name database, but consider your choice carefully since the change is permanent when done. To be able to rename new youth players in excess of these three, one of the renamed players have to leave your squad, either by being sold, retired or released from his contract.
+
+There are four sets of icons below the Player attributes. Some of these are visible all the time, while others appear under certain circumstances.
+
+Training Area: This icon and drop down menu display what attribute the Player is currently training. The drop down menu can be used to quickly change what attribute the Player will be training.
+
+In tactic(s): These icons show which tactics the Player is fielded in. The tactic icons are clickable and will redirect you to the Tactic page.
+
+Today's Training: Here the result of today's training is shown with an icon, training speed indicator (showing a ball if one has been given) and whether a coach has assisted the Player. If the Player is deteriorating a similar set of icons is displayed to track today's deteriorations.
+
+Training camp: If the Player is attending a training camp this is displayed with an icon and the name of the type of camp. By clicking the name a window with details about the training camp will be displayed.
+Injuries/Suspensions Screen
+
+This screen provides a summary of all the players who are serving suspensions or have picked up injuries. For injuries it displays the type of ailment, whether the player is able to play ("Recovering" players can play in matches but will not be completely fit and run the risk of aggravating their injury), and the length of time out. Note that purchasing a clinic for your stadium (see "Capacity and Facilities" in [link:./?p=manual_faq&cat_id=1375] Stadium) can reduce recovery times. For suspensions, the screen details the competition the player is banned from and how many more matches his punishment is due to last. 
+
+Red and Yellow Cards
+
+If a player receives two yellow cards in games within the same competition (or three in the League) or if he is shown a red card in a certain competition, he will be banned from playing in the next game in that competition. If he receives two yellow cards in one game, he will be sent off but will receive no further ban. Note that, as Friendlies are not seen as competitive games, any cards received in them will have no knock-on effects in future games.
+Squad Numbers Screen
+
+You can change your squad numbers at any time by inputting your desired number into the box to the left of a player and clicking the CHANGE button. Note that two players cannot have the same number, so if another player in your squad is already wearing your newly-assigned number, his will have to be changed as well. 
+Retired Players Screen
+
+Players intending on retiring from their playing careers will announce their intentions before the start of their final season. A retiring Player is identified with the retirement icon, a red background and a retirement text in the player profile (Loyal Players will only have the icon and the retirement text). You can view all the members of your squad who have already retired by selecting RETIRED PLAYERS in the Squad sub-menu. Players can decide to retire at any age once they reach 31 and at the very latest a Player will decide to retire at the age of 38. A retiring player will leave the team at day 88 of the season.
+
+When a Player has decided to retire it is still possible to extend his career between one and three Seasons by clicking the blue heart-icon in his player profile and paying a one time off extension bonus to the Player. A Player that has had his career extended will no longer show the red retirement text in the Player profile, but will retain the retirement icon and the red background.
+
+Exactly how many Seasons it is possible to prolong a Player's career is individual for each one. Stresses and strain a Player went through when he was younger will eventually take its toll in the final years of his career. Note that a Player's career only can be extended one Season at a time. Loyal Players and Players that have reached the age of 38 can never have their careers extended further.
+
+The extension bonus cost for adding one more season is dependent on the Player's Season salary, and how many times he has already been convinced to stay:
+
+Number of SeasonsCost (% on salary)
+1120%
+2150%
+3200%
+
+Keeping vs. Replacing a Player
+
+Extending a Player's career can become quite expensive for a Club and should therefore be carefully considered. It could often be a better option to replace the Player, not the least since older players takes longer time to recover from injuries and to prepare for the next match. From Season 51/43, Players who have announced they wish to retire will take an average 50% longer to recover from injuries.
+
+Selling a retiring Player
+
+A retiring Player transfer window will be open between Day 1 and 21 of each Season. A Player whose career has been extended cannot be sold, meaning that a buyer always knows that a retiring Players on the Transfer Market can play at least the current and the following Season (if the extend career bonus is payed).
+
+After the active career
+
+When a Player retires, he is moved to the Retired Players Page. You then have the option to negotiate a Coach contract with him to convince him to stay in your club as a Coach. To start negotiating, click Convert to Coach down on the left in the Player Profile (on the Retired Players Page). A lightbox will give you a preview of how the Player will look as a coach, his salary demand and when the Coach Contract will expire.
+
+During this first engagement it is not possible to negotiate the salary that the player demands. If you do not accept the players demands you can chose to leave the negotiations. Exactly one week after the negotiation started the player will reevaluate his starting salary and make a new demand, that can be both higher and lower than the week before.
+
+If you are satisfied with the deal you confirm the details of the contract and pays an administration fee (with [link:./?p=manual_faq&cat_id=1743] Power Tokens) for the conversion (as [link:./?p=manual_faq&cat_id=1386] Club Member you will get one conversion for free).
+
+When the contract has been signed the player will begin his new work as a coach at 08:00 the following day. Future contract negotiations will work exactly as for other [link:./?p=manual_faq&cat_id=1365] coaches and if you do not renegotiate the contract the coach will return to the Retired Players Page, from where you can hire him again in the future if you should wish.
+
+A "player coach" acts exactly like any other coach on the training pitch.
+Squad Stats Screen
+
+ [link:./?p=manual_faq&cat_id=1386] Club Members can view more detailed data on their team in the Squad Stats screen, including average statistics for senior and youth members of their squad. 
+Loyal Players
+
+Loyal Players are Players that have been part of your Club since they were kids. They are very passionate about the Club and would never agree to being transferred. They can be fired, but never sold.
+
+Loyal Players are identified by a different background colour and the heart icon.
+
+These Players form the core of any new team and are most likely the Players around which they will be built. Over time they may be replaced by Youths they have trained via the Youth Academy or supplemented by purchases from the Transfer Market.
+
+All new teams have 4 (or 5 if the team is registered late in the Season) Loyal Players. 
+

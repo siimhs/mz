@@ -1,0 +1,72 @@
+
+B05: Cups
+Introduction
+
+There are a variety of different kinds of cup competition in ManagerZone. Some are for clubs, others for National Teams. Some can be created by managers while others are laid on by ManagerZone Crew. Some are open to everyone while others are invite-only. Some are for senior players while others are for youngsters. 
+
+Cups Home Screen
+
+The Cups Home screen provides links to all of ManagerZone's cups in the menu on the left, as well as listing your club’s current invitations and historical cup statistics and highlighting the game's latest trophy winner.
+
+When you have a new Official Cup or Prized Cup invite, the cup icon will light up in the Shortcut Bar at the top-right of the screen (see [link:./?p=manual_faq&cat_id=1392] Navigating ManagerZone). To view information about the cup (see "Cup Information Screen", below), click the icon (or click CUPS in the Matches secondary menu) and then click the relevant link.
+Cup Information Screen
+
+Each cup has an Information screen that provides a short description of the competition along with its format (see "Cup Formats", below), the days on which games are played, the deadline for entries and its start date. To see a detailed list of the awards on offer, click the PRIZES link on the right-hand side of the screen or, for a further explanation of the various formats, click CUP FORMATS. To confirm which teams are eligible to join, click INVITED TEAMS and to view the teams that have already entered the competition, click PARTICIPATING TEAMS. You can also look for a specific team by clicking the SEARCH link.
+
+Once a cup begins, you can use the menu on the right of the Cup Information screen to find out how it is progressing. Depending on its format, you can click GROUP STAGES or FINAL STAGES to see how various phases of the competition are panning out (the former shows your club's group by default while the latter highlights all the matches played from the Round of 16 to the Final). Clicking MATCH SCHEDULE displays all your team’s matches in the tournament by default (to see those of other teams, first select them by using the SEARCH or PARTICIPATING TEAMS tools). You can also view the tournament's hotshots by clicking TOP SCORERS and, when it is over, the REMAINING TEAMS link changes to FINAL STANDINGS, so you can see how the most successful teams fared.
+
+Note that the options on the right of the Cup Information screen change depending on the cup type and the stage it is currently at. For further information, see "Cup Types" below.
+Cup Types
+
+Official Cups
+
+Many Official Cups date back to ManagerZone's first season and come with a great deal of prestige. There are two main types: Seasonal Cups (played once per ManagerZone season) and Annual Cups (contested every calendar year). They consist of a variety of formats and have various eligibility rules, which can be based on factors such as location, experience, player age and League status. Official Cup prizes include team money and [link:./?p=manual_faq&cat_id=1387] Power Tokens.
+
+To view a list of past, present and future Official Cups, along with a summary of your outstanding invites, click OFFICIAL CUPS in the Cups sub-menu. To join one, click its link and read the description (see "Cup Information Screen", above), click the JOIN button and confirm payment if necessary ( [link:./?p=manual_faq&cat_id=1386] Club Members can join Official Cups free of charge). You can then choose your default tactic for that cup using the Set Default Tactic dropdown. Your first match will be added to your [link:./?p=manual_faq&cat_id=1366] fixture list when the cup's deadline has passed.
+
+Prized Cups
+
+Like Official Cups, Prized Cups feature a wide range of formats and eligibility rules but, unlike Official Cups, they reward winners with great Power Tokens prizes. [link:./?p=manual_faq&cat_id=1386] Club Members can join Prized Cups for a reduced price.
+
+To view a list of past, present and future Prized Cups, along with a summary of your outstanding invites, click PRIZED CUPS in the Cups sub-menu. To join one, click its link and read the description (see "Cup Information Screen", above), click the JOIN button and confirm payment if necessary (Club Members can join Prized Cups at a reduced price). You can then choose your default tactic for that cup using the Set Default Tactic dropdown. Your first match will be added to your fixture list when the cup's deadline has passed.
+
+Cup Pools
+
+The Cup Pools offer a fast and simple opportunity to participate in quick paced cups that follow the Prized Cup format. A Pool Cup is joined by clicking Cup Pools in the Cups sub-menu and opting into the preferred Pool. When enough teams have joined, the Cup will start instantly. Cup Pools come in the four different age formats Senior, U18, U21 and U23. Each Season Crew will sponsor a free entry for each team to the Cup Pools and 3 free entries if you support the game as a [link:./?p=manual_faq&cat_id=1386] Club Member. 
+
+Friendly Cups
+
+Friendly Cups are a range of customisable competitions that can be created by managers. To view all the Friendly Cups you’ve been invited to, click FRIENDLY CUPS in the Cups sub-menu (or the INVITATIONS link on the right of any Friendly Cups screen).
+
+To join one immediately, click JOIN CUP. To read a cup's description, click on its name and then, if you want to join it, click JOIN. Your first match will be added to your [link:./?p=manual_faq&cat_id=1366] fixture list when the cup's deadline has passed. You can view all the Friendly Cups you've joined by clicking the JOINED CUPS link on the right of the screen.
+
+To create one, click CREATE FRIENDLY CUP in the Cups sub-menu and enter your cup's name and description into the text boxes at the top of the screen. Then decide whether you want your new cup to have an age limit (see "Uxx and Oxx Cups" below for more information on eligibility rules) using the lower limit and upper limit sliders on the Player Age Limit bar.
+
+Select your Friendly Cup's match days by ticking the boxes and use the dropdowns to set kick-off times, how many teams will contest each group (choosing zero will create a Knockout Only cup – see "Cup Formats", below, for more information) and the maximum number of participants you wish to take part. If you have decided to include a Group Stage, you must also set how many times the teams will play each other in each group and how many will be promoted.
+
+Finally, use the dropdown and search box in the Invitations section to find prospective participants (you can search for specific teams and managers by entering their names or IDs in a comma-separated list or quickly input your Friends' teams or those you've faced in previous Friendly Cups). They will appear in the Search Results box. To add them to the Invite to Your Cup box, click the plus icon next to them (or, to select all the teams in the Search Results box, click INVITE ALL). To remove teams from the Invite to Your Cup box, click the minus icon next to them (or, to remove all the teams, click REMOVE ALL). When you're happy with the teams you are inviting, click CREATE CUP and pay your entry fee by clicking GET IT.
+
+Once you've purchased your Friendly Cup, your team is automatically added as a participant. To make further changes to its set-up or send more invites, follow the process above and then click the SAVE CHANGES button.
+
+When you are happy with your settings, click ACCEPT ENTRIES. This will lock all setup options apart from Invitations and Description and send out any invitations currently in the Invite to Your Cup section (to send out further invitations, use the SAVE CHANGES button).
+
+As teams accept your invites, they are labelled as "Participating" in the Invite to Your Cup box. When you're happy with the number of teams in your cup (the minimum allowable number of teams depends upon your settings), click the START CUP button.
+
+If you fail to click the START CUP button, the cup will start automatically 90 days after its creation date. However if, after that time, there are less than the minimum required participants, it will be cancelled. You can then contact payments@powerchallenge.com to claim a Power Token refund.
+
+You can view all the cups you have created by clicking the CREATED CUPS link on the right-hand side of any Friendly Cups screens.
+
+Elite Cups
+
+Elite Cups are ManagerZone's most prestigious club tournaments. The Champions Cup, Cup Winners Cup and Top Teams Cup are invite-only competitions contested by the best teams in ManagerZone. In order to qualify for one of these competitions, which are played for every season, a team has to either win its country's National Cup or finish near the top of its premier division.
+
+National Team Cups
+
+A collection of cups contested by countries, National Team Cups consist of three competitions played for each calendar year by both senior and under-21 teams: the World Cup, the European Championship and the Confederations Cup (which is contested by all non-European countries). Like real-life international competitions, there is a group-based Qualifying competition held for each to decide which teams go through to the Finals, which themselves consist of group and knockout stages. In order to contest one of these cups, a manager must first be elected to the position of Head Manager (see [link:./?p=manual_faq&cat_id=1373] National Teams).
+Cup Formats
+
+You can check out a cup's format by viewing its Cup Information Screen (see above). There are two main formats: Knockout Only and Group + Knockout. Some cups begin using the Group Play format, which divides participants into several groups, within which they play each other either once or twice aiming for promotion to the later, Knockout stages. The Knockout format, which can also be used throughout an entire cup, consists of one-off sudden-death matches, which are decided, if necessary, by extra time and penalties. You can read a more detailed explanation of both on the Cup Formats screen.
+Uxx and Oxx Cups
+
+Uxx (e.g. Under-18) and Oxx (e.g. Over-30) cups refer to age-restricted competitions, which only allow players within a certain age range to take part. Not only do they offer potential "fringe players" regular matches, they also inject an extra tactical test for managers, rewarding them for the creation of productive [link:./?p=manual_faq&cat_id=1364] Youth Academies. There are currently Uxx Official Cups and Prized Cups while Friendly Cups and [link:./?p=manual_faq&cat_id=1370] Friendly Leagues can be created using both Uxx and Oxx formats.
+

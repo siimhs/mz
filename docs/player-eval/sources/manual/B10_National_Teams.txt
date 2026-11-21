@@ -1,0 +1,25 @@
+
+B10: National Teams
+Introduction
+
+Most countries in ManagerZone have senior and under-21 National Teams that take part in their own set of competitions (see "National Team Cups" in [link:./?p=manual_faq&cat_id=1369] Cups). National Teams are managed in the same way as club teams but managers can't simply join one – they have to be voted to the position.
+
+You can view information on your National Team, including its latest result, next game and information on its Head Manager and Assistant Managers, in the National Teams screen. To switch to its under-21 team, use the Team Type dropdown on the right of the screen or to view another National Team, select it in the Change Country dropdown. To take on a National Team in a match, click CHALLENGE (see [link:./?p=manual_faq&cat_id=1371] Challenges).
+Elections
+
+The only way a manager can coach their National Team is to be elected to the post by their fellow countrymen and women. Elections, which are held twice a year (usually in January and July), begin with an invitation for eligible managers to register as candidates. To be eligible, a manager must either have been a Club Member who has played the game more than 1 month, or a Supporter who has played for more than 6 months.
+
+Once the candidates have registered, eligible voters cast votes for their preferred choice. The candidate with the most number of votes becomes National Coach of the senior and under-21 teams for a six month term. National Coaches can also select up to two Assistant Managers to help with the National Team during their term. 
+
+In the event of a tied vote, the candidate with the earliest account registration date is elected. To view the latest election result for your National Team, click the VOTING RESULT link on the right-hand side of the National Teams screen.
+
+Players
+
+Unlike club managers, National Team Head Managers have an entire country of players to choose from. In order to help them select the best ones, they can view the attributes of every eligible player they search for. You can view your National Team's current squads by clicking the PLAYERS link on the right of the National Teams/U21 National Teams screen. Current international players can also be spotted by a note after the Nationality information on their club profiles. To view a list of all the club managers supplying players to the squads, click the PLAYER OWNERS link.
+News and Matches
+
+Over the course of a six-month contract, a Head Manager will contest two major competitions – one senior and one under-21. They can also arrange [link:./?p=manual_faq&cat_id=1368] Friendlies with other National Teams. To view your National Team's fixtures and results, click the MATCHES link on the right-hand side of the National Teams screen. To watch a match, click the appropriate viewing button (see "Viewing a Match" in [link:./?p=manual_faq&cat_id=1366] Fixtures and Results) and to analyse how each team performed, click the % icon. For your Head Manager's perspective on the games – and other National Team matters – click the NEWS link.
+History
+
+To see how your National Team has performed in previous competitions, click the EVENTS link on the right of the National Teams screen and then select a tournament to view. Alternatively, to view individual records, including the National Team's most capped player, highest scorer and most carded players, click STATISTICS.
+

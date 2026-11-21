@@ -1,0 +1,71 @@
+
+B02: League
+Introduction
+
+League games provide the core of a manager's competitive experience in ManagerZone. They are played every Wednesday and Sunday. Each club competes in a division of 12 teams, playing each opponent home and away during the course of a 22-game season. With season breaks lasting two weeks each, four League seasons are played in one calendar year.
+
+ManagerZone runs Leagues in countries all over the world. Each has one top division containing the best 12 teams in that country and a "pyramid" system of divisions below it (for instance there are three div1's, nine div2's, 27 div3's etc.). Each division is identified by a code which first describes its level in the pyramid and then its number within that level (e.g. div4.53).
+Table Screen
+
+You can see your team's current position in your division in the Table screen, as well as their recently-completed and upcoming matches. 
+
+In the league table the following columns are presented, in addition to a team's position and name:
+
+MMatches played
+WWins
+DDraws
+LLosses
++Goals scored
+-Goals conceded
+=Goal difference
+PPoints
+Last 6The results in the last six league games (green = win, yellow = draw, red = loss)
+
+Three points are awarded for a win, one point for a draw and no points for a defeat. When two teams finish the season on the same number of points, their positions are calculated using a number of "tie breakers" in the following order of importance: goal difference, goals scored, most victories, results between the two tied teams, random draw.
+
+Promotion and Relegation
+
+The team that finishes top of a division at the end of each season is promoted to a division in the level above, while the bottom three clubs are relegated to the one below (unless they already occupy a division at the bottom of the pyramid, in which case they remain in the same division). Teams that finish in second and third place play-off for promotion while those that finish in eighth and ninth play-off to stay in the division.
+
+Inactive teams are not promoted, new Managers must play 1 League Match (non Play-Off Match) with their team in order to be promoted
+
+Play-Offs
+
+Play-offs consist of a four-way round-robin tournament to decide who is promoted and relegated. Each play-off contains one team that finished in the relegation play-off places of their division and three teams who reached promotion play-off places in the level below. 
+
+Each team in a play-off plays three matches – one against each of the others. If the team from the higher division finishes top of the play-off table, all the teams remain in the same divisions. However, if one of the lower-division teams comes first, they are promoted and the higher-division team is relegated.
+
+Senior League prize money
+
+Team money is awarded to the three best placed teams in every senior league. In the table below the amounts in Euros are presented for each division and place:
+
+PositionTop divisionDiv 1.xDiv 2.xDiv 3.xDiv 4.xDiv 5.xDiv 6.xDiv 7.xDiv 8.x
+1st109 00099 00088 00082 00077 00066 00055 00044 00033 000
+2nd55 00049 00044 00044 00038 00038 00033 00027 00022 000
+3rd2700025 00022 00022 00019 00019 00016 00014 00010 900
+League Schedule Screen
+
+View the matches, both completed and upcoming, played by all the teams in your division.
+Top Scorers Screen
+
+View the current season's top goal scorers (to view only your team's scorers, click the MY TEAM button at the top of the screen). In addition to the place in the list, name of the player and team abbreviation, the table contain the following columns:
+
+GPNumber of league games the players have participated in
+GNumber of goals scored
+YCNumber of yellow cards received
+RCNumber of red cards received
+
+All these four columns are sortable.
+Injuries/Suspensions Screen
+
+View all those players due to miss future League games as a result of injury or suspension (see "Injuries/Suspensions Screen" in [link:./?p=manual_faq&cat_id=1359] Squad for more information on injuries and suspension).
+Message Board
+
+View messages from other managers in your division and type your own by using the text box at the bottom of the screen and clicking the POST button.
+Division History
+
+Select LAST SEASON TABLE in the League sub-menu to view how the current division looked at the end of the last campaign, including which teams were promoted and relegated to and from it. For further information on how all the play-offs finished, click PREVIOUS SEASON QUALIFICATIONS.
+Walk Overs
+
+Home teams that lose due to walk-over in a League match or any Cup match will now not earn any team money for that match. 
+

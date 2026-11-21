@@ -1,0 +1,9 @@
+
+C08: Friends
+Friends Screen
+
+Your Friends screen shows all your ManagerZone Friends. All those currently logged in are denoted by a green icon to the left of their Username, while those who are currently offline display a red icon. The Friends window on the left of the screen also shows your Friends, allowing you to challenge them to [link:./?p=manual_faq&cat_id=1397] Instant Matches and write in their [link:./?p=manual_faq&cat_id=1382] Guestbooks by clicking on the icons next to their names. To add a current ManagerZone manager to your Friends list, click the ADD FRIEND icon on their [link:./?p=manual_faq&cat_id=1381] Profile screen.
+Removing Friends
+
+To remove a manager from your Friends list, either click the REMOVE FRIEND icon on their [link:./?p=manual_faq&cat_id=1381] Profile or the DUSTBIN icon to the right of their entry in the Friends screen.
+

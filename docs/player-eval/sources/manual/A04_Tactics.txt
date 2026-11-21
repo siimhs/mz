@@ -1,0 +1,125 @@
+
+A04: Tactics
+Introduction
+
+Tactics are an important element of ManagerZone. They can be set in the My Tactics screen well in advance of matches and applied to multiple games so you don't need to be online when each of your fixtures is played. The selected tactic for a match is locked two hours before kick-off. After that time, no changes can be made for that match. There are six main elements to setting tactics: Formation, tactical substitutions, Passing style, team Mentality, Pressing intensity and player Roles. As well as setting these before every match, you can also add Rules to lay down changes you wish to make during games.
+Preparation
+
+Assessing your Squad
+
+You can adopt any tactic you like but it's advisable to first review the attributes of your players as they will be the ones tasked with putting your plans into practice on the pitch. To do so, hover the cursor over your players' shirts on the My Tactics screen.
+
+Scouting your Opponents
+
+As well as ensuring your tactics suit your players, it's also a good idea to scout your upcoming opponent to find out how best to play against them. To do so, click on the relevant match in the [link:./?p=manual_faq&cat_id=1366] Fixtures Screen and then click on the name of your opponent. On the left of their Team Home screen, click MATCHES and RESULTS and finally click the %-symbol next to their last game. This will show you detailed statistics, including their formation and how each of their players performed. Using this information, you can work out how best to prepare your team for the match.
+Formation
+
+Quick Start
+
+If you're in a hurry, you can have ManagerZone generate a default tactic for you by selecting a formation (4-4-2. 4-3-3 or 5-3-2) from the Formation Preset dropdown. However, bear in mind that your players won't necessarily be placed in their best positions, which means that your team may not play to its full potential. To get the most from your players, it's advisable to manually place them according to a well-planned strategy. 
+
+Placing Players
+
+Once you've reviewed your players' attributes and worked out how you intend to play, the next stage is to place them in their best positions. You can create a formation by dragging player shirts from the right of the My Tactics screen onto the Tactics Field. The Field is divided into defensive, midfield and attacking thirds and any player you drag into them will automatically adopt that role (e.g. defender, midfielder, attacker). Any player you drop close to your goal will become your goalkeeper. You can then fine-tune players' positions by moving them around their third of the Field. To swap two players, drag one shirt onto the other.
+
+Placement Errors
+
+If you attempt to place a player in an incorrect position (e.g. too near a team-mate or in a light green area of the Field) a red circle will appear indicating that you must reposition him. If you set an incorrect formation, the formation indicator at the top of the Tactics Field will turn red. You must have at least one goalkeeper, two defenders, two midfielders and one attacker for your formation to be valid. You should have eleven players on the field in total (but only seven is required to save a Tactic slot). Until all positional and formation errors are addressed, you won't be able to save your formation.
+
+Injuries and Suspensions
+
+Injured and suspended players cannot play in matches (see "Injuries/Suspensions Screen" in [link:/?p=manual_faq&cat_id=1359] Squad. If you don't select replacements for them before a game, ManagerZone will automatically replace them with selected substitutes and reserves. Players at Training Camps (indicated by an orange cone icon) are not available for selection until they return to the club.
+
+Line-Up Requirements
+
+If you have less than 11 available players in your starting line-up when a tactic is locked for a game, ManagerZone will automatically make up the difference from substitutes and reserves. However, if there aren't enough players available, your team will be short-handed. 
+
+Walk Over
+
+If you enter a match with less than 7 eligible players or if you for any reason (injury/suspensions etc.) aren't able to have at least 7 players on the field for the entire match, your opponent will be awarded a 5-0 "walk over" victory. You will also lose by walk over if you use a tactic without a goalkeeper, or one that includes an ineligible player in an age-restricted competition (see "Uxx and Oxx Cups" in Cups). Unlike with injured and suspended players, ManagerZone will not replace over- or under-age players automatically. To make sure your players are eligible for a tournament, visit the Availability screen.
+
+We no longer allow teams who forfeit by walk over to earn ticket income for matches. The rule applies as follows: 
+
+ Match type If Walk Over
+ Senior League No income
+ Youth League (U18)No income
+ U21 League No income
+ U23 League No income
+ World League No income
+ U18 World LeagueNo income
+ Private/Partner Cup income
+ Friendly League income
+ Friendly Match income
+ Official Cup (group stage) no income
+ Official Cup (playoff) no income
+
+Selecting Substitutes
+
+For each tactic, you can select five substitutes and use up to three during a match. Substitutes will enter the match if an on-field player gets injured, or according to a Tactical Rule you have set up (see "In-Play Tactical Rules" below). 
+
+Select substitutes by dragging player shirts onto the bench (the rectangle area directly to the right of the tactic field).
+
+The first bench position contains your reserve goalkeeper; the second contains reserves for defensive players, while the third and fourth contains reserves for midfielders and strikers. The fifth position substitute will enter the game if a reserve is needed for a position where the primary reserve has already been used. 
+
+If a fifth substitute is not on the bench – or if the fifth sub has already entered play – another substitute will be brought on from your roster. 
+
+Note that if a player who sustains an injury or receives a suspension will not be automatically removed from your tactics during his time away. Rather that player will be replaced by a substitute at the start of each match he is scheduled to appear in. While this does not count as one of your three available substitutions, it will leave a reduced number of available substitutes on your bench for the game. 
+
+To avoid this, be sure to manually replace injured or substituted players in each tactic that they appear in for the duration of their injury or suspension.
+Passing
+
+Use the Passing dropdown to select how your team plays when it has the ball. Decide whether you want them to engage in a patient, Short passing approach (this can result in good possession stats but sometimes at the expense of a cutting edge in front of goal), knock Long balls up to the forwards (allowing your team to quickly get into shooting positions but increasing the risk of losing possession with less precise passes) or channel their attacks down the Wings (which tests the opposition full backs and goalkeeper with crosses to your strikers). Each style has its own strengths and weaknesses and it’s up to you to gauge which most suits your players and which is most likely to overcome your opponents.
+Mentality
+
+The Mentality dropdown allows you to define your team's attitude. Will you decide on a policy of all-out attack by selecting Attacking or choose Defensive to make sure you don't commit too many players forward and risk being caught on the counter attack by your opponents? If you'd prefer a neutral strategy, select Balanced.
+Pressing
+
+Decide how much pressure you wish your team to exert on the opposition. A Committed approach means that your players will harass the ball carrier more but they will also use up more Stamina (see "Player Attributes" in [link:./?p=manual_faq&cat_id=1361] Training for more information) and run the risk of committing more fouls. A Passive policy, meanwhile, will save on Stamina and reduce the chance of disciplinary problems but could give the opposition too much of an easy time. If you'd rather not do either, select Normal.
+Roles
+
+Sort your players into an order of priority to take penalties and free kicks by clicking your current Tactics Slot's ROLES/TACTICS EDITOR button on the My Tactics screen. To move players up and down each list, select one and click one of the arrows in the middle of the screen or click and drag their names. To select your captain, pick a player from the dropdown at the bottom of the screen.
+Tactics Slots
+
+You can set up to three tactics at a time ( [link:./?p=manual_faq&cat_id=1386] Club Members can set up to ten) using the Tactics Slots provided on the My Tactics screen and apply them to different upcoming games to ensure you can react to various opponents and scenarios.
+
+Setting up a Tactics Slot
+
+To set your tactics for Tactics Slot B for example, click the B tab and, when you've finished, click its ROLES/TACTICS EDITOR button to choose your set piece takers and captain. Finally, click SAVE ALL to retain your changes.
+
+Applying Tactics to Fixtures and Competitions
+
+Once you've decided which tactic to use for an upcoming game, you can apply the relevant Tactics Slot to the fixture by clicking AVAILABILITY in the Tactics sub-menu, selecting the correct Tactics Slot letter (e.g. A, B, C etc.) next to the game and clicking SAVE at the bottom of the screen. To use the same tactic for all future games in the same competition, click on the adjacent tick box and click SAVE. You can also apply tactics to specific competitions (either Friendly Leagues or cups) by heading to their Information screen and selecting a Tactics Slot letter from the Set Default Tactic dropdown.
+
+Moving Tactics Slots
+
+To swap tactics between two slots, click a Tactics Slot tab at the top of the My Tactics screen, choose the slot you want to move its tactic to using the Swap Tactics dropdown at the top of the screen and then click the SWAP button. 
+
+Importing and Exporting Tactics
+
+As well as having seven extra Tactics Slots to choose from, [link:./?p=manual_faq&cat_id=1386] Club Members can also import and export extra tactics, giving them a potentially unlimited choice of different strategies to choose from. To export a tactic, click the IMPORT/EXPORT TACTIC button, click EXPORT TACTIC and copy the XML code that appears in the text box to a word processing application. When you need to import your exported tactic, click the IMPORT/EXPORT TACTIC button, paste the relevant XML code into the text box and click IMPORT TACTIC. If you need to empty the text box, click CLEAR XML.
+Tactics Test
+
+Tactics Tests let you simulate tactical match-ups by playing two of your saved tactics against each other. They have many uses, from finding out which tactics are best at combating certain formations to analysing your players' performances in certain positions and within different tactical setups. As this is an analysis tool rather than a real match, you can even play the same players against each other in order to form a direct comparison.
+
+Testing Tactics
+
+To start a Tactics Test, set up the tactics you want to test in two different slots and, with one of the slots selected, click the TEST TACTIC button at the top-right of the screen. In the resulting pop-up, select the other tactic you want to use and then click GET IT.
+
+Viewing and Loading Tested Tactics
+
+To evaluate your Tactics Test match-up, find it in the Tactics Test History section at the bottom of the My Tactics screen and click one of the viewing buttons. You can quickly use any tactic employed in a previous Tactics Test match-up by selecting a Tactics Slot to load it into and clicking the icon next to the tactic's letter (e.g. A, B or C).
+Availability Screen
+
+With the introduction of age-restricted tournaments, it's become even more vital for managers to be able to establish quickly which players are available for upcoming matches. The Availability screen allows you not only to view whether your players fulfil different competitions' age criteria, it also lists current injuries and suspensions.
+
+To view this information, click AVAILABILITY in the Tactics sub-menu and then select a tournament from the dropdown at the top of the screen (or perform a custom age check by dragging the handle of the Age slider). All your tactics are displayed, including players who are currently injured and those who are suspended from the selected competition. Depending on the tournament selected (or the Age slider setting) players who are not eligible based on age are highlighted red. The tab of each tactic containing an under- or over-age player is also highlighted red to allow managers to review availability issues at-a-glance.
+
+To quickly apply a Tactics Slot to a fixture, scroll down the screen to view your team's fixtures (see "Applying Tactics to Fixtures and Competitions" above for more information).
+In-Play Tactical Rules 
+
+As well as choosing the Tactics you wish to use at the start of each game, you can also add "Rules" defining changes that you want to take place during a match, should certain scenarios occur. For instance, you can decide to substitute one of your players or even change your team's Passing style, Mentality and Formation if you are losing by a certain score after a set amount of time has elapsed.
+
+To enter the details of your proposed changes, click ADD RULE on the My Tactics screen, then use the dropdowns on the left to set the time you want the change to be made and the conditions under which it should be activated (e.g. your team is "losing by at least 2" goals or "one of your players is injured"). Then choose the nature of the change using the dropdowns on the right and click SAVE ALL.
+
+To add another scenario, click the ADD RULE button and repeat the above process. To delete a rule you've set up, click the dustbin icon in the top right-hand corner of the window.
+
