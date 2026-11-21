@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagerZone_MatchList>
+<Match id="1626426089" date="2026-11-22 10:00" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="88050" teamName="Gagnac" countryShortname="fr"/>
+</Match><Match id="1626426096" date="2026-11-25 11:00" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="1202763" teamName="Ludres" countryShortname="fr"/>
+</Match><Match id="1626426106" date="2026-11-29 19:15" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="1204036" teamName="Custines" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+</Match><Match id="1626426111" date="2026-12-02 12:45" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="1205641" teamName="Provin" countryShortname="fr"/>
+</Match><Match id="1626426113" date="2026-12-06 17:15" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="1207387" teamName="Aubière" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+</Match><Match id="1626426119" date="2026-12-09 13:00" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="1094587" teamName="Violaines" countryShortname="fr"/>
+</Match><Match id="1626426126" date="2026-12-13 19:15" status="scheduled" type="league" typeName="div5.107" typeId="11099">
+ <Team field="home" goals="0" teamId="1200142" teamName="Eschau" countryShortname="fr"/>
+ <Team field="away" goals="0" teamId="100002" teamName="Test Hockey" countryShortname="fr"/>
+</Match></ManagerZone_MatchList>

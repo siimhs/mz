@@ -3,6 +3,7 @@ package cli
 import (
 	"bufio"
 	"errors"
+	"fmt"
 	"os"
 	"strings"
 
@@ -35,6 +36,21 @@ func loadDotEnv(path string) {
 	}
 }
 
+// sport returns the MZ sport name from --sport, else MZ_SPORT, else football.
+func sport() (string, error) {
+	s := sportFlag
+	if s == "" {
+		s = os.Getenv("MZ_SPORT")
+	}
+	switch strings.ToLower(strings.TrimSpace(s)) {
+	case "", "football", "soccer":
+		return mzhttpclient.Football, nil
+	case "hockey":
+		return mzhttpclient.Hockey, nil
+	}
+	return "", fmt.Errorf("unknown sport %q (use football or hockey)", s)
+}
+
 // newClient returns a client logged in with MZ_USERNAME / MZ_PASSWORD (env or ./.env).
 func newClient() (*mzhttpclient.MZHTTPClient, error) {
 	loadDotEnv(".env")
@@ -47,7 +63,11 @@ func newClient() (*mzhttpclient.MZHTTPClient, error) {
 	if baseURL == "" {
 		baseURL = "https://www.managerzone.com/"
 	}
-	c := mzhttpclient.New(baseURL)
+	sp, err := sport()
+	if err != nil {
+		return nil, err
+	}
+	c := mzhttpclient.New(baseURL).WithSport(sp)
 	if err := c.Login(username, password); err != nil {
 		return nil, err
 	}

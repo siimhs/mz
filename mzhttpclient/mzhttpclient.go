@@ -33,30 +33,31 @@ type MZHTTPClient struct {
 	sport     string
 }
 
-// New creates a new MZHTTPClient
+// New creates a football client; use WithSport to switch to hockey.
 func New(baseURL string) *MZHTTPClient {
 	return &MZHTTPClient{
 		client:  &http.Client{},
 		baseURL: baseURL,
+		sport:   Football,
 	}
 }
 
-// New creates a new MZHTTPClient
-func NewFootballClient() *MZHTTPClient {
-	return &MZHTTPClient{
-		client:  &http.Client{},
-		baseURL: "https://www.managerzone.com/",
-		sport:   "soccer",
-	}
+// WithSport sets the sport (Football or Hockey) used for login and
+// sport-specific pages. Call it before Login.
+func (mz *MZHTTPClient) WithSport(sport string) *MZHTTPClient {
+	mz.sport = sport
+	return mz
 }
 
-// New creates a new MZHTTPClient
-func NewHockeyClient() *MZHTTPClient {
-	return &MZHTTPClient{
-		client:  &http.Client{},
-		baseURL: "https://www.managerzone.com/",
-		sport:   "hockey",
+// Sport is the client's sport, Football ("soccer") or Hockey ("hockey").
+func (mz *MZHTTPClient) Sport() string { return mz.sport }
+
+// sportID is the numeric sport id some endpoints use (1 football, 2 hockey).
+func (mz *MZHTTPClient) sportID() int {
+	if mz.sport == Hockey {
+		return 2
 	}
+	return 1
 }
 
 // Login authenticates the user and stores the PHPSESSID value
@@ -96,7 +97,7 @@ func (mz *MZHTTPClient) Login(username, password string) error {
 		"logindata[username]":      {username},
 		"logindata[password]":      {password},
 		"logindata[markasdefault]": {""},
-		"logindata[sport]":         {"soccer"},
+		"logindata[sport]":         {mz.sport},
 		"logindata[remember_me]":   {""},
 	}
 
@@ -177,13 +178,13 @@ func (mz *MZHTTPClient) Get(path string) ([]byte, error) {
 	return io.ReadAll(resp.Body)
 }
 
-// https://www.managerzone.com/ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer
+// GetTeamIDsOnQuickChallengePage returns the team ids on the quick-challenge page.
 func (mz *MZHTTPClient) GetTeamIDsOnQuickChallengePage() ([]string, error) {
 	if mz.phpsessid == "" {
 		return nil, errors.New("not logged in: PHPSESSID is empty")
 	}
 
-	req, err := http.NewRequest("GET", mz.baseURL+"ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer", nil)
+	req, err := http.NewRequest("GET", mz.baseURL+quickChallengePath+mz.sport, nil)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create request for my team: %w", err)
 	}
@@ -293,7 +294,7 @@ func (mz *MZHTTPClient) SendFriendlyRequest(teamId string, dateTimeHome time.Tim
 	data.Set("date_away", fmt.Sprintf("%d,%d", a.Unix(), awaysrvtime.Hour()))
 	data.Set("tactic_away", tacticAway)
 
-	req, err := http.NewRequest("POST", mz.baseURL+"ajax.php?p=challenge&sub=handle-challenge&action=create&tid="+teamId+"&country_id=123&sport=soccer", strings.NewReader(data.Encode()))
+	req, err := http.NewRequest("POST", mz.baseURL+"ajax.php?p=challenge&sub=handle-challenge&action=create&tid="+teamId+"&country_id=123&sport="+mz.sport, strings.NewReader(data.Encode()))
 	if err != nil {
 		return fmt.Errorf("failed to create request for my team: %w", err)
 	}

@@ -1,0 +1,96 @@
+package e2e
+
+import (
+	"strings"
+	"testing"
+)
+
+// Teams on the hockey quick-challenge page, in page order, without duplicates.
+var hockeyCandidates = []string{"52998", "41639", "161069", "44180", "56078", "38304", "4469", "161897", "110608", "109975", "198753", "112299"}
+
+func hockeyMZ(t *testing.T, routes ...Routes) *MZ {
+	mz := Start(t, append([]Routes{HockeyAuto()}, routes...)...)
+	mz.Env["MZ_NOW"] = autoNow
+	return mz
+}
+
+func TestHockeyFriendlyAutoDryRun(t *testing.T) {
+	mz := hockeyMZ(t)
+
+	res := mz.Run("--sport", "hockey", "friendly", "auto", "--dry-run")
+
+	res.WantExit(t, 0)
+	res.WantStdout(t, `incoming invites: 0
+quick challenge for Mon 2026-11-23 (day 56): 2 offers
+  52998: would accept (tactic b)
+12 candidate teams: `+strings.Join(hockeyCandidates, ", ")+`
+Mon 2026-11-23 (day 56): booked
+Tue 2026-11-24 (day 57): would invite 12 teams (tactic a, 12:00 home / 20:00 away)
+Thu 2026-11-26 (day 59): would invite 12 teams (tactic b, 12:00 home / 20:00 away)
+Fri 2026-11-27 (day 60): would invite 12 teams (tactic b, 12:00 home / 20:00 away)
+Sat 2026-11-28 (day 61): too far ahead to book yet
+dry run: nothing sent
+`)
+	login := mz.Find("POST", "/?p=login")[0].Form
+	if got := login.Get("logindata[sport]"); got != "hockey" {
+		t.Errorf("logindata[sport] = %q, want hockey", got)
+	}
+}
+
+func TestHockeyFriendlyAuto(t *testing.T) {
+	mz := hockeyMZ(t,
+		Route("GET", hockeyQCAccept, inviteOK),
+		Route("POST", hockeySendInvite, inviteOK),
+	)
+	mz.Env["MZ_SPORT"] = "hockey"
+
+	res := mz.Run("friendly", "auto")
+
+	res.WantExit(t, 0)
+	res.WantStdoutContains(t, "  52998: accepted (tactic b)\n")
+	res.WantStdoutContains(t, "sent 36, failed 0\n")
+	acc := mz.Find("GET", hockeyQCAccept)
+	if len(acc) != 1 || !strings.Contains(acc[0].URL, "tid=52998") {
+		t.Fatalf("quick challenge accepts: %v, want one for 52998", acc)
+	}
+	sent := mz.Find("POST", hockeySendInvite)
+	if len(sent) != 36 {
+		t.Fatalf("%d invites sent, want 36 (12 teams x 3 days)", len(sent))
+	}
+	// Every request that names a sport names hockey.
+	for _, r := range mz.Requests() {
+		if strings.Contains(r.URL, "sport=") && !strings.Contains(r.URL, "sport=hockey") {
+			t.Errorf("football request in hockey mode: %s", r)
+		}
+	}
+}
+
+func TestHockeyFriendlyCandidates(t *testing.T) {
+	mz := hockeyMZ(t)
+	mz.Env["MZ_SPORT"] = "hockey"
+
+	res := mz.Run("friendly", "candidates")
+
+	res.WantExit(t, 0)
+	res.WantStdout(t, strings.Join(hockeyCandidates, "\n")+"\n")
+}
+
+func TestSportFlagOverridesEnv(t *testing.T) {
+	mz := Start(t, Login(), QuickChallenge())
+	mz.Env["MZ_SPORT"] = "hockey"
+
+	res := mz.Run("--sport", "football", "friendly", "candidates")
+
+	res.WantExit(t, 0)
+	res.WantStdout(t, strings.Join(candidates, "\n")+"\n")
+}
+
+func TestUnknownSport(t *testing.T) {
+	mz := Start(t)
+
+	res := mz.Run("--sport", "curling", "whoami")
+
+	res.WantExit(t, 1)
+	res.WantStderrContains(t, `unknown sport "curling"`)
+	mz.WantRequests()
+}

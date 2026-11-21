@@ -1,6 +1,6 @@
 # mz
 
-Command line tool for [ManagerZone](https://www.managerzone.com) (football).
+Command line tool for [ManagerZone](https://www.managerzone.com) (football and hockey).
 
 ## Setup
 
@@ -14,6 +14,10 @@ make e2e                  # end-to-end tests: the binary against a fake MZ
 ```
 
 `mz` reads credentials from the environment or `./.env`.
+
+The sport is football unless `--sport hockey` (any command) or `MZ_SPORT=hockey`
+says otherwise; the flag wins over the variable. So far only `whoami` and
+`mz friendly …` are tested with hockey; `players` and `eval` assume football.
 
 ## Usage
 

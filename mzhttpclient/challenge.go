@@ -63,7 +63,7 @@ func (s Schedule) Day(n int) (GameDay, bool) {
 
 // GetSchedule fetches and parses the friendly schedule with the invite lists.
 func (mz *MZHTTPClient) GetSchedule(now time.Time) (Schedule, error) {
-	body, err := mz.Get("ajax.php?p=challenge&sub=personal-challenge-template&sport=soccer")
+	body, err := mz.Get("ajax.php?p=challenge&sub=personal-challenge-template&sport=" + mz.sport)
 	if err != nil {
 		return Schedule{}, fmt.Errorf("fetch friendly schedule: %w", err)
 	}
@@ -195,11 +195,12 @@ type QuickOffer struct {
 	BookURL string
 }
 
-const quickChallengePath = "ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer"
+// quickChallengePath is followed by the sport.
+const quickChallengePath = "ajax.php?p=challenge&sub=quick-challenge-template&sport="
 
 // GetQuickChallenge fetches and parses the quick-challenge page.
 func (mz *MZHTTPClient) GetQuickChallenge() (QuickChallenge, error) {
-	body, err := mz.Get(quickChallengePath)
+	body, err := mz.Get(quickChallengePath + mz.sport)
 	if err != nil {
 		return QuickChallenge{}, fmt.Errorf("fetch quick challenges: %w", err)
 	}
@@ -259,7 +260,7 @@ func (mz *MZHTTPClient) BookQuickChallenge(o QuickOffer, tacticHome, tacticAway 
 // OptInQuickChallenge opts our team in for the quick challenge's game day.
 func (mz *MZHTTPClient) OptInQuickChallenge(qc QuickChallenge, tacticHome, tacticAway string) error {
 	body, err := mz.Get("ajax.php?p=challenge&sub=quick-challenge-opt-in&date=" + url.QueryEscape(qc.Date) +
-		"&tactic_home=" + url.QueryEscape(tacticHome) + "&tactic_away=" + url.QueryEscape(tacticAway) + "&sport=soccer")
+		"&tactic_home=" + url.QueryEscape(tacticHome) + "&tactic_away=" + url.QueryEscape(tacticAway) + "&sport=" + mz.sport)
 	if err != nil {
 		return err
 	}

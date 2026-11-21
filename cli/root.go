@@ -32,6 +32,10 @@ func Execute() {
 	}
 }
 
+// sportFlag is --sport; empty means MZ_SPORT, then football.
+var sportFlag string
+
 func init() {
 	rootCmd.SilenceUsage = true
+	rootCmd.PersistentFlags().StringVar(&sportFlag, "sport", "", "football or hockey (default: $MZ_SPORT, else football)")
 }

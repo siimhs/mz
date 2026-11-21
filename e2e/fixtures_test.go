@@ -72,6 +72,34 @@ var (
 // SendInvite answers friendly invites with the given responses in order.
 func SendInvite(responses ...Response) Routes { return Route("POST", sendInvite, responses...) }
 
+// Hockey pages, recorded Saturday 2026-11-21 ~12:20 with --sport hockey
+// (testdata/mz/hockey). The hockey team is 100002 (hockeyTeam). Only the
+// players page differs in the login flow, so the football index and
+// clubhouse pages stand in for the rest.
+
+// HockeyLogin is Login with the hockey team's players page.
+func HockeyLogin() Routes {
+	return join(Login(), Route("GET", "/?p=players", File("hockey/players.html")))
+}
+
+// HockeyAuto is everything friendly auto reads for hockey: days 56, 57, 59,
+// 60 open, no invites; 52998 and 41639 offer a quick challenge for day 56;
+// 12 teams on the quick-challenge page; no friendlies booked.
+func HockeyAuto() Routes {
+	return join(
+		HockeyLogin(),
+		Route("GET", "/xml/team_matchlist.php?team_id="+hockeyTeam+"&match_status=2", File("hockey/matches-upcoming-2026-11-21.xml")),
+		Route("GET", "/ajax.php?p=challenge&sub=personal-challenge-template&sport=hockey", File("hockey/challenges-2026-11-21.html")),
+		Route("GET", "/ajax.php?p=challenge&sub=quick-challenge-template&sport=hockey", File("hockey/quick-challenge-offer.html")),
+	)
+}
+
+const (
+	hockeyTeam       = "100002"
+	hockeyQCAccept   = "/ajax.php?p=challenge&sub=quick-challenge-accept&tid=*&sport=hockey&home_tacticset=*&away_tacticset=*"
+	hockeySendInvite = "/ajax.php?p=challenge&sub=handle-challenge&action=create&tid=*&country_id=123&sport=hockey"
+)
+
 func join(groups ...Routes) Routes {
 	var out Routes
 	for _, g := range groups {
