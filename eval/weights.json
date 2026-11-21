@@ -1,0 +1,82 @@
+{
+  "_comment": "Player evaluation model, docs/player-eval/RESULTS.md (v2). Every number is an unvalidated prior. Skills: SPD speed, STA stamina, PI play intelligence, PAS passing, SHO shooting, HEA heading, KEE keeping, BC ball control, TAC tackling, AP aerial passing, SP set plays. Base rows are re-normalised after modifiers, so they need not sum to 1 exactly.",
+  "base": {
+    "GK": {"SPD": 0.05, "STA": 0.11, "PI": 0.12, "KEE": 0.58, "BC": 0.07, "AP": 0.07},
+    "CD": {"SPD": 0.17, "STA": 0.15, "PI": 0.18, "PAS": 0.07, "HEA": 0.02, "BC": 0.10, "TAC": 0.24, "AP": 0.07},
+    "FB": {"SPD": 0.20, "STA": 0.16, "PI": 0.14, "PAS": 0.08, "HEA": 0.02, "BC": 0.12, "TAC": 0.20, "AP": 0.08},
+    "DM": {"SPD": 0.13, "STA": 0.14, "PI": 0.18, "PAS": 0.12, "SHO": 0.04, "BC": 0.11, "TAC": 0.20, "AP": 0.08},
+    "CM": {"SPD": 0.14, "STA": 0.14, "PI": 0.20, "PAS": 0.16, "SHO": 0.03, "BC": 0.17, "TAC": 0.06, "AP": 0.10},
+    "W":  {"SPD": 0.20, "STA": 0.16, "PI": 0.10, "PAS": 0.12, "SHO": 0.07, "BC": 0.17, "AP": 0.18},
+    "ST": {"SPD": 0.15, "STA": 0.15, "PI": 0.12, "PAS": 0.07, "SHO": 0.19, "HEA": 0.10, "BC": 0.19, "AP": 0.03}
+  },
+  "modifiers": {
+    "passing": {
+      "short": {
+        "GK": {"AP": 0.8},
+        "CD": {"PAS": 1.2, "AP": 0.8},
+        "FB": {"PAS": 1.2, "AP": 0.8, "SPD": 0.9},
+        "DM": {"PAS": 1.3, "BC": 1.1, "AP": 0.7},
+        "CM": {"PAS": 1.3, "BC": 1.1, "AP": 0.7},
+        "W":  {"PAS": 1.2, "AP": 0.7},
+        "ST": {"PAS": 1.2, "BC": 1.1, "HEA": 0.6}
+      },
+      "long": {
+        "GK": {"AP": 1.25},
+        "CD": {"AP": 1.3},
+        "FB": {"AP": 1.2},
+        "DM": {"AP": 1.15, "PAS": 0.9},
+        "CM": {"AP": 1.15, "PAS": 0.9},
+        "W":  {"AP": 1.1},
+        "ST": {"SPD": 1.15, "BC": 1.1}
+      },
+      "wings": {
+        "GK": {"AP": 1.2},
+        "CD": {"AP": 1.3},
+        "FB": {"AP": 1.3},
+        "DM": {"AP": 1.3, "PAS": 0.85},
+        "CM": {"AP": 1.3, "PAS": 0.85},
+        "W":  {"AP": 1.4, "STA": 1.1},
+        "ST": {"HEA": 1.8, "SHO": 0.9}
+      }
+    },
+    "pressing": {
+      "passive": {
+        "CD": {"SPD": 0.9, "STA": 0.85},
+        "FB": {"SPD": 0.9, "STA": 0.85},
+        "DM": {"STA": 0.85},
+        "CM": {"STA": 0.85},
+        "W":  {"STA": 0.85},
+        "ST": {"STA": 0.85}
+      },
+      "normal": {},
+      "committed": {
+        "GK": {"STA": 1.1},
+        "CD": {"SPD": 1.1, "STA": 1.2},
+        "FB": {"SPD": 1.1, "STA": 1.2},
+        "DM": {"SPD": 1.15, "TAC": 1.15, "STA": 1.2},
+        "CM": {"SPD": 1.15, "TAC": 1.15, "STA": 1.2},
+        "W":  {"SPD": 1.15, "STA": 1.2},
+        "ST": {"STA": 1.2}
+      }
+    },
+    "opponentPassing": {
+      "short": {},
+      "long": {},
+      "wings": {
+        "CD": {"TAC": 1.1, "PI": 1.1},
+        "FB": {"TAC": 1.1, "PI": 1.1, "SPD": 1.1},
+        "DM": {"TAC": 1.2}
+      }
+    }
+  },
+  "gk": {"keepingFloor": 4, "staminaCap": 7},
+  "shapeExponent": 0.8,
+  "blend": {"position": 0.8, "core": 0.2, "coreSkills": ["SPD", "STA", "PI", "BC"]},
+  "fatigue": {
+    "perPoint": 0.04,
+    "committedExtra": 1,
+    "threshold": {"GK": 6, "CD": 8, "FB": 8, "DM": 8, "CM": 8, "W": 8, "ST": 7}
+  },
+  "condition": {"formTarget": 9, "formPerPoint": 0.05, "expBase": 0.80, "expPerPoint": 0.02},
+  "setPiece": {"SP": 0.35, "AP": 0.35, "SHO": 0.30}
+}

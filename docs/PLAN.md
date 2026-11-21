@@ -25,6 +25,14 @@ Working (tested live 2026-11-20):
   the list are cut with `..` (the full one is on the topic page); recent dates are
   "Today", "Yesterday" or a weekday name. They are read in the local timezone. They are
   not Stockholm time: at 23:00 Tallinn time a post already showed "Today 22:04".
+- `mz eval [--passing …] [--pressing …] [--opponent …] [--pos X] [--no-condition] [--json]`:
+  per-position scores (GK CD FB DM CM W ST) from the model in
+  [player-eval/RESULTS.md](player-eval/RESULTS.md), implemented in the pure `eval` package.
+  Weights, tactic modifiers and constants are in `eval/weights.json` (embedded; replaced
+  by `--weights file` / `$MZ_EVAL_WEIGHTS`, starting from `--dump-weights`). **All
+  weights are unvalidated priors.** First look at our squad: outfield scores for one
+  player are close together (often < 0.2 apart), so the best position is decided by
+  small, unmeasured differences. `mz players` now also reports the player `ID`.
 - hidden `mz raw <path>` dumps any logged-in page, for discovering endpoints
 
 Not yet verified after the rewrite: an actual live `send` (dry-run only). Open question:
@@ -52,9 +60,14 @@ End-to-end tests: `make e2e`, see [e2e/README.md](../e2e/README.md).
    Needs endpoints for: incoming invites (list/accept), quick challenge (list/accept/post).
 3. `mz friendly challenge --team-id <tid>`, `mz matches set-tactic --match-id <mid> --tactic <A|B|C>`
 4. `mz team [tid]`, `mz player <pid>`, `mz match <mid>`
-5. **Player evaluation** — a numeric score per position: keeper, defender, midfield,
-   winger, striker (finer roles like defensive/attacking mid later). Used for
-   lineups/tactics and, day to day, for **training plans**.
+5. **Player evaluation: calibrate** (`mz eval` exists, its weights are priors). Next session:
+   scrape played match pages (since 2024-11-25 they show per-player passes, failed
+   passes, tackles, assists, saves, distance and avg speed) for our and opponents'
+   matches into SQLite, then fit the weights in `eval/weights.json`: tackles won vs
+   TAC/PI/SPD, pass success vs PAS/AP per passing style, saves vs KEE/PI, goals per shot
+   vs SHO against the opposing KEE; test the core term, the size of Experience and
+   whether Speed flattens above 8 (RESULTS.md "Next steps" / "Still open"). Then use the
+   scores for lineups and **training plans**.
 6. **Scraping + storage** — `mz training`, `mz transfers search …`,
    `mz sync players|matches|training` into SQLite.
 

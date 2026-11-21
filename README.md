@@ -22,6 +22,10 @@ mz whoami
 mz players [--json]
 mz matches [team-id] [--played] [--type friendly]
 
+mz eval [--passing short|long|wings] [--pressing passive|normal|committed]
+        [--opponent short|long|wings] [--pos GK|CD|FB|DM|CM|W|ST]
+        [--no-condition] [--json] [--weights file] [--dump-weights]
+
 mz friendly candidates                       # teams on the quick-challenge page
 mz friendly send <team-id> --date 2026-11-22 [--home 12 --away 20 --tactic a]
 mz friendly auto --dry-run                   # invite candidates for each free day
@@ -38,6 +42,13 @@ mz sql 'SELECT …'                                 # read-only SQL, JSON rows (
 The database is `$MZ_DB`, else `~/.local/share/mz/mz.db`. `sync` defaults to
 English » ManagerZone talk (10) and Questions & Answers (12); the first sync
 fetches all of a forum, later ones only topics with new posts.
+
+`mz eval` scores the squad per position for a tactic: best position and all
+scores, or with `--pos` the squad ranked for one position. The model is
+[docs/player-eval/RESULTS.md](docs/player-eval/RESULTS.md); **its weights are
+unvalidated priors**. They live in `eval/weights.json` (embedded). To tune
+without rebuilding, `mz eval --dump-weights > w.json`, edit it, and pass
+`--weights w.json` or set `$MZ_EVAL_WEIGHTS`.
 
 End-to-end tests are described in [e2e/README.md](e2e/README.md).
 

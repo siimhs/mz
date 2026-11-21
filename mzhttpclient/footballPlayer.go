@@ -1,6 +1,7 @@
 package mzhttpclient
 
 type FootballPlayer struct {
+	ID             int
 	Name           string
 	Age            int
 	BirthSeason    int

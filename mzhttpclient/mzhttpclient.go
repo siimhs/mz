@@ -393,7 +393,8 @@ func scrapePlayers(n *html.Node, players []FootballPlayer) (_ []FootballPlayer, 
 		}
 	}()
 
-	name := findByTagAndAttr(n, atom.Span, "class", "player_name").FirstChild.Data                          // TODO err handling
+	name := findByTagAndAttr(n, atom.Span, "class", "player_name").FirstChild.Data // TODO err handling
+	id, _ := strconv.Atoi(strings.TrimSpace(findByTagAndAttr(n, atom.Span, "class", "player_id_span").FirstChild.Data))
 	age, _ := strconv.Atoi(findByData(n, "Age: ").NextSibling.FirstChild.Data)                              // TODO err handling
 	foot := findByData(n, "Foot: ").NextSibling.FirstChild.Data                                             // TODO err handling
 	birthSeason, _ := strconv.Atoi(findByData(n, "Birth Season: ").NextSibling.FirstChild.Data)             // TODO err handling
@@ -429,6 +430,7 @@ func scrapePlayers(n *html.Node, players []FootballPlayer) (_ []FootballPlayer, 
 	experience := extractSkillValue(skills[11])
 	form := extractSkillValue(skills[12])
 	p := FootballPlayer{
+		ID:             id,
 		Name:           name,
 		Age:            age,
 		Foot:           foot,
