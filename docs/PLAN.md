@@ -10,7 +10,15 @@ Working (tested live 2026-11-20):
 
 - `mz whoami`, `mz players [--json]`, `mz matches [tid] [--played] [--type friendly]`
 - `mz friendly candidates`, `mz friendly send <tid> --date …`, `mz friendly auto [--dry-run]`
-  (`auto` = old `main.go`: invite all quick-challenge teams for each day without a friendly)
+  (`auto` fills every bookable game day, read from the friendly schedule page
+  `ajax.php?p=challenge&sub=personal-challenge-template`: 1. accept incoming invites,
+  2. accept a quick challenge for the next game day (`sub=quick-challenge-accept&tid=`),
+  3. else opt in (`sub=quick-challenge-opt-in&date=<#qc-date>&tactic_home=&tactic_away=`),
+  4. invite the quick-challenge page's teams for the other free days, skipping teams
+  already invited for that day. Game days run 01:00–00:59; friendlies can be booked
+  up to 7 days ahead, never on league days (Wed, Sun). **Accepting an incoming invite is
+  untested live**: the link format is read from MZ's challenges.js `handleChallenge(url,
+  side, …)` + `&tacticset=&tacticset2=`; no incoming invite has been seen on the page yet.)
 - `mz forum sync` scrapes forums 10 and 12 (by default) into SQLite (`store/`, schema in
   `store/schema.sql`, FTS5 over post text); `mz forum list|topics|topic|search` and the
   hidden `mz sql` read only the DB. Purpose: material for analysing what works in MZ
@@ -50,17 +58,9 @@ End-to-end tests: `make e2e`, see [e2e/README.md](../e2e/README.md).
    - harden the players scraper (it depends on exact whitespace and node layout;
      the old pretty-printed `testdata/players.html` no longer parses)
    - remove hardcoded `country_id=123` from the friendly request
-2. **`mz friendly auto-arrange`** — fill friendlies as far ahead as allowed (~5 days).
-   Order matters:
-   1. accept invites other teams have sent us
-   2. accept a quick challenge someone offers for the next day
-   3. post our own quick challenge for the next day
-   4. send invites to all recent quick-challenge teams
-
-   Needs endpoints for: incoming invites (list/accept), quick challenge (list/accept/post).
-3. `mz friendly challenge --team-id <tid>`, `mz matches set-tactic --match-id <mid> --tactic <A|B|C>`
-4. `mz team [tid]`, `mz player <pid>`, `mz match <mid>`
-5. **Player evaluation: calibrate** (`mz eval` exists, its weights are priors). Next session:
+2. `mz friendly challenge --team-id <tid>`, `mz matches set-tactic --match-id <mid> --tactic <A|B|C>`
+3. `mz team [tid]`, `mz player <pid>`, `mz match <mid>`
+4. **Player evaluation: calibrate** (`mz eval` exists, its weights are priors). Next session:
    scrape played match pages (since 2024-11-25 they show per-player passes, failed
    passes, tackles, assists, saves, distance and avg speed) for our and opponents'
    matches into SQLite, then fit the weights in `eval/weights.json`: tackles won vs
@@ -68,7 +68,7 @@ End-to-end tests: `make e2e`, see [e2e/README.md](../e2e/README.md).
    vs SHO against the opposing KEE; test the core term, the size of Experience and
    whether Speed flattens above 8 (RESULTS.md "Next steps" / "Still open"). Then use the
    scores for lineups and **training plans**.
-6. **Scraping + storage** — `mz training`, `mz transfers search …`,
+5. **Scraping + storage** — `mz training`, `mz transfers search …`,
    `mz sync players|matches|training` into SQLite.
 
 ## Original command sketch

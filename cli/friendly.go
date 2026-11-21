@@ -76,89 +76,17 @@ var friendlySendCmd = &cobra.Command{
 	},
 }
 
-var (
-	autoDays     int
-	autoHomeHour int
-	autoAwayHour int
-	autoTactics  string
-	autoDryRun   bool
-)
-
-var friendlyAutoCmd = &cobra.Command{
-	Use:   "auto",
-	Short: "Invite all quick-challenge teams for every upcoming day without a friendly",
-	Long: `For each of the next --days days (starting tomorrow) that has no friendly yet,
-send an invite to every team on the quick-challenge page.
-
-This is the old main.go behaviour, made safer. It is a stepping stone towards
-'auto-arrange' (accept invites, accept/post quick challenges, then invite).`,
-	Example: `  mz friendly auto --dry-run
-  mz friendly auto --days 5 --tactics tue=a,wed=a,default=b`,
-	Args: cobra.NoArgs,
-	RunE: func(cmd *cobra.Command, args []string) error {
-		tactics, err := parseTactics(autoTactics)
-		if err != nil {
-			return err
-		}
-		c, err := newClient()
-		if err != nil {
-			return err
-		}
-		me, err := c.Whoami()
-		if err != nil {
-			return err
-		}
-		booked, err := friendlyDays(c, me.TeamID)
-		if err != nil {
-			return err
-		}
-		tids, err := candidates(c, me.TeamID)
-		if err != nil {
-			return err
-		}
-		fmt.Printf("%d candidate teams: %s\n", len(tids), strings.Join(tids, ", "))
-
-		today := truncateDay(now())
-		sent, failed := 0, 0
-		for i := 1; i <= autoDays; i++ {
-			day := today.AddDate(0, 0, i)
-			label := day.Format("Mon 2006-01-02")
-			if booked[day] {
-				fmt.Printf("%s: already has a friendly, skipping\n", label)
-				continue
-			}
-			tactic := tactics.forDay(day.Weekday())
-			fmt.Printf("%s: inviting %d teams (tactic %s, %02d:00 home / %02d:00 away)\n",
-				label, len(tids), tactic, autoHomeHour, autoAwayHour)
-			if autoDryRun {
-				continue
-			}
-			for _, t := range tids {
-				err := c.SendFriendlyRequest(t, at(day, autoHomeHour), tactic, at(day, autoAwayHour), tactic)
-				if err != nil {
-					failed++
-					fmt.Printf("  %s: %v\n", t, firstLine(err))
-				} else {
-					sent++
-					fmt.Printf("  %s: sent\n", t)
-				}
-			}
-		}
-		if autoDryRun {
-			fmt.Println("dry run: nothing sent")
-		} else {
-			fmt.Printf("sent %d, failed %d\n", sent, failed)
-		}
-		return nil
-	},
-}
-
 // candidates returns unique team ids from the quick-challenge page, excluding my own.
 func candidates(c *mzhttpclient.MZHTTPClient, myTID string) ([]string, error) {
 	raw, err := c.GetTeamIDsOnQuickChallengePage()
 	if err != nil {
 		return nil, err
 	}
+	return uniqueTeams(raw, myTID), nil
+}
+
+// uniqueTeams drops duplicates and my own team, keeping page order.
+func uniqueTeams(raw []string, myTID string) []string {
 	seen := map[string]bool{myTID: true}
 	var out []string
 	for _, t := range raw {
@@ -167,7 +95,7 @@ func candidates(c *mzhttpclient.MZHTTPClient, myTID string) ([]string, error) {
 			out = append(out, t)
 		}
 	}
-	return out, nil
+	return out
 }
 
 // friendlyDays returns the local calendar days that already have an upcoming friendly.
@@ -257,7 +185,7 @@ func init() {
 	friendlySendCmd.Flags().StringVar(&sendTacticAway, "tactic-away", "", "tactic for the away match (default: same as --tactic)")
 	friendlySendCmd.MarkFlagRequired("date")
 
-	friendlyAutoCmd.Flags().IntVar(&autoDays, "days", 5, "how many days ahead to fill, starting tomorrow")
+	friendlyAutoCmd.Flags().IntVar(&autoDays, "days", 7, "look at most this many days ahead, starting tomorrow (MZ allows 7)")
 	friendlyAutoCmd.Flags().IntVar(&autoHomeHour, "home", 12, "hour of the home match (local time)")
 	friendlyAutoCmd.Flags().IntVar(&autoAwayHour, "away", 20, "hour of the away match (local time)")
 	friendlyAutoCmd.Flags().StringVar(&autoTactics, "tactics", "tue=a,wed=a,default=b", "tactic per weekday")

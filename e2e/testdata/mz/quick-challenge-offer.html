@@ -1,0 +1,105 @@
+							<p id="qc-info" class="clearfix">
+					<span class="fa-stack fa-lg floatRight">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+					</span>
+					Quickly find a friendly opponent for the next game day (excluding league match days), either by opting in or by accepting someone else's challenge in the list below. This feature can only be used if you have not already booked any friendlies on that day.<br><br>The friendlies are booked as a double and are played at <strong>12:00</strong> and <strong>20:00</strong>.
+				</p>
+				<div id="qc-countdown-wrapper" class="box_notice">
+					<div class="flex-wrap">
+						<div class="flex-grow-1">
+							<span class="clearfix" id="qc-countdown" style="margin: 0 auto; width: 200px;"></span>
+						</div>
+						<div class="flex-grow-1">
+							Each game day at <strong>01:00</strong> (excluding league match days) the Quick Challenge list resets, and all teams who have not had their challenges accepted will be automatically opted out.
+						</div>
+					</div>
+				</div>
+				<div class="flex-wrap">
+					<div id="qc-action-panel" class="flex-grow-1 box_dark">
+						<div id="qc-opted-in">
+							<i class="fa fa-check-square fa-lg green" aria-hidden="true"></i> Your team is opted in for <strong>Day 56</strong>.
+						</div>
+						<div id="qc-opted-out" class="active">
+							Your team can opt in for <strong>Day 56</strong>.
+						</div>
+						<div id="qc-booked">
+							<i class="fa fa-info-circle"></i> Your team already has one or more friendlies booked on <strong>Day 56</strong>.
+						</div>
+
+						<div id="qc-tactics" class="active">
+							<input type="hidden" id="qc-date" value="1795428535">
+							<div>
+								<i class="fa fa-home"></i> 23-11-2026 12:00 <span class="challengeTacticListWrapper floatRight"><i class="fa fa-share"></i> <select id="tactic_home" name="tactic_home">				<option title="A" value="a">A</option>				<option title="B" value="b" selected="selected">B</option></select> 				<span class="fa-stack-wrapper">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-check-square fa-stack-1x fa-inverse"></i>
+						<i class="fa fa-minus-square fa-stack-1x fa-inverse"></i>
+					</span>
+				</span></span>
+							</div>
+							<br>
+							<div>
+								<i class="fa fa-plane"></i> 23-11-2026 20:00 <span class="challengeTacticListWrapper floatRight"><i class="fa fa-share"></i> <select id="tactic_away" name="tactic_away">				<option title="A" value="a">A</option>				<option title="B" value="b" selected="selected">B</option></select> 				<span class="fa-stack-wrapper">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-check-square fa-stack-1x fa-inverse"></i>
+						<i class="fa fa-minus-square fa-stack-1x fa-inverse"></i>
+					</span>
+				</span></span>
+							</div>
+						</div>
+
+						<div id="qc-extra-opted-in">
+							<div class="form_error_content"></div>
+							<a href="#" onclick="return false;" class="mzbtn buttondiv button_red" id="qc-opt-out">
+	<span class="buttonClassMiddle"><span style="white-space: nowrap">Opt Out</span></span><span class="buttonClassRight">&nbsp;</span>
+</a>
+						</div>
+						<div id="qc-extra-opted-out" class="active">
+							<div class="form_error_content"></div>
+							<a href="#" onclick="return false;" class="mzbtn buttondiv button_account" id="qc-opt-in">
+	<span class="buttonClassMiddle"><span style="white-space: nowrap">Opt In</span></span><span class="buttonClassRight">&nbsp;</span>
+</a>
+						</div>
+						<div id="qc-extra-opted-out-disabled">
+							<div class="form_error_content"></div>
+							<a href="#" onclick="return false;" class="mzbtn buttondiv_disabled button_account" id="qc-opt-in-disabled">
+	<span class="buttonClassMiddle"><span style="white-space: nowrap">Opt In</span></span><span class="buttonClassRight">&nbsp;</span>
+</a>
+						</div>
+					</div>
+					<div id="qc-selectors-panel" class="flex-grow-1 box_dark">
+								<h4><i class="fa fa-shield fa-lg" aria-hidden="true"></i> Browse teams:</h4>
+		<select id="countries-selector" name="countries" autocomplete="off"><option value="0">All countries (1)</option><option value="240">Argentina (1)</option></select> <select id="divisions-selector" name="divisions" disabled="disabled" autocomplete="off"><option value="0">All divisions</option></select>
+					</div>
+				</div>
+				<br>
+			<div id="quickChallengeResponseWrapper"></div>
+			<div id="quickChallengesWrapper">
+				<div id="reload_quick_challenges_anchor" class="hitlist_reload_anchor">
+	<a href="/ajax.php?p=challenge&sub=quick-challenge-template&country=&division=&include-structure=0&sport=soccer" title="Reload list" onclick="$('#quick_challenges_search_string').val(''); getHitlist($(this).prop('href'), 'quick_challenges', true); return false;">
+		<img src="nocache-958/img/list_refresh_icon.png" alt="Reload list">
+	</a>
+</div><a class="hitlist_filter_anchor" id="filter_quick_challenges_anchor" href="#">Filter</a><div class="hitlist_filter">
+	<form style="display: none;" method="post" action="/ajax.php?p=challenge&sub=quick-challenge-template&country=&division=&include-structure=0&sport=soccer" id="filter_quick_challenges_form" class="hitlist_filter__form filter_quick_challenges_form" onsubmit="hitlistFilterSearch(this); return false;">
+		<label for="quick_challenges_search_string">Filter:</label>
+		<span class="hitlist_filter__search_string_container">
+			<input type="text" class="hitlist_filter__search_string search_string" id="quick_challenges_search_string" name="quick_challenges_search_string" value="" autocomplete="off" />
+		</span>
+		<input type="image" name="submit" src="img/magnifier.png" />
+	</form>
+</div>			<table class="hitlist hitlist-compact-list-included" id="quick_challenges" cellspacing="0" cellpadding="4">				<thead>
+					<tr>				<td  class="hitlist-compact-list-column">Manager</td>				<td >Team</td>				<td >Country</td>				<td >Division</td>				<td >Challenge</td>					</tr>
+				</thead>				<tbody><tr class="a odd"><td class="hitlist-compact-list-column"><img src="nocache-958/img/flags/20/ar.png" width="12" height="12"> <a href="/?p=profile&uid=430789">jorfer</a><dl class="hitlist-compact-list"><dd><span>Team</span> <span><img src="dynimg/badge.php?team_id=429231&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=429231">Antiguos FC v2.0</a></span></dd><dd><span>Country</span> <span>Argentina</span></dd><dd><span>Division</span> <span>div5.233</span></dd><dd><span>Challenge</span> <span>				<a href="/ajax.php?p=challenge&sub=quick-challenge-accept&tid=429231&sport=soccer" onclick="quickChallenge.book(this.href); return false;"><i class="fa fa-thumbs-up fa-lg challenge-thumb" aria-hidden="true"></i></a></span></dd></dl></td><td><img src="dynimg/badge.php?team_id=429231&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=429231">Antiguos FC v2.0</a></td><td>Argentina</td><td>div5.233</td><td>				<a href="/ajax.php?p=challenge&sub=quick-challenge-accept&tid=429231&sport=soccer" onclick="quickChallenge.book(this.href); return false;"><i class="fa fa-thumbs-up fa-lg challenge-thumb" aria-hidden="true"></i></a></td></tr>				</tbody>
+			</table>
+			</div>
+			<br>		<fieldset class="grouping self">
+			<legend><i class="fa fa-history fa-lg" aria-hidden="true"></i> Recently booked Quick Challenges</legend>
+						<table class="hitlist" id="quick_challenges_booked" cellspacing="0" cellpadding="4">				<tbody><tr class="a odd"><td><img src="dynimg/badge.php?team_id=343098&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=343098">FC Hope Speranța</a> accepted a quick challenge from <img src="dynimg/badge.php?team_id=143217&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=143217">☆冰谷☆〓新势力〓Genshin丨万叶YYDS</a>.<span class="responsive-show"><br><i class="fa fa-clock-o" aria-hidden="true"></i> 1 minute ago</span></td><td><span class="responsive-hide"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 minute ago</span></td></tr><tr class="a even"><td><img src="dynimg/badge.php?team_id=378645&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=378645">Kromolin SA</a> accepted a quick challenge from <img src="dynimg/badge.php?team_id=868864&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=868864">Alemannia Aachen</a>.<span class="responsive-show"><br><i class="fa fa-clock-o" aria-hidden="true"></i> 4 minutes ago</span></td><td><span class="responsive-hide"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 minutes ago</span></td></tr><tr class="a odd"><td><img src="dynimg/badge.php?team_id=114651&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=114651">T H F C</a> accepted a quick challenge from <img src="dynimg/badge.php?team_id=91096&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=91096">Ne</a>.<span class="responsive-show"><br><i class="fa fa-clock-o" aria-hidden="true"></i> 9 minutes ago</span></td><td><span class="responsive-hide"><i class="fa fa-clock-o" aria-hidden="true"></i> 9 minutes ago</span></td></tr><tr class="a even"><td><img src="dynimg/badge.php?team_id=254695&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=254695">Ribeiro Sales FC</a> accepted a quick challenge from <img src="dynimg/badge.php?team_id=1010152&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=1010152">Monsalvo</a>.<span class="responsive-show"><br><i class="fa fa-clock-o" aria-hidden="true"></i> 17 minutes ago</span></td><td><span class="responsive-hide"><i class="fa fa-clock-o" aria-hidden="true"></i> 17 minutes ago</span></td></tr><tr class="a odd"><td><img src="dynimg/badge.php?team_id=361140&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=361140">Jong Lyra-Lierse</a> accepted a quick challenge from <img src="dynimg/badge.php?team_id=378314&sport=soccer&location=icon" width="12" height="15"> <a href="/?p=team&tid=378314">Borowiec</a>.<span class="responsive-show"><br><i class="fa fa-clock-o" aria-hidden="true"></i> 20 minutes ago</span></td><td><span class="responsive-hide"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 minutes ago</span></td></tr>				</tbody>
+			</table>
+		</fieldset>
+						<script type="text/javascript">
+				var votingEnds = new Date(1795388399000);
+				$("#qc-countdown").countdown({until: votingEnds, format: "HMS", expiryUrl: "?p=challenges&tab=quick"});
+			</script>

@@ -28,6 +28,40 @@ func QuickChallenge() Routes {
 	return Route("GET", "/ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer", File("quick-challenge.html"))
 }
 
+// Pages recorded on Saturday 2026-11-21 ~12:00 for friendly auto.
+
+// UpcomingMatchesSat: friendlies only on Saturday 2026-11-21.
+func UpcomingMatchesSat() Routes {
+	return Route("GET", "/xml/team_matchlist.php?team_id="+myTeam+"&match_status=2", File("matches-upcoming-2026-11-21.xml"))
+}
+
+// Schedule serves a friendly schedule page (Challenges > Friendlies):
+//   - challenges-2026-11-21.html: recorded; days 56, 57, 59, 60 open, no invites
+//   - challenges-outgoing.html: recorded earlier that day; 10 outgoing invites
+//     each for days 56, 57 and 59
+//   - challenges-incoming.html: hand-made from the first, one incoming
+//     double from 849080 for day 59 (the accept link format is a guess from
+//     MZ's challenges.js; no live sample yet)
+func Schedule(file string) Routes {
+	return Route("GET", "/ajax.php?p=challenge&sub=personal-challenge-template&sport=soccer", File(file))
+}
+
+// QuickChallengeOffer: day 56, we can opt in, 429231 offers a quick challenge.
+func QuickChallengeOffer() Routes {
+	return Route("GET", "/ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer", File("quick-challenge-offer.html"))
+}
+
+// QuickChallengeNone: day 56, we can opt in, nobody else has.
+func QuickChallengeNone() Routes {
+	return Route("GET", "/ajax.php?p=challenge&sub=quick-challenge-template&sport=soccer", File("quick-challenge-none.html"))
+}
+
+const (
+	qcAccept     = "/ajax.php?p=challenge&sub=quick-challenge-accept&tid=*&sport=soccer&home_tacticset=*&away_tacticset=*"
+	qcOptIn      = "/ajax.php?p=challenge&sub=quick-challenge-opt-in&date=*&tactic_home=*&tactic_away=*&sport=soccer"
+	inviteAccept = "/ajax.php?p=challenge&sub=handle-challenge&action=accept&cid=*&sport=soccer&tacticset=*&tacticset2=*"
+)
+
 const sendInvite = "/ajax.php?p=challenge&sub=handle-challenge&action=create&tid=*&country_id=123&sport=soccer"
 
 var (

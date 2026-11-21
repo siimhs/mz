@@ -199,6 +199,16 @@ func (r *Result) WantStdoutGolden(t *testing.T, name string) {
 	}
 }
 
+// WantStdoutContains checks that stdout contains each part.
+func (r *Result) WantStdoutContains(t *testing.T, parts ...string) {
+	t.Helper()
+	for _, p := range parts {
+		if !strings.Contains(r.Stdout, p) {
+			t.Errorf("%s: stdout does not contain %q:\n%s", r.cmd(), p, r.Stdout)
+		}
+	}
+}
+
 // WantStderrContains checks that stderr mentions each part. Tests check the
 // meaning of an error, not its exact wording, which is implementation detail.
 func (r *Result) WantStderrContains(t *testing.T, parts ...string) {

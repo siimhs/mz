@@ -1,0 +1,43 @@
+incoming invites: 0
+quick challenge for Mon 2026-11-23 (day 56): 1 offers
+  429231: accepted (tactic a)
+11 candidate teams: 429231, 343098, 143217, 378645, 868864, 114651, 91096, 254695, 1010152, 361140, 378314
+Mon 2026-11-23 (day 56): booked
+Tue 2026-11-24 (day 57): inviting 11 teams (tactic a, 12:00 home / 20:00 away)
+  429231: sent
+  343098: sent
+  143217: sent
+  378645: sent
+  868864: sent
+  114651: sent
+  91096: sent
+  254695: sent
+  1010152: sent
+  361140: sent
+  378314: sent
+Thu 2026-11-26 (day 59): inviting 11 teams (tactic a, 12:00 home / 20:00 away)
+  429231: sent
+  343098: sent
+  143217: sent
+  378645: sent
+  868864: sent
+  114651: sent
+  91096: sent
+  254695: sent
+  1010152: sent
+  361140: sent
+  378314: sent
+Fri 2026-11-27 (day 60): inviting 11 teams (tactic a, 12:00 home / 20:00 away)
+  429231: sent
+  343098: sent
+  143217: sent
+  378645: sent
+  868864: sent
+  114651: sent
+  91096: sent
+  254695: sent
+  1010152: sent
+  361140: sent
+  378314: sent
+Sat 2026-11-28 (day 61): too far ahead to book yet
+sent 33, failed 0

@@ -28,8 +28,8 @@ mz eval [--passing short|long|wings] [--pressing passive|normal|committed]
 
 mz friendly candidates                       # teams on the quick-challenge page
 mz friendly send <team-id> --date 2026-11-22 [--home 12 --away 20 --tactic a]
-mz friendly auto --dry-run                   # invite candidates for each free day
-mz friendly auto --days 5 --tactics tue=a,wed=a,default=b
+mz friendly auto --dry-run                   # accept invites, quick challenge, invite for free days
+mz friendly auto --tactics tue=a,wed=a,default=b
 
 mz forum sync [--forum 10 --forum 12] [--full]   # fetch new posts from MZ into SQLite
 mz forum list                                     # the rest read only the database (JSON)

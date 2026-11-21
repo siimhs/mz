@@ -1,0 +1,628 @@
+<div id="personal-challenges-content">		<div id="friendly_series_schedule">
+			<div class="flex-nowrap">
+					<div id="day-view-menu" class="flex-grow-1">
+			<div>
+				<h6>Week</h6>
+				<ul id="dv-menu-weeks">
+					<li id="dw-w-6" data-day="36">W6</li><li id="dw-w-7" data-day="43">W7</li><li class="this-week" id="dw-w-8" data-day="50">W8</li><li id="dw-w-9" data-day="57">W9</li>
+				</ul>
+				<ul id="dv-menu-days">
+					<li id="dw-d-6-36" class="w6">36</li><li id="dw-d-6-37" class="w6 disabled">37</li><li id="dw-d-6-38" class="w6">38</li><li id="dw-d-6-39" class="w6">39</li><li id="dw-d-6-40" class="w6">40</li><li id="dw-d-6-41" class="w6 disabled">41</li><li id="dw-d-6-42" class="w6">42</li><li id="dw-d-7-43" class="w7">43</li><li id="dw-d-7-44" class="w7 disabled">44</li><li id="dw-d-7-45" class="w7">45</li><li id="dw-d-7-46" class="w7">46</li><li id="dw-d-7-47" class="w7">47</li><li id="dw-d-7-48" class="w7 disabled">48</li><li id="dw-d-7-49" class="w7">49</li><li id="dw-d-8-50" class="w8">50</li><li id="dw-d-8-51" class="w8 disabled">51</li><li id="dw-d-8-52" class="w8">52</li><li id="dw-d-8-53" class="w8">53</li><li id="dw-d-8-54" class="w8 today">54</li><li id="dw-d-8-55" class="w8 disabled">55</li><li id="dw-d-8-56" class="w8">56</li><li id="dw-d-9-57" class="w9">57</li><li id="dw-d-9-58" class="w9 disabled">58</li><li id="dw-d-9-59" class="w9">59</li><li id="dw-d-9-60" class="w9">60</li><li id="dw-d-9-61" class="w9">61</li><li id="dw-d-9-62" class="w9 disabled">62</li><li id="dw-d-9-63" class="w9">63</li>
+				</ul>
+			</div>
+		</div>
+							<div id="fss-time-texts" class="flex-grow-1">
+						<p>The friendly schedule below helps to get an overview of your friendlies. Book a friendly either by challenge a friend, or type in a user/club name into the search column. Match days available for both teams will show up in the schedule below. Choose desired day, send a challenge and then wait for the opponent to accept it.</p>
+						<p>You should play friendlies every week to receive important revenue for the club, but also to gain valuable experience and maintain the form of your players. 		<span id="fss-help-form-experience" class="help_button_placeholder">
+			<a class="help_button" href="#" onclick="showHelpLayer('', 'Form and Experience', true, 400,'%2Fajax.php%3Fp%3Dchallenge%26sub%3Dhelp-form-experience%26sport%3Dsoccer'); return false">
+				<span class="help_button_wrapper">
+					<span class="help_button_text">?</span>
+				</span>
+			</a>
+		</span></p>
+				</div>		<div id="challenge-form-wrapper" class="search-form flex-grow-0" style="align-self: center">
+			<form id="search-form" method="post" action="/ajax.php?p=challenge&sub=search&sport=soccer&suffix=">
+				<fieldset class="grouping self ui-widget" disabled="disabled">
+					<legend>Book Friendly Challenge</legend>
+					<input type="hidden" id="buddy-id" name="buddy-id" class="buddy-id" value="" autocomplete="off">
+					<input type="hidden" id="team-id" name="team-id" class="team-id" value="" autocomplete="off">
+					<div class="box_dark"><select id="buddy-select" class="buddy-select" autocomplete="off"><option value="">- Challenge friend -</option></select></div>
+					<div class="box_dark">
+						<select id="search-area" name="search-area" autocomplete="off"><option value="user">User</option><option value="team">Club</option></select> <input type="text" id="search-string" name="search-string" class="search-string" value="" autocomplete="off"> <a href="#" onclick="button_onClick('fss-submit', '$(\'#search-form\').submit();', 'multi_delay', 'normal'); return false;" class="mzbtn buttondiv_disabled button_account fss-submit" id="fss-submit">
+	<span class="buttonClassMiddle"><span style="white-space: nowrap"><i class="fa fa-search"></i></span></span><span class="buttonClassRight">&nbsp;</span>
+</a> <a href="#" onclick="button_onClick('fss-reset', 'challenges.reset($(\'#search-form\'), true);', 'single', 'red'); return false;" class="mzbtn buttondiv_disabled button_red fss-reset" id="fss-reset">
+	<span class="buttonClassMiddle"><span style="white-space: nowrap"><i class="fa fa-close"></i></span></span><span class="buttonClassRight">&nbsp;</span>
+</a>
+					</div>
+				</fieldset>
+			</form>
+			<fieldset id="search-response" class="search-response grouping box_dark">
+				<legend id="search-response-found" class="search-response-found"></legend>
+				<span id="search-response-not-found" class="search-response-not-found"></span>				<div id="challenge-day-selector-wrapper">
+					<select id="challenge-day-selector" autocomplete="off"><option value="0">Available time slots</option><optgroup label="Day 54"><option value="8,1795215600,12">Sa, 21-11-2026 13:00</option><option value="8,1795215600,13">Sa, 21-11-2026 14:00</option><option value="8,1795215600,14">Sa, 21-11-2026 15:00</option><option value="8,1795215600,15">Sa, 21-11-2026 16:00</option><option value="8,1795215600,16">Sa, 21-11-2026 17:00</option><option value="8,1795215600,17">Sa, 21-11-2026 18:00</option><option value="8,1795215600,18">Sa, 21-11-2026 19:00</option><option value="8,1795215600,19">Sa, 21-11-2026 20:00</option><option value="8,1795215600,20">Sa, 21-11-2026 21:00</option><option value="8,1795215600,21">Sa, 21-11-2026 22:00</option><option value="8,1795215600,22">Sa, 21-11-2026 23:00</option><option value="8,1795215600,23">Su, 22-11-2026 00:00</option></optgroup><optgroup label="Day 56"><option value="8,1795388400,0">Mo, 23-11-2026 01:00</option><option value="8,1795388400,1">Mo, 23-11-2026 02:00</option><option value="8,1795388400,2">Mo, 23-11-2026 03:00</option><option value="8,1795388400,3">Mo, 23-11-2026 04:00</option><option value="8,1795388400,4">Mo, 23-11-2026 05:00</option><option value="8,1795388400,5">Mo, 23-11-2026 06:00</option><option value="8,1795388400,6">Mo, 23-11-2026 07:00</option><option value="8,1795388400,7">Mo, 23-11-2026 08:00</option><option value="8,1795388400,8">Mo, 23-11-2026 09:00</option><option value="8,1795388400,9">Mo, 23-11-2026 10:00</option><option value="8,1795388400,10">Mo, 23-11-2026 11:00</option><option value="8,1795388400,11">Mo, 23-11-2026 12:00</option><option value="8,1795388400,12">Mo, 23-11-2026 13:00</option><option value="8,1795388400,13">Mo, 23-11-2026 14:00</option><option value="8,1795388400,14">Mo, 23-11-2026 15:00</option><option value="8,1795388400,15">Mo, 23-11-2026 16:00</option><option value="8,1795388400,16">Mo, 23-11-2026 17:00</option><option value="8,1795388400,17">Mo, 23-11-2026 18:00</option><option value="8,1795388400,18">Mo, 23-11-2026 19:00</option><option value="8,1795388400,19">Mo, 23-11-2026 20:00</option><option value="8,1795388400,20">Mo, 23-11-2026 21:00</option><option value="8,1795388400,21">Mo, 23-11-2026 22:00</option><option value="8,1795388400,22">Mo, 23-11-2026 23:00</option><option value="8,1795388400,23">Tu, 24-11-2026 00:00</option></optgroup><optgroup label="Day 57"><option value="9,1795474800,0">Tu, 24-11-2026 01:00</option><option value="9,1795474800,1">Tu, 24-11-2026 02:00</option><option value="9,1795474800,2">Tu, 24-11-2026 03:00</option><option value="9,1795474800,3">Tu, 24-11-2026 04:00</option><option value="9,1795474800,4">Tu, 24-11-2026 05:00</option><option value="9,1795474800,5">Tu, 24-11-2026 06:00</option><option value="9,1795474800,6">Tu, 24-11-2026 07:00</option><option value="9,1795474800,7">Tu, 24-11-2026 08:00</option><option value="9,1795474800,8">Tu, 24-11-2026 09:00</option><option value="9,1795474800,9">Tu, 24-11-2026 10:00</option><option value="9,1795474800,10">Tu, 24-11-2026 11:00</option><option value="9,1795474800,11">Tu, 24-11-2026 12:00</option><option value="9,1795474800,12">Tu, 24-11-2026 13:00</option><option value="9,1795474800,13">Tu, 24-11-2026 14:00</option><option value="9,1795474800,14">Tu, 24-11-2026 15:00</option><option value="9,1795474800,15">Tu, 24-11-2026 16:00</option><option value="9,1795474800,16">Tu, 24-11-2026 17:00</option><option value="9,1795474800,17">Tu, 24-11-2026 18:00</option><option value="9,1795474800,18">Tu, 24-11-2026 19:00</option><option value="9,1795474800,19">Tu, 24-11-2026 20:00</option><option value="9,1795474800,20">Tu, 24-11-2026 21:00</option><option value="9,1795474800,21">Tu, 24-11-2026 22:00</option><option value="9,1795474800,22">Tu, 24-11-2026 23:00</option><option value="9,1795474800,23">We, 25-11-2026 00:00</option></optgroup><optgroup label="Day 59"><option value="9,1795647600,0">Th, 26-11-2026 01:00</option><option value="9,1795647600,1">Th, 26-11-2026 02:00</option><option value="9,1795647600,2">Th, 26-11-2026 03:00</option><option value="9,1795647600,3">Th, 26-11-2026 04:00</option><option value="9,1795647600,4">Th, 26-11-2026 05:00</option><option value="9,1795647600,5">Th, 26-11-2026 06:00</option><option value="9,1795647600,6">Th, 26-11-2026 07:00</option><option value="9,1795647600,7">Th, 26-11-2026 08:00</option><option value="9,1795647600,8">Th, 26-11-2026 09:00</option><option value="9,1795647600,9">Th, 26-11-2026 10:00</option><option value="9,1795647600,10">Th, 26-11-2026 11:00</option><option value="9,1795647600,11">Th, 26-11-2026 12:00</option><option value="9,1795647600,12">Th, 26-11-2026 13:00</option><option value="9,1795647600,13">Th, 26-11-2026 14:00</option><option value="9,1795647600,14">Th, 26-11-2026 15:00</option><option value="9,1795647600,15">Th, 26-11-2026 16:00</option><option value="9,1795647600,16">Th, 26-11-2026 17:00</option><option value="9,1795647600,17">Th, 26-11-2026 18:00</option><option value="9,1795647600,18">Th, 26-11-2026 19:00</option><option value="9,1795647600,19">Th, 26-11-2026 20:00</option><option value="9,1795647600,20">Th, 26-11-2026 21:00</option><option value="9,1795647600,21">Th, 26-11-2026 22:00</option><option value="9,1795647600,22">Th, 26-11-2026 23:00</option><option value="9,1795647600,23">Fr, 27-11-2026 00:00</option></optgroup><optgroup label="Day 60"><option value="9,1795734000,0">Fr, 27-11-2026 01:00</option><option value="9,1795734000,1">Fr, 27-11-2026 02:00</option><option value="9,1795734000,2">Fr, 27-11-2026 03:00</option><option value="9,1795734000,3">Fr, 27-11-2026 04:00</option><option value="9,1795734000,4">Fr, 27-11-2026 05:00</option><option value="9,1795734000,5">Fr, 27-11-2026 06:00</option><option value="9,1795734000,6">Fr, 27-11-2026 07:00</option><option value="9,1795734000,7">Fr, 27-11-2026 08:00</option><option value="9,1795734000,8">Fr, 27-11-2026 09:00</option><option value="9,1795734000,9">Fr, 27-11-2026 10:00</option><option value="9,1795734000,10">Fr, 27-11-2026 11:00</option><option value="9,1795734000,11">Fr, 27-11-2026 12:00</option><option value="9,1795734000,12">Fr, 27-11-2026 13:00</option><option value="9,1795734000,13">Fr, 27-11-2026 14:00</option><option value="9,1795734000,14">Fr, 27-11-2026 15:00</option><option value="9,1795734000,15">Fr, 27-11-2026 16:00</option><option value="9,1795734000,16">Fr, 27-11-2026 17:00</option><option value="9,1795734000,17">Fr, 27-11-2026 18:00</option><option value="9,1795734000,18">Fr, 27-11-2026 19:00</option><option value="9,1795734000,19">Fr, 27-11-2026 20:00</option><option value="9,1795734000,20">Fr, 27-11-2026 21:00</option><option value="9,1795734000,21">Fr, 27-11-2026 22:00</option><option value="9,1795734000,22">Fr, 27-11-2026 23:00</option><option value="9,1795734000,23">Sa, 28-11-2026 00:00</option></optgroup></select>
+				</div>			</fieldset>			<div id="search-fully-booked" class="green bold"><i class="fa fa-check-square green fa-lg t-checked" aria-hidden="true"></i> You are fully booked one week ahead.</div>		</div></div>			<h2 id="goto-today" class="floatRight"><a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"> </i>Today</a></h2>
+			<h2 id="back-to-overview"><a href="#"><i class="fa fa-arrow-circle-left" aria-hidden="true"> </i>Overview</a></h2>
+			<h3 id="fss-title-heading" class="textCenter"><i class="fa fa-calendar"></i> Friendly Schedule</h3>			<div class="calendar compact">
+				<div class="flex-nowrap fss-row fss-main-heading">
+					<div class="flex-grow-1 fss-main-header textCenter">
+						Days
+					</div>
+				</div>
+				<div class="flex-nowrap fss-row">
+					<div class="flex-grow-1 fss-toggle-view textCenter">
+						<a id="toggle-weeks" class="exclude" href="#" onclick="challenges.togglePastWeeks(); return false"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i> <span class="toggle-text-show">Show previous weeks</span><span class="toggle-text-hide">Hide previous weeks</span></a>
+					</div>
+				</div>
+				<div class="flex-nowrap fss-row">
+					<div class="flex-grow-1 fss-toggle-view textCenter responsive-show">
+						<select id="calendar-day-selector" autocomplete="off"><option value="0">Quick navigation</option><optgroup label="Day 36 (Tu / We)"><option value="6:36">3/11 01:00 - 4/11 00:59</option></optgroup><optgroup label="Day 38 (Th / Fr)"><option value="6:38">5/11 01:00 - 6/11 00:59</option></optgroup><optgroup label="Day 39 (Fr / Sa)"><option value="6:39">6/11 01:00 - 7/11 00:59</option></optgroup><optgroup label="Day 40 (Sa / Su)"><option value="6:40">7/11 01:00 - 8/11 00:59</option></optgroup><optgroup label="Day 42 (Mo / Tu)"><option value="6:42">9/11 01:00 - 10/11 00:59</option></optgroup><optgroup label="Day 43 (Tu / We)"><option value="7:43">10/11 01:00 - 11/11 00:59</option></optgroup><optgroup label="Day 45 (Th / Fr)"><option value="7:45">12/11 01:00 - 13/11 00:59</option></optgroup><optgroup label="Day 46 (Fr / Sa)"><option value="7:46">13/11 01:00 - 14/11 00:59</option></optgroup><optgroup label="Day 47 (Sa / Su)"><option value="7:47">14/11 01:00 - 15/11 00:59</option></optgroup><optgroup label="Day 49 (Mo / Tu)"><option value="7:49">16/11 01:00 - 17/11 00:59</option></optgroup><optgroup label="Day 50 (Tu / We)"><option value="8:50">17/11 01:00 - 18/11 00:59</option></optgroup><optgroup label="Day 52 (Th / Fr)"><option value="8:52">19/11 01:00 - 20/11 00:59</option></optgroup><optgroup label="Day 53 (Fr / Sa)"><option value="8:53">20/11 01:00 - 21/11 00:59</option></optgroup><optgroup label="Day 54 (Sa / Su)"><option value="8:54">21/11 01:00 - 22/11 00:59</option></optgroup><optgroup label="Day 56 (Mo / Tu)"><option value="8:56">23/11 01:00 - 24/11 00:59</option></optgroup><optgroup label="Day 57 (Tu / We)"><option value="9:57">24/11 01:00 - 25/11 00:59</option></optgroup><optgroup label="Day 59 (Th / Fr)"><option value="9:59">26/11 01:00 - 27/11 00:59</option></optgroup><optgroup label="Day 60 (Fr / Sa)"><option value="9:60">27/11 01:00 - 28/11 00:59</option></optgroup><optgroup label="Day 61 (Sa / Su)"><option value="9:61">28/11 01:00 - 29/11 00:59</option></optgroup><optgroup label="Day 63 (Mo / Tu)"><option value="9:63">30/11 01:00 - 1/12 00:59</option></optgroup></select>
+					</div>
+				</div>
+
+				<div class="flex-nowrap fss-row fss-day-explanation">
+					<div class="flex-grow-0 fss-col fss-gw">
+						<div class="fss-header"></div>
+					</div>
+					<div class="flex-grow-1 fss-col fss-d fss-gw">
+						<div class="fss-header textCenter"><span><strong>Tu</strong> / We</span></div>
+					</div>
+					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header">&nbsp;</div>
+					</div>
+					<div class="flex-grow-1 fss-col fss-d fss-gw">
+						<div class="fss-header textCenter"><span><strong>Th</strong> / Fr</span></div>
+					</div>
+					<div class="flex-grow-1 fss-col fss-d fss-gw">
+						<div class="fss-header textCenter"><span><strong>Fr</strong> / Sa</span></div>
+					</div>
+					<div class="flex-grow-1 fss-col fss-d fss-gw">
+						<div class="fss-header textCenter"><span><strong>Sa</strong> / Su</span></div>
+					</div>
+					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header">&nbsp;</div>
+					</div>
+					<div class="flex-grow-1 fss-col fss-d fss-gw">
+						<div class="fss-header textCenter"><span><strong>Mo</strong> / Tu</span></div>
+					</div>
+				</div>
+
+				<form id="saveMatchTactics" action="/ajax.php?p=tactics&sub=change-tactic&sport=soccer" method="post" name="saveMatchTactics">
+					<div class="flex-nowrap fss-row row-hidden fss-has-matches">					<div class="flex-grow-0 fss-col fss-gw">
+						<div class="fss-header textCenter">
+							W
+						</div>
+						<div class="textCenter">
+							6
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft disabled"></i><span class="day-str">Day </span>36<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d36" class="d1">
+												<p class="date-range">
+						<strong><span>Tu, </span>3/11 01:00</strong> - <span>We, </span>4/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>03-11-2026 12:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/tr.png" width="12" height="12"><a href="/?p=team&tid=906517" title="Binboğa.F.K - Test United" class="clippable"><span class="full-name">Binboğa.F.K</span><span class="short-name">MBF</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638142645&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638142645&tid=100001" class="score-shown green">2 - 3</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>03-11-2026 20:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/tr.png" width="12" height="12"><a href="/?p=team&tid=906517" title="Test United - Binboğa.F.K" class="clippable"><span class="full-name">Binboğa.F.K</span><span class="short-name">MBF</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638142646&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638142646&tid=100001" class="score-shown green">17 - 0</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>37<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d37" class="d2">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>38<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d38" class="d3">
+												<p class="date-range">
+						<strong><span>Th, </span>5/11 01:00</strong> - <span>Fr, </span>6/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>05-11-2026 12:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=59264" title="Oldham Athletic - Test United" class="clippable"><span class="full-name">Oldham Athletic</span><span class="short-name">OAFC</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638153750&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638153750&tid=100001" class="score-shown green">0 - 14</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>05-11-2026 20:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=59264" title="Test United - Oldham Athletic" class="clippable"><span class="full-name">Oldham Athletic</span><span class="short-name">OAFC</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638153751&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638153751&tid=100001" class="score-shown green">6 - 0</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>39<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d39" class="d4">
+												<p class="date-range">
+						<strong><span>Fr, </span>6/11 01:00</strong> - <span>Sa, </span>7/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>06-11-2026 12:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=72512" title="Test United - Kåtebol FF" class="clippable"><span class="full-name">Kåtebol FF</span><span class="short-name">KFF</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638228836&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638228836&tid=100001" class="score-shown red">3 - 5</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>06-11-2026 20:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=72512" title="Kåtebol FF - Test United" class="clippable"><span class="full-name">Kåtebol FF</span><span class="short-name">KFF</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638228837&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638228837&tid=100001" class="score-shown red">7 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>40<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d40" class="d5">
+												<p class="date-range">
+						<strong><span>Sa, </span>7/11 01:00</strong> - <span>Su, </span>8/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>07-11-2026 12:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=67950" title="Test United - The Green Fairies" class="clippable"><span class="full-name">The Green Fairies</span><span class="short-name">Fair</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638259448&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638259448&tid=100001" class="score-shown green">2 - 1</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>07-11-2026 20:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/se.png" width="12" height="12"><a href="/?p=team&tid=67950" title="The Green Fairies - Test United" class="clippable"><span class="full-name">The Green Fairies</span><span class="short-name">Fair</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638259449&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638259449&tid=100001" class="score-shown red">14 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>41<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d41" class="d6">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>42<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d42" class="d7">
+												<p class="date-range">
+						<strong><span>Mo, </span>9/11 01:00</strong> - <span>Tu, </span>10/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>09-11-2026 12:00 (Monday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/lu.png" width="12" height="12"><a href="/?p=team&tid=1257214" title="Test United - United Colors of Schengen" class="clippable"><span class="full-name">United Colors of Schengen</span><span class="short-name">✫✫✫</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638285807&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638285807&tid=100001" class="score-shown green">2 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>09-11-2026 20:00 (Monday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/lu.png" width="12" height="12"><a href="/?p=team&tid=1257214" title="United Colors of Schengen - Test United" class="clippable"><span class="full-name">United Colors of Schengen</span><span class="short-name">✫✫✫</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638285808&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638285808&tid=100001" class="score-shown green">0 - 5</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>				</div><div class="flex-nowrap fss-row row-hidden fss-has-matches">					<div class="flex-grow-0 fss-col fss-gw">
+						<div class="fss-header textCenter">
+							W
+						</div>
+						<div class="textCenter">
+							7
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>43<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d43" class="d1">
+												<p class="date-range">
+						<strong><span>Tu, </span>10/11 01:00</strong> - <span>We, </span>11/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>10-11-2026 12:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Test United - Abbotsford FC" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638529496&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638529496&tid=100001" class="score-shown green">12 - 1</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>10-11-2026 20:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Abbotsford FC - Test United" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638529497&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638529497&tid=100001" class="score-shown green">0 - 4</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>44<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d44" class="d2">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>45<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d45" class="d3">
+												<p class="date-range">
+						<strong><span>Th, </span>12/11 01:00</strong> - <span>Fr, </span>13/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>12-11-2026 12:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Abbotsford FC - Test United" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541708&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541708&tid=100001" class="score-shown green">1 - 13</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>12-11-2026 20:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Test United - Abbotsford FC" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541709&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541709&tid=100001" class="score-shown green">10 - 0</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>46<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d46" class="d4">
+												<p class="date-range">
+						<strong><span>Fr, </span>13/11 01:00</strong> - <span>Sa, </span>14/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>13-11-2026 12:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Abbotsford FC - Test United" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541710&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541710&tid=100001" class="score-shown red">15 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>13-11-2026 20:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Test United - Abbotsford FC" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541711&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541711&tid=100001" class="score-shown red">0 - 13</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>47<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d47" class="d5">
+												<p class="date-range">
+						<strong><span>Sa, </span>14/11 01:00</strong> - <span>Su, </span>15/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>14-11-2026 12:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Abbotsford FC - Test United" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541713&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541713&tid=100001" class="score-shown red">4 - 3</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>14-11-2026 20:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/au.png" width="12" height="12"><a href="/?p=team&tid=165656" title="Test United - Abbotsford FC" class="clippable"><span class="full-name">Abbotsford FC</span><span class="short-name">Abd</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638541714&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638541714&tid=100001" class="score-shown red">0 - 7</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>48<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d48" class="d6">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>49<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d49" class="d7">
+												<p class="date-range">
+						<strong><span>Mo, </span>16/11 01:00</strong> - <span>Tu, </span>17/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>16-11-2026 12:00 (Monday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Palermo Football Club - Test United" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638641802&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638641802&tid=100001" class="score-shown red">9 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>16-11-2026 20:00 (Monday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Test United - Palermo Football Club" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638641803&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638641803&tid=100001" class="score-shown red">1 - 4</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>				</div><div class="flex-nowrap fss-row fss-gw-wrapper fss-has-matches">					<div class="flex-grow-0 fss-col fss-gw fss-current">
+						<div class="fss-header textCenter">
+							W
+						</div>
+						<div class="textCenter">
+							8
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>50<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d50" class="d1">
+												<p class="date-range">
+						<strong><span>Tu, </span>17/11 01:00</strong> - <span>We, </span>18/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>17-11-2026 12:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Palermo Football Club - Test United" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638687905&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638687905&tid=100001" class="score-shown green">0 - 10</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>17-11-2026 20:00 (Tuesday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Test United - Palermo Football Club" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638687906&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638687906&tid=100001" class="score-shown green">6 - 0</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>51<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d51" class="d2">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>52<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d52" class="d3">
+												<p class="date-range">
+						<strong><span>Th, </span>19/11 01:00</strong> - <span>Fr, </span>20/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>19-11-2026 12:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Palermo Football Club - Test United" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638687910&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638687910&tid=100001" class="score-shown green">0 - 8</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>19-11-2026 20:00 (Thursday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/it.png" width="12" height="12"><a href="/?p=team&tid=1237643" title="Test United - Palermo Football Club" class="clippable"><span class="full-name">Palermo Football Club</span><span class="short-name">PAL</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638687911&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638687911&tid=100001" class="score-shown green">11 - 1</a>
+				</dd>
+			</dl><a title="Tactic A" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">A</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>53<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d53" class="d4">
+												<p class="date-range">
+						<strong><span>Fr, </span>20/11 01:00</strong> - <span>Sa, </span>21/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>20-11-2026 12:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/cn.png" width="12" height="12"><a href="/?p=team&tid=569230" title="≮王者归来≯匪匪占山为王 - Test United" class="clippable"><span class="full-name">≮王者归来≯匪匪占山为王</span><span class="short-name">匪匪</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638736647&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638736647&tid=100001" class="score-shown red">2 - 0</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>20-11-2026 20:00 (Friday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/cn.png" width="12" height="12"><a href="/?p=team&tid=569230" title="Test United - ≮王者归来≯匪匪占山为王" class="clippable"><span class="full-name">≮王者归来≯匪匪占山为王</span><span class="short-name">匪匪</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638736648&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638736648&tid=100001" class="score-shown yellow">1 - 1</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div>			<i class="fa fa-circle fss-match-icon played"></i>			<i class="fa fa-circle fss-match-icon played"></i></div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d fss-current">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>54<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d54" class="d5">
+												<p class="date-range">
+						<strong><span>Sa, </span>21/11 01:00</strong> - <span>Su, </span>22/11 00:59
+					</p>
+					<div class="flex-wrap"><div class="match-wrapper flex-grow-1" data-match-hour="11">			<h6><i class="fa fa-home" aria-hidden="true"></i>  Home<span>21-11-2026 12:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="away-team-column flex-grow-0">
+					<i class="fa fa-home" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/gr.png" width="12" height="12"><a href="/?p=team&tid=103861" title="Test United - KoPiDia" class="clippable"><span class="full-name">KoPiDia</span><span class="short-name">KoPi</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638748045&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638748045&tid=100001" class="score-shown gray">x - x</a>
+				</dd>
+			</dl><a title="Tactic B" class="gradientSunriseIcon" style="cursor: default" onclick="return false;" href="">B</a></div><div class="match-wrapper flex-grow-1" data-match-hour="19">			<h6><i class="fa fa-plane" aria-hidden="true"></i>  Away<span>21-11-2026 20:00 (Saturday)</span></h6>
+			<dl class="flex-nowrap">				<dd class="home-team-column flex-grow-0">
+					<i class="fa fa-plane" aria-hidden="true"></i> <img src="nocache-958/img/flags/20/gr.png" width="12" height="12"><a href="/?p=team&tid=103861" title="KoPiDia - Test United" class="clippable"><span class="full-name">KoPiDia</span><span class="short-name">KoPi</span></a>
+				</dd>				<dd class="bold score-cell-wrapper textCenter flex-grow-0">
+					<a href="/?p=match&sub=result&mid=1638748046&tid=100001" class="score-hidden gray">vs</a>
+					<a href="/?p=match&sub=result&mid=1638748046&tid=100001" class="score-shown gray">x - x</a>
+				</dd>
+			</dl>					<div class="fixtureTacticListWrapper">
+						<label>Switch Tactic:</label>
+								<span class="help_button_placeholder" style="display: none">
+			<a class="help_button" href="#" onclick="location.href = '?p=tactics&sub=availability&reference_type=&reference_id=&check_tactic=' + $('#1638748046').val();; return false">
+				<span class="help_button_wrapper">
+					<span class="help_button_text">!</span>
+				</span>
+			</a>
+		</span>
+						<select autocomplete="off" id="1638748046" name="a:1638748046:b::" onchange="saveMatchList(this)">
+				<option title="A" value="a" name="a:1638748046:b">A</option>				<option title="B" value="b" name="a:1638748046:b" selected="selected">B</option>						</select>
+						<input autocomplete="off" type="checkbox" disabled="disabled" style="visibility: hidden">					<span id="cbs_1638748046" class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-check-square fa-stack-1x fa-inverse"></i>
+						<i class="fa fa-minus-square fa-stack-1x fa-inverse"></i>
+					</span>
+					</div></div>			<i class="fa fa-circle fss-match-icon booked"></i>			<i class="fa fa-circle fss-match-icon booked"></i></div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>55<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d55" class="d6">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>56<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d56" class="d7">
+												<p class="date-range">
+						<strong><span>Mo, </span>23/11 01:00</strong> - <span>Tu, </span>24/11 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-plus-o fss-icon-day-active" aria-hidden="true"></i> No friendlies have been booked on this day yet.</p>					<div class="fss-invitations-preview">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i><span>&nbsp;&nbsp;</span>
+						<span>In: </span><a href="#">0</a><span>&nbsp;&nbsp;Out: <a href="#">0</a></span>
+					</div>
+						</div>
+					</div>				</div><div class="flex-nowrap fss-row rounded-bottom">					<div class="flex-grow-0 fss-col fss-gw">
+						<div class="fss-header textCenter">
+							W
+						</div>
+						<div class="textCenter">
+							9
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>57<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d57" class="d1">
+												<p class="date-range">
+						<strong><span>Tu, </span>24/11 01:00</strong> - <span>We, </span>25/11 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-plus-o fss-icon-day-active" aria-hidden="true"></i> No friendlies have been booked on this day yet.</p>					<div class="fss-invitations-preview">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i><span>&nbsp;&nbsp;</span>
+						<span>In: </span><a href="#">0</a><span>&nbsp;&nbsp;Out: <a href="#">0</a></span>
+					</div>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>58<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d58" class="d2">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>59<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d59" class="d3">
+												<p class="date-range">
+						<strong><span>Th, </span>26/11 01:00</strong> - <span>Fr, </span>27/11 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-plus-o fss-icon-day-active" aria-hidden="true"></i> No friendlies have been booked on this day yet.</p>					<div class="fss-invitations-preview">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i><span>&nbsp;&nbsp;</span>
+						<span>In: </span><a href="#">0</a><span>&nbsp;&nbsp;Out: <a href="#">0</a></span>
+					</div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>60<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d60" class="d4">
+												<p class="date-range">
+						<strong><span>Fr, </span>27/11 01:00</strong> - <span>Sa, </span>28/11 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-plus-o fss-icon-day-active" aria-hidden="true"></i> No friendlies have been booked on this day yet.</p>					<div class="fss-invitations-preview">
+						<i class="fa fa-thumbs-up" aria-hidden="true"></i><span>&nbsp;&nbsp;</span>
+						<span>In: </span><a href="#">0</a><span>&nbsp;&nbsp;Out: <a href="#">0</a></span>
+					</div>
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>61<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d61" class="d5">
+												<p class="date-range">
+						<strong><span>Sa, </span>28/11 01:00</strong> - <span>Su, </span>29/11 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-times-o fss-icon-day-future" aria-hidden="true"></i> Friendlies can only be booked up to 7 days in advance.</p>
+						</div>
+					</div>					<div class="flex-grow-0 fss-d fss-disabled">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i>62<i class="fa fa-caret-right fa-lg floatRight"></i>
+						</div>
+						<div id="d62" class="d6">
+							&nbsp;
+						</div>
+					</div>					<div class="flex-grow-1 fss-col fss-d">
+						<div class="fss-header textCenter">
+							<i class="fa fa-caret-left fa-lg floatLeft"></i><span class="day-str">Day </span>63<i class="fa fa-caret-right fa-lg floatRight disabled"></i>
+						</div>
+						<div id="d63" class="d7">
+												<p class="date-range">
+						<strong><span>Mo, </span>30/11 01:00</strong> - <span>Tu, </span>1/12 00:59
+					</p>
+					<p class="fss-empty-matchday-description"><i class="fa fa-calendar-times-o fss-icon-day-future" aria-hidden="true"></i> Friendlies can only be booked up to 7 days in advance.</p>
+						</div>
+					</div>				</div>
+				</form>
+			</div>			<ul id="fss-ui-colors-explanation">
+				<li><i class="fa fa-circle fss-match-icon played" aria-hidden="true"></i> Match played</li>
+				<li><i class="fa fa-circle fss-match-icon booked" aria-hidden="true"></i> Match booked</li>
+				<li><i class="fa fa-circle fss-match-icon available" aria-hidden="true"></i> Opponent available</li>
+				<li><i class="fa fa-circle fss-match-icon unavailable" aria-hidden="true"></i> Opponent unavailable</li>
+			</ul>
+		</div><script type="text/javascript">function validateTactic(){}</script>		<br>
+		<div id="my_challenges">
+			<div id="matches_in_out_tabs">
+	<ul>
+		<li><a href="#matches_in_wrapper">Incoming Challenges<span></span></a></li>
+		<li><a href="#matches_out_wrapper">Outgoing Challenges<span></span></a></li>
+	</ul>
+
+	<div id="matches_in_wrapper" style="display: none; position: relative">
+		<h2 id="matches_in_title" style="padding: 0; margin: 0">&nbsp;</h2>
+		<div style="padding: 6px 0; font-style: italic">The list is empty</div>
+	</div>
+	<div id="matches_out_wrapper" style="display: none; position: relative">
+		<h2 id="matches_out_title" style="padding: 0; margin: 0">&nbsp;</h2>
+		<div style="padding: 6px 0; font-style: italic">The list is empty</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#matches_in_out_tabs").tabs();
+</script>
+		</div>
+	</div>
