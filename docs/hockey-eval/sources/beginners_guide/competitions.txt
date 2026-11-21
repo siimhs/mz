@@ -1,0 +1,114 @@
+Fixtures and Results
+
+Friendly matches
+
+Youth Leagues
+
+Cups
+
+Friendly Leagues
+
+Scout Matches and Challenges
+
+Chapter III: Competitions
+
+There are many ways to enjoy ManagerZone and many ways to test the calibre of your team. Competitions offer the chance to play against friends and rivals in a variety of formats. Winning Leagues, Cups and Challenges allows you to show your managerial skills, earn valuable Team Money and build your reputation in ManagerZone.
+
+Fixtures and Results
+
+Your upcoming matches appear in the Fixtures screen. Here, you can view your opposition, the competition name and type, and the time of each match. You can also choose which of your Tactics to use in each match, using the drop down selector alongside the fixture. Ticking the “Make Default ” box applies your chosen Tactic to all matches in that competition.
+
+The Results screen lists all your completed matches (you can choose to view them with or without the individual scores visible). Simply select a viewing icon (see above) to watch one.
+
+Friendly matches
+
+Friendlies can be arranged by inviting another team to a home and/or away match on an available game day. It is possible to play friendlies on all days except league match days (the second and sixth day of each gameweek) with a maximum of two matches per game day.
+
+Friendlies allow managers to test their tactical skill against other teams in a low-pressure environment. These matches do affect players’ experience and form levels, and any injuries they suffer apply to all competitions. A maximum of two home matches per gameweek will earn team money for the club.
+
+You can challenge another manager to a friendly either by visiting their profile and clicking on the “Invite to Friendly” link, or find a user to challenge by clicking the icon in the header panel. You can also accept another manager’s friendly challenge by clicking on the .
+
+If you feel that booking friendlies manually is too much of a hassle, you can allow your club secretary to find regular opponents and arrange friendlies based on your instructions by opting into the Friendly Pool.
+
+Back to top
+
+Youth Leagues
+
+Matches Youth Leagues
+
+Youth Leagues focus on developing younger Players in your squad. ManagerZone offers three types of age restricted Youth Leagues: U23, U21 and U18. As their names suggest, these only allow Players under 23, 21 or 18 to participate.
+
+Due to their age restrictions, Youth Leagues tend to level the playing field between more established Clubs and newer ones. They also offer a great opportunity for Managers to raise a new generation of talented Players, who will eventually be part of their Senior squad.
+
+Youth Leagues share the same structure as senior Leagues. They contain 12 teams that play each other twice, at a rate of two matches per week. At the end of the season, teams are promoted and relegated, with prize money being handed out according to final placement.
+
+These competitions are very popular with supporters and Team Money is earned from every Youth League you participate in.
+
+Please note that if you select an over-age Player as part of your Tactic for a Youth League match, you will automatically forfeit that match by a walkover, with a 0-5 score.
+
+Youth Leagues require a Season Ticket (only one season ticket is needed to participate in up to three Youth Leagues), which can be purchased using Power Tokens.
+
+Back to top
+
+Cups
+
+Matches Cups
+
+Cups are competitions that Managers can register their teams to participate in. There are three types of Cups (see below).
+
+| Cup Type | Creation | Rewards |
+
+| Official Cup | By Crew | Team Money, ranking points, prestige, trophies |
+
+| Prized Cup | By Crew | Limited Team Money, Power Tokens, prestige, trophies |
+
+| Friendly Cup | By Managers | - |
+
+You can quickly navigate to the Cups page by clicking the icon. Here you will see your outstanding invitations, a page with information on Friendly, Official and Prized Cups and the history of the Cups you have entered in the past. This is also where you can create and customise new Friendly Cups and invite Managers to join them.
+
+All Cups can be played in a variety of formats (e.g. group stages and playoffs or playoffs only) and can have age restrictions added by the creator.
+
+Invitations can be restricted using various criteria, including country, division or the season in which a team joined ManagerZone.
+
+On a weekly basis you will receive invitations from Crew to join Official Cups and Prized Cups. Club Members are able to join Official Cups for free and receive a discount to join Prized Cups.
+
+Managers can create Friendly Cups and invite up to 1024 participants. Whenever you are invited to join a cup, the icon in the header panel will light up in yellow.
+
+If you do not want to wait for a Cup invitation or to create your own, you can always sign up with a Cup Pool. The Cup Pool will accept and automatically add you to a Cup along with other Teams in the Pool and your Cup will start as soon as it is full. Each Season you are entitled to 1 free entry to the Cup Pool, or 3 free entries if you support the game as a Club Member .
+
+Back to top
+
+Friendly Leagues
+
+Matches Friendly League
+
+Friendly Leagues are custom Leagues created by Managers. They can have between 4 and 16 participants, be age restricted and their schedules offers lots of variety, with the possibility of multiple matches each day.
+
+Friendly Leagues are a great way to compete and test your team’s strength against other Clubs. Alternatively you can choose not to participate in your League - you can simply create it on behalf of your friends or Federation. Friendly Leagues can be created in a standard format, or they can include a prize pool with 40% of the combined entry fee being awarded to the top four teams at the end.
+
+If you do not want to create your own Friendly League, or wait for an invitation, you can join a Friendly League Pool of your choosing. The Pool will automatically accept and add you to a Friendly League along with other teams in the Pool and those Friendly Leagues will then start as soon as 16 Teams have joined.
+
+If another Manager invites you to participate in their Friendly League, the icon will light up in the header panel. By clicking on it you will be directed to the Friendly Leagues home page, where you can view and accept existing invitations, see your current and finished Friendly Leagues, or browse all running Friendly Leagues.
+
+Team Money is awarded for the first five Friendly League matches you play each week.
+
+Back to top
+
+Scout Matches and Challenges
+
+Matches Challenges
+
+If you cannot wait for League and Cup matches, you also have the option to play instant matches. You can send your Chief Scout to any ManagerZone team to produce a Scout Match report or you can challenge the Top teams, the National Team and Crew special team. Club Members receive up to 15 free Scout Matches or Challenges per month.
+
+Challenges can be found in the Matches menu while Scout Matches can be arranged by going to a Manager’s profile and clicking on the Scout Match () link.
+
+Scout Matches and Challenges are a great way of testing varying Tactics against the same team (including your League opponents) and gaining a better understanding of your Players.
+
+Team Money is awarded for the first five Scout Matches or Challenges you play each week.
+
+Back to top
+
+[link:/?p=beginners_guide&chapter=your_first_season]
+Next Chapter: Your first season
+[link:/?p=beginners_guide&chapter=manager_basics]
+Previous Chapter: Manager Basics

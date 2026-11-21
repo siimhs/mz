@@ -1,0 +1,44 @@
+
+A09: Staff
+
+Introduction
+
+Coaches use their expertise to improve your players' training efficiency in certain attributes. Like players, they have different skill levels in each attribute, which are represented by skill pucks. Their effects are magnified if their skill level in the attribute they are teaching is greater than that of the players under their guidance. To attempt to hire a coach, offer a contract to one on the Available Coaches list.
+
+Club boards stress the importance of signing Coaches and therefore help all new Managers sign one, ready to assist with training from day one. This Coach only has a 14-day contract however, so make sure you renegotiate with him in time if you want him to stay!
+
+Choosing an Available Coach
+
+To attempt to hire a coach on the Available Coaches list, select AVAILABLE COACHES, review the profiles on display and click on the coach you would like to start negotiating with. Next, offer a contract to the coach (see below). He will let you know if he has decided to enter into negotiations with your club in the Comments From Coach section of his profile on the Current Negotiations screen. Your initial offer will act as the first of three rounds of negotiations.
+
+Negotiating with a Coach
+
+Once you have decided to negotiate with a coach, his profile will appear in the Current Negotiations screen. You can negotiate with up to three coaches at any one time.
+
+To being negotiating a contract, click on a coach and select both the salary and length of their proposed contract.
+
+You have only five minutes to close the deal, so make sure your offers are within his expected range, shown in brackets. That doesn't necessarily mean, however, that you must offer figures at the upper end of his expectations – prospective coaches consider more than just finances when they weigh up job opportunities.
+
+When you are happy with the offer, click SEND OFFER.
+
+There are three rounds of negotiations (initial contract offers to Available Coaches count as the first round). After each round the coach will provide their feedback on your latest offer. However, you do not necessarily have to amend your initial offer (especially if they are happy with it).
+
+The round you are currently on is highlighted at the top-right of the coach's profile. After the third round, the coach will decide whether or not he wishes to join your club and will post his decision in the Comments From Coach section of his profile on the Current Negotiations screen. If he decides to sign the contract, he will start working for your club the next day.
+
+My Staff Screen
+
+All the coaches you've hired are listed in the My Staff screen. Their profiles show their age, class (a general indication of their coaching ability), skill level in each attribute, salary and the remaining length of their current contract. To release a coach from his contract, click the RELEASE icon. Bear in mind that when you release a coach, you will have to pay 25% of his remaining salary. To renew a contract, click the RENEGOTIATE icon (see below).
+
+Renegotiating a Contract
+
+If one of your current coaches is in the last 14 days of his contract, you can offer him a new one before the current one expires by clicking the RENEGOTIATE icon. Renegotiating a coach's contract works in exactly the same way as negotiating one (see above).
+
+If you know you want to keep the coach indefinitely, you can use the AUTO RENEW feature. When a coach's contract is set to AUTO RENEW it will automatically renew with the same conditions as the current contract each time it expires.
+
+Using Coaches
+
+When a coach joins your club, he is automatically placed in a zone on one of your Training Fields (senior or youth). To place him into your desired attribute zone, use the mouse to drag him (see [link:./?p=manual_faq&cat_id=729] Training). Once placed into one of the ten attribute zones, he will begin training those Players currently learning that attribute. However, he can only train up to 7 Players at a time (9 in the Youth Training Ground). If there are more players than this in the same zone, some will miss out on his guidance. Note that if two coaches are placed in the same zone, only one will actively train Players.
+
+Youth Coaching
+
+Coaches can be used to train both senior and [link:./?p=manual_faq&cat_id=732] youth players. To move a coach from the senior Training Field to the youth one, drag him off the senior Field, click the YOUTH button above it and then drag him back on, placing him in your desired zone on the youth Field (see [link:./?p=manual_faq&cat_id=729] Training). Note that coaches can only help out on one Field at a time.

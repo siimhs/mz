@@ -1,0 +1,18 @@
+
+002: Notifications
+
+With the help of notifications you will easily keep track of what is happening in the game. There are three different types of notifications that can be viewed by clicking on the appropriate icon in the header panel. The icons will light up when a new unread notification appears. Notifications will remain in the list for seven days.
+
+Game Notifications
+
+The person-shaped icon in the header panel gives a quick view of the latest news concerning the game in general as well as notifications regarding your Federations. By clicking one of the items a popup window with the complete text will appear.
+
+Message Notifications
+
+The globe-icon in the header panel gives access to messages that is being posted on the message boards of the competitions your teams participate in and your federations. By clicking a message the whole conversation will open in a popup window where you can also immediately post an answer.
+
+Club Notifications
+
+The fax-icon in the header panel gives access to important notifications regarding your team. This could be when your team is added to a Pool Friendly League or a Pool Cup, when a Friendly Pool match is booked, or when a stadium upgrade is finished. Here is also where you get an notification whenever a Coach contract is about to expire, a Player is about to retire or when your own or a watched* Player is put on the Transfer Market.
+
+* Watched Player is a player from your own League or from your shortlist.

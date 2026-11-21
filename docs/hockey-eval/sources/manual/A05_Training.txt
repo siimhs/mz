@@ -1,0 +1,274 @@
+
+A05: Training
+
+Introduction
+
+There are three main ways to improve your team in ManagerZone: buying new players, bringing promising youngsters through from your Academy, and improving your current squad by training them. Players can train in any of their ten core attributes: Play Intelligence, Power, Skating, Passing, Quickness, Shooting, Keeping, Puck Control, Checking and Stamina. Form cannot be influenced by training. Unless they are at Training Camps (see below), players train on Monday, Tuesday, Thursday, Friday and Saturday.
+
+Player Attributes
+
+The skill a player shows in each attribute is indicated visually by skill pucks. He can have between 0 and 10 pucks and this total can increase or decrease at different rates depending on his training efficiency, injuries, age and how close he is to reaching his limit in an attribute (an event known as maxing). The ten trainable attributes are:
+
+Play Intelligence: A Player's ability to find good positions on the ice, both when attacking and defending.
+
+Power: A Player's ability to make, and withstand, tackles.
+
+Skating: Skating improves a Player's balance and helps them turn faster on the ice.
+
+Passing: A player with good Passing skills is more likely to retain possession for his team as he has an increased likelihood of finding his team-mates with accurate passes.
+
+Quickness: How fast a player can skate, both with and without the puck.
+
+Shooting: Players with high Shooting skills are more likely to get into goal scoring positions, and to exploit them.
+
+Keeping: Although good goalkeepers need other attributes as well, without high Keeping skill levels they will be less effective shot stoppers.
+
+Puck Control: Players with good Puck Control are more likely to trap incoming passes and are less likely to lose possession once they have the puck.
+
+Checking: A Player's ability to apply pressure to opponents and win the puck in 1 vs. 1 situations.
+
+Stamina: A player's physical endurance. Those with high Stamina skill levels are less likely to tire towards the end of games.
+
+Form
+
+This attribute increases with the number of matches a player takes part in. However, if a player plays too many [link:./?p=manual_faq&cat_id=736] League and [link:./?p=manual_faq&cat_id=738] Friendly matches, it will start to decrease as a result of exhaustion (other games can only positively affect Form). For more information on how to track your players' Form, see "Icons and Buttons" in [link:./?p=manual_faq&cat_id=727] Squad.
+
+Match type | Form influence |
+
+Senior League (including play-off matches) | Yes* |
+
+Youth League (U18/U21/U23) | Yes* |
+
+World League | Yes* |
+
+Prize or Friendly Cup | Only positive** |
+
+Friendly League | Only positive** |
+
+Friendly | Yes |
+
+Official Cup | Only positive** |
+
+* = The two first league matches (regardless of type) will influence the players' form.
+
+** = A player that have the status tired will not loose form, but a player that needs to play will improve his form.
+
+Partial Skill Bar
+
+In matches Players benefit from each part of their skill, not only the full skill pucks displayed on the Player's card or the Squad Page.
+
+When Players train and improve in the Attribute they are training, each partial skill is aggregated and as they reach or pass a whole puck your Head of Training and Club Secretary note that improvement and an additional puck is displayed.
+
+In addition to this some information is shown through the Partial Skill Bar. This is a visual representation of a fraction of a skill and is rounded down to the nearest quarter.
+
+Every time a Player improves in a Skill, he will use the improvement in future matches, sadly the same goes when a Player deteriorates in a Skill.
+
+Whilst not showing every level of detail, the partial skill display help differentiate between the different levels within a whole puck.
+
+Training Players
+
+To train a Player, head to the Training Field screen, drag his shirt into the zone of the Field that corresponds to the attribute you wish him to learn and click SAVE. You can view his current attribute skills by hovering over his shirt and see how he fits into your tactics by selecting a Tactics Slot from the dropdown above the Field.
+
+There are 10 zones on the Training Field, each representing a different attribute. The Senior Training Field has a limit of 60 Players.
+
+Training Youth Players
+
+To train your youth Players, click the YOUTH button above the Training Field. Youth training works in the same way as senior training, although the youth Training Field has a limit of 32 Players (equal to the maximum number of Youths). As youth Players start from a lower skill base and come to your club eager to learn, their skills will generally improve more quickly than those of senior Players.
+
+Training Boost
+
+Every time a Player is moved to a new zone on the Training Field, he receives a short-term boost in that attribute, which is represented by a small green puck next to his skill pucks.
+
+Deteriorations
+
+At the age of 30 the Players will start to deteriorate in the affected attributes (Speed and Stamina). The deterioration will start slowly, and will increase by every Season based on the Player's age. This means Players who start to deteriorate at 28 will do so slower than Players starting at age 30. The deterioration rate will be at its peak when a Player turns 34. A Player can lose a maximum of 2 pucks in each attribute affected by deterioration (a total of 4 pucks).
+
+Each training day, one of the two affected attributes will be picked at random and the Player will then deteriorate in that attribute if possible. If he's already at or below his new maximum level, he will not deteriorate at all that day.
+
+Players with maxed out attributes who start deteriorating will quickly lose a puck in both attributes. While this may look dramatic, the attribute is still very close to the previous level and the Player will performance almost as good on the ice.
+
+The SIM recognise the partial skills and Players benefit from each part of the skill.
+
+Training during deterioration
+
+During the deterioration period, you will be able to gain skill balls in attributes other than Quickness and Stamina. You will then see two entries in the daily Training Report, one for the deterioration and one for any improvement in the other skill trained. It will not help the Player if you try to train him in Quickness and Stamina at this time.
+
+Training Reports Screen
+
+To check how well a Player is training, view his training efficiency meter in the Training Reports screen. This shows how quickly he is improving (green segments) or deteriorating (red segments) in his currently-trained attribute. The more segments on the meter, the greater the rate of change. When a Player has improved enough to reach the next skill level in an attribute, a puck appears on his Training meter and a blue puck is shown next to his total skill balls. When he has deteriorated enough for his attribute skill level to decrease, a red puck is shown next to his total skill balls. Note that each daily change is reflected in a Player's match performances – not just when his number of skill pucks changes.
+
+Sorting Training Results
+
+By default, your squad's training results are based on the current day and sorted by the level of improvement or degradation. Click on one of the top screen options to view another day's – or a summary of the current week's – results. To sort by Player name, squad number, the currently-trained attribute, total skill balls or training type choose the relevant option just below the screen's top menu. You can also limit your results to Players on the Training Field and Players at Training Camp.
+
+Training Camp Screen
+
+One way to increase a player's training efficiency is to send him to a Training Camp. Camps employ intensive training sessions that concentrate on multiple attributes over the course of 1-5 weeks. There are four categories of regular Training Camps; Defender, Center, Forward and Wild Card (a random package from any of the other categories). In addition to the regular Camps there are up to three special Training Camp offers;
+
+Youth Package
+
+Tries to pinpoint the most probable role for your Youth Player and trains him in three useful skills for that role.
+
+Youth Conditioning Camp
+
+Allows Youth Players to accelerate their training and catch up with training they have missed during their first season (before they arrived at your team). This package will appear on Day 7 of the Season and remain to the Season end. If you are a new Manager and have been playing 14 days (or less), you are allowed to send up to 21 new Youths.
+
+Form Package
+
+The Form Package give players the option to instantly receive Form 7 and the status "match fit". Players that already have Form 7 or better cannot use the package. The package cost [link:./?p=manual_faq&cat_id=759] Power Tokens and can be bought once per Season. The package can improve the Form for a maximum of 16 players.
+
+Exchange Training Camp
+
+Once per season you have the possibility to purchase the Exchange Training Camp feature. This feature will allow you to exchange the active Training Camp for the selected player, with any of the Training Camps in ManagerZone. You can buy 1 Package per Season that each include 6 players. Unused spots will be available the following seasons.
+
+The cost of sending a Player to a Training Camp varies, depending on his salary and how many weeks his placement is due to last. Players train every day except Sunday. Players cannot attend more than one regular Camp or Youth Package per season (Players who have been to a Camp during the current season are indicated by an orange cone). A Player can however attend a Youth Conditioning Camp and a regular Training Camp or Youth Package.
+
+Regular Training Camp offers rotate twice per week, every Monday and Friday, and you can always preview the upcoming four packages to better plan your Players training. The existing training camps are presented in the tables below.
+
+Forward Packages:
+
+Number | Attributes trained |
+
+1 | Power, Shooting, Puck Control |
+
+2 | Quickness, Skating, Shooting |
+
+3 | Power, Shooting, Checking |
+
+4 | Passing, Shooting, Skating |
+
+5 | Stamina, Quickness, Power |
+
+6 | Passing, Puck Control, Play Intelligence |
+
+7 | Shooting, Skating, Play Intelligence |
+
+8 | Shooting, Skating, Puck Control |
+
+9 | Passing, Puck Control, Skating |
+
+10 | Shooting, Power, Play Intelligence |
+
+11 | Shooting, Passing, Power |
+
+12 | Shooting, Passing, Quickness |
+
+13 | Shooting, Quickness, Play Intelligence |
+
+Center Packages:
+
+Number | Attributes trained |
+
+1 | Shooting, Puck Control, Play Intelligence |
+
+2 | Passing, Puck Control, Power |
+
+3 | Play Intelligence, Skating, Puck Control |
+
+4 | Stamina, Quickness, Play Intelligence |
+
+5 | Power, Quickness, Play Intelligence |
+
+6 | Passing, Power, Checking |
+
+7 | Checking, Puck Control, Quickness |
+
+8 | Checking, Power, Stamina |
+
+9 | Power, Puck Control, Play Intelligence |
+
+10 | Checking, Shooting, Passing |
+
+11 | Power, Puck Control |
+
+Defender Packages:
+
+Number | Attributes trained |
+
+1 | Power, Checking, Play Intelligence |
+
+2 | Shooting, Checking, Quickness |
+
+3 | Power, Skating, Checking |
+
+4 | Checking, Skating, Stamina |
+
+5 | Checking, Play Intelligence, Puck Control |
+
+6 | Checking, Skating, Play Intelligence |
+
+7 | Checking, Passing, Power |
+
+8 | Checking, Skating, Shooting |
+
+9 | Checking, Puck Control, Shooting |
+
+10 | Checking, Puck Control, Power |
+
+11 | Checking, Puck Control, Skating |
+
+12 | Checking, Power |
+
+13 | Checking, Stamina, Puck Control |
+
+14 | Stamina, Quickness, Checking |
+
+Wild Card Packages:
+
+Number | Attributes trained |
+
+1 | Power, Stamina, Skating |
+
+2 | Stamina, Quickness, Skating |
+
+3 | Power,Skating, Quickness |
+
+4 | Stamina, Quickness |
+
+5 | Keeping, Stamina Play Intelligence |
+
+6 | Stamina, Keeping, Quickness |
+
+7 | Stamina, Passing, Keeping |
+
+Sending Players to Training Camps
+
+You can send up to 15 Players (including Youth Players) to the regular Training Camps or Youth Package at one time. While they are there, they won't be able to take part in any of your matches (they are automatically removed from all of your Tactics Slots on entry - see [link:./?p=manual_faq&cat_id=728] Tactics). Note that Players sent to Youth Conditioning Camp may still play matches while attending these Camps.
+
+For the Youth Conditioning Camp other limits are applied. You can send up to 15 new Youths to the Youth Conditioning Camp per season. Players sent to Youth Conditioning Camp may play in matches while attending the Camps.
+
+To send a Player to a Training Camp, select him from one of the dropdowns on the Training Home screen (those Players who have already attended one in the current season are not available for selection), choose how many weeks you want to send him for, review the cost and click SEND TO TRAINING CAMP. While he is away, his profile will include the number and icon of the Training Camp package he's undertaking.
+
+Recalling Players from Training Camps
+
+If you wish to recall a player from a Training Camp before it has ended, click his REPORT-icon in the Training Camp screen and then select CANCEL CAMP. Although he will not "lose" any of the new skills he has picked up, you will not receive a refund for withdrawing him early.
+
+Free Youth places on the Training Camps
+
+As your Club's Chairman really want you to focus on your Youth Academy; your team is allowed 8 free placements at any time.
+
+Training Efficiency in Training Camps
+
+The longer a player stays at a Training Camp, the more efficient his train will become. Training efficiency increases as follows:
+
+Week | Training efficiency |
+
+1 | 100% (normal training efficiency x 2.0) |
+
+2 | 150% (normal training efficiency x 2.5) |
+
+3 | 200% (normal training efficiency x 3.0) |
+
+4 | 250% (normal training efficiency x 3.5) |
+
+5 | 300% (normal training efficiency x 4.0) |
+
+Training Graphs
+
+[link:./?p=manual_faq&cat_id=758] Club Members can study their players' training histories with the Training Graphs feature.
+
+Training Graph data is available from December 25th, 2011, and includes players' histories with previous clubs.You may also view a player's Training Graph on the Transfer Market if the selling manager is a Club Member and chooses to provide it.
+
+The Training Graph is the only place where you can check whether a Player have attended any of the special Training Camps; Intensive Training Camp or Youth Conditioning Camp.
+
+On the Training Graph page, select a player using the dropdown menu located in the top left corner of your screen. You can zoom in and out on the Graph for varied levels of detailed information.

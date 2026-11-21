@@ -1,0 +1,30 @@
+
+B04: Friendlies
+
+Introduction
+
+Friendlies are games directly arranged between two managers. They have a number of benefits including testing out [link:./?p=manual_faq&cat_id=728] tactics, maintaining player Form (see "Form" in [link:./?p=manual_faq&cat_id=729] Training) and making extra money for your club (see "Income" in [link:./?p=manual_faq&cat_id=746] Finances). You can invite other managers to Friendlies or accept invites from them. Once a Friendly has been booked, it cannot be cancelled. Up to two Friendlies can be played every day apart from [link:./?p=manual_faq&cat_id=736] League match days (Wednesdays and Sundays) but ticket sale income can only be received from the first two home Friendlies of each week.
+
+Arranging a Friendly
+
+Managers can invite any team in ManagerZone to a Friendly by clicking the INVITE TO FRIENDLY-icon on its manager's [link:./?p=manual_faq&cat_id=753] Profile, selecting whether to arrange a home or away match, choosing a date and time and clicking INVITE TO FRIENDLY. The prospective opponent's current Friendly matches are shown at the bottom of the screen.
+
+Once an invite has been sent, you can see it by clicking FRIENDLY INVITES in the Friendlies sub-menu and looking at the Sent Invites section. Until it has been accepted, you can cancel it by clicking the DUSTBIN-icon next to it. When it is accepted, it is transferred to the Friendly Fixtures screen and added to your [link:./?p=manual_faq&cat_id=735] fixture list.
+
+Friendly Etiquette
+
+The best way to ensure your invitation is going to be accepted is to send it to a friend or find a manager requesting invites in the Friendly Matches forum (see "Forum Categories" in [link:./?p=manual_faq&cat_id=757] Forum). Remember that most managers will only accept doubles (home and away matches) as ticket sale income can only be earned from home matches. To test yourself against other teams in the game, take them on in a [link:./?p=manual_faq&cat_id=741] Challenge or an [link:./?p=manual_faq&cat_id=742] Instant Match.
+
+Accepting a Friendly
+
+When another manager has invited you to a Friendly, the THUMBS UP-icon will light up in the Shortcut Bar at the top-right of the screen (see [link:./?p=manual_faq&cat_id=721] Navigating ManagerZone). To view the invitation, click the icon or click FRIENDLY INVITES in the Friendlies sub-menu and check the section at the top of the screen. To accept a Friendly invite, click the THUMBS UP-icon next to the match (to decline one, tick the box to its right and click the THUMBS DOWN-icon).
+
+Friendly Match Pool
+
+Allow your Club Secretary to find regular opponents and arrange Friendly Matches based on your instructions. Your Club Secretary will try to find fixtures for the first two weeks and then daily, on a rolling basis so your Friendly Match fixtures are always booked two weeks in advance.
+
+The matches will be played against other teams in the pool and are always booked as a double, with both played on the same day.
+
+To ensure your Club Secretary remembers to book the matches, your Chairman asks you to contribute 1 Power Token per pair of matches booked. The Power Tokens are deducted when the matches are scheduled and will continue to be deducted if you remain in the Pool, as new matches are scheduled.
+
+If you change your instructions to your Club Secretary, these will only apply to new fixtures. Once scheduled, the match cannot be cancelled, although you can always change your tactics.

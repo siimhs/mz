@@ -1,0 +1,4 @@
+
+A07: Shortlisting Players
+
+The Shortlist screen allows you to keep track of all the players that interest you. To add a player to the list, click the SHORTLIST icon on his profile. You can store up to 25 players ( [link:./?p=manual_faq&cat_id=758] Club Members can store 50) in order to monitor their progress and, for instance, find out when they have been placed on the transfer market (see [link:./?p=manual_faq&cat_id=730] Transfers). If they have, their transfer details will appear along with a new PLACE BID icon. To remove a player from the list, click the REMOVE icon on the player's profile.

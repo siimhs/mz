@@ -1,0 +1,24 @@
+
+C09: Profile
+
+Introduction
+
+Your Profile screen displays information about you as a user. To alter it, upload an image or change the e-mail address and password associated with your account, click EDIT PROFILE in the Profile sub-menu. It's vital that you keep your e-mail address up-to-date as ManagerZone use it to communicate with you if you forget your password. All of your details are stored securely and not sent to any third parties.
+
+Any sensitive information you add (e.g. mobile phone number and personal e-mail/mail addresses) will not be published on the site and you can further reduce the amount of data you share by ticking the PLEASE MAKE MY PROFILE ANONYMOUS tick box. Note that it is not possible to change your Username and that this, as well as your gender and nationality is always shown, even on anonymous Profiles. In the Edit Profile screen you can also decide whether or not you wish to receive ManagerZone newsletters.
+
+Gameplay Settings Screen
+
+The Gameplay Settings screen allows you to change your gameplay preferences, including graphics quality, the renderer used, screen resolution, colour depth and whether you want to play ManagerZone in a window or in full screen mode. If you have ManagerZone football and hockey teams, you can also decide which appears when you first login to the game.
+
+Change Theme Screen
+
+ManagerZone can be enjoyed in a number of different themes. Select your preference here and click SAVE.
+
+Change Sport Screen
+
+Switch between your hockey and football teams using the links on this screen. Alternatively, click on the permanent link in the game's [link:./?p=manual_faq&cat_id=721] Header.
+
+Other Managers' Profiles
+
+You can view a fellow manager's Profile by clicking on their Username or selecting PROFILE in the menu on the left of their Team screens. It will display all the information the manager has agreed to show as well as providing links that allow you to add or remove them as a [link:./?p=manual_faq&cat_id=752] Friend, write in their [link:./?p=manual_faq&cat_id=754] Guestbook, invite them to a [link:./?p=manual_faq&cat_id=738] Friendly or take them on in an [link:./?p=manual_faq&cat_id=742] Instant Match.

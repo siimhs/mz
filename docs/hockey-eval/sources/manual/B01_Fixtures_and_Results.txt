@@ -1,0 +1,52 @@
+
+B01: Fixtures and Results
+
+Fixtures Screen
+
+You can view all your upcoming games in the Fixtures screen, which displays your opposition, the competition you're playing in, and the kick-off time of each match. Use the dropdown at the top of the screen to sort between different competitions, use the radio buttons to the right of each fixture to set your tactics and use the tick boxes next to them to make those tactics default ones for the selected competition (see "Applying Tactics to Fixtures and Competitions" in [link:./?p=manual_faq&cat_id=728] Tactics). Note that it is possible for your team to play more than one match at a time.
+
+When a fixture's kick-off time has passed, for a limited period you will be able to view the match by clicking one of the viewing buttons next to it (see "Viewing a Match", below). Then it will be transferred to the Results screen, where you will also be able to view it. You will be notified when a match has just been played by the ball icon lighting up in the Shortcut Bar at the top-right of the screen (see [link:./?p=manual_faq&cat_id=721] Navigating ManagerZone). Clicking it will take you to the Match Report screen (see below).
+
+Results Screen
+
+The Results screen provides the same information as the Fixtures screen, with the addition of viewing buttons for all the matches (see "Viewing a Match", below). By default the Results (Hidden) screen is shown. This removes the actual results from the screen so as not to give away scores before viewing matches. To view all the scores, select RESULTS (VISIBLE) in the Results sub-menu.
+
+Viewing a Match
+
+Managers are offered three methods of viewing played games: via a Match Analyzer tool, using 2D top-down coverage or through ManagerZone's 3D engine.
+
+To view the Match Analyzer, click the A button. Its simple graphics allow you to concentrate on how well your tactics are being put into practice on the pitch. You can use a suite of tools to rewind, fast-forward, pause, zoom and provide slow-motion replays.
+
+To use the 2D viewing tool, click the LIVE button. Using a top-down view, this provides more visually-detailed coverage of the game, but without any visual tools.
+
+To watch a match using the 3D engine, click the 3D button. Offering by far the most graphically-intensive coverage, the 3D engine allows you to follow the action from four distinctive camera angles or use the 360-degree camera, which lets you click (left-click to rotate and right-click to zoom) and drag your mouse to tailor your view. You can also choose whether to display player names, view the team line-ups, turn the sound on and off and use a range of tools to manipulate the coverage. Note that in order to use the 3D engine, you first need to download a plug-in. The hockey 3D engine is not available for MAC-users.
+
+Match Report
+
+Match Page
+
+Clicking on the match in the Fixtures or Results screen (as well as a number of other places on the site) will bring you to the Match Page. When a match has been played you will find all the important information about it here.
+
+At the top of the page you will see what type of match you are viewing, what teams participated, the scoreline and icons for the various ways of viewing the match (Analyzer, 2D and 3D). Below these you will find a schematic image of the two teams' formations, followed by the basic facts for both the match and all they participating Players. These facts include among other things position, penalty minutes and goals scored, as well as the Rating for every Player (see Rating System below).
+
+Further down the screen you will find two tabs containing a Timeline with important match events and the Full Match Statistics.
+
+Timeline
+
+On the Timeline important events in the match are shown in chronological order with the time and involved Player next to them. On the Timeline screen you can also see the venue in which the match was played, and a picture of the Player chosen as the Most Valued Player of the match (see below).
+
+Full Match Statistics
+
+In this tab all relevant statistics such as shifts, shots, assists and points are presented for each individual Player, and for each team as a whole.
+
+Recent Matches
+
+At the very bottom of the Match Page you can view the three most recent matches each of the two teams have played in various competitions. Your own team's matches will have the results hidden by a pad lock icon until you click on it.
+
+Rating System
+
+After every match each participating Player is given a Rating based on how well he performed during the match. The Rating is based on visible statistics and the formulas used for calculating it takes into account both how well the team did in general, the actions each Player undertook, and the position of the Player. The Rating is open ended, and could even be negative if a Player and his team has done a bad performance.
+
+Most Valued Player (MVP)
+
+The Player in a match that receive the highest rating of all will be chosen as the Most Valued Player (MVP).

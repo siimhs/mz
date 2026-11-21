@@ -1,0 +1,100 @@
+
+D03: Forum
+
+Introduction
+
+ManagerZone's Forum is where its Community comes together to chat and share hints and tips. There are Forums in most of the languages spoken by the game's managers and each is divided into a number of categories (see below). To select a language, use the dropdown at the top of the screen.
+
+Forum Categories
+
+Cup Talk: Discuss ManagerZone's user-created competitions. Often used to advertise newly-created [link:./?p=manual_faq&cat_id=740] Friendly Leagues and Friendly Cups (see [link:./?p=manual_faq&cat_id=739] Cups).
+
+Federations & Clans: Create and join ManagerZone-related federations and clans and talk to managers with similar interests.
+
+Friendly Matches: Advertise availability for, and invites to, [link:./?p=manual_faq&cat_id=738] Friendlies.
+
+ManagerZone Talk: For general ManagerZone-related discussions that don't fit into any other categories.
+
+Open Discussion: For all non-ManagerZone-related discussions.
+
+Questions & Answers: For questions on certain elements of the game.
+
+Simulator Development Feedback: For comments specifically about ManagerZone's simulator.
+
+Suggestions/Improvements: For more general comments about how ManagerZone can improve.
+
+Transfers: Advertise players currently for sale (see [link:./?p=manual_faq&cat_id=730] Transfers).
+
+Word From the Owner: Showcase for Word From the Owner screens (see "Edit Info Screen" in [link:./?p=manual_faq&cat_id=726] My Team).
+
+As well as the general Forum categories, a selection of categories specifically devoted to MZ Tools (see "MZ Tools Screen" in [link:./?p=manual_faq&cat_id=756] Community) can be found by selecting MZ TOOLS FORUM in the Forum sub-menu. Here, MZ Tools users and developers can discuss a wide range of more technical topics.
+
+Reading Forum Posts
+
+To read posts that have been added to the Forum, select the category you're interested in and click a title. Posts that have been contributed to most recently will appear at the top of each category screen along with their author and the time when the initial post was added. Once you've read the initial post, scroll down the screen to view all the responses.
+
+To find a specific post, click SEARCH FORUMS in the Forum sub-menu, enter your search criteria (e.g. keywords, author name etc.) and click the SEARCH button. The results most closely matching your criteria appear at the bottom of the screen.
+
+Posting on the Forum
+
+Before posting, managers should first ensure they've read the rules (see "Forum Rules", below) and selected the correct category (see "Forum Categories", above). Otherwise their post could be edited, moved or removed by an Assistant (see "ManagerZone Assistants" in [link:./?p=manual_faq&cat_id=756] Community) and they could face punishment. Posts that have been edited will display who they were edited by, when the edit took place and how many changes were made.
+
+To post, select the appropriate forum, scroll to the bottom of the screen, enter your post's title and body and click SEND. It will be added to the top of the screen.
+
+Forum Rules
+
+Like most forum hosts, ManagerZone sets strict guidelines for posters, which must be adhered to. To view them, as well as the kinds of punishment handed out for different infringements, click FORUM RULES in the Forum sub-menu. These, along with more general ManagerZone guidelines can also be read by selecting RULES in the [link:./?p=manual_faq&cat_id=762] Help menu.
+
+Forum Identifiers
+
+ManagerZone's various Assistants and Crew members are identified within the Forums by bracketed labels after their names (e.g. "FA"). Managers are also identified by their [link:./?p=manual_faq&cat_id=753] Profile Badges, which represent both their status as a [link:./?p=manual_faq&cat_id=758] Club Member and their level of support to the running of the game.
+
+The Toolbar
+
+In order to give more life to your posts in the forum the toolbar can be used to format the content. The Toolbar can be found as small icons right below the title of every new message.
+
+Note that some of the tools are only available for [link:./?p=manual_faq&cat_id=1386] Club Members. All members can however use bold, italic and underline-style, as well as the preview feature.
+
+BBCode
+
+The toolbar use BBCode to format your texts in the forum. There are however more codes that can be used, but that are not available from the toolbar.
+
+Create a table, for example when you want to add a league table:
+
+[table]
+
+[tr]
+
+[th]column header 1[/th]
+
+[th]column header 2[/th]
+
+[/tr]
+
+[tr]
+
+[td]cell 1.1[/td]
+
+[td]cell 1.2[/td]
+
+[/tr]
+
+[tr]
+
+[td]cell 2.1[/td]
+
+[td]cell 2.2[/td]
+
+[/tr]
+
+[/table]
+
+Results
+
+column header 1 | column header 2 |
+
+cell 1.1 | cell 1.2 |
+
+cell 2.1 | cell 2.2 |
+
+To prevent BBCode-syntax from being executed, write [code]BBCode like this[/code].

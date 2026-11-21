@@ -1,0 +1,4 @@
+
+A01: Clubhouse Home
+
+The Clubhouse Home screen displays the latest [link:./?p=manual_faq&cat_id=748] game news, including a special focus on local events. By clicking the VIEW button, managers can also access up-to-date information on their club, including Team News and [link:./?p=manual_faq&cat_id=735] fixtures and results, and keep an eye on their friends' recent activities. To display a completed game's score, click the SHOW RESULT link next to it.

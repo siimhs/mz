@@ -1,0 +1,8 @@
+
+B09: LiveScores
+
+All [link:./?p=manual_faq&cat_id=758] Club Members can subscribe to ManagerZone's LiveScores feature, which allows them to stay up-to-date with the latest scores of their choice. To add a manager's team(s) or an entire competition to your LiveScores feed, click the ADD TO LIVESCORES-icon that appears at the top of its menu.
+
+All the teams (both football and hockey) and tournaments you are following are displayed in the LiveScores screen. To quickly add all your [link:./?p=manual_faq&cat_id=752] Friends to this list, click the ADD ALL FRIENDS button at the bottom of the screen. To remove a team or competition from your LiveScores feed, tick the box to the right of its name and click the REMOVE button.
+
+When a team on your list (either one you are following directly or one playing in a competition you are following) is playing a game, their latest score is added to the LiveScores window on the left of your screen (use the tabs at the top of the window to choose whether to view scores from football, hockey or both sports). You will also see scores pop up in the top-right hand corner of your screen when watching a 3D match (see "Viewing a Match" in [link:./?p=manual_faq&cat_id=735] Fixtures and Results).

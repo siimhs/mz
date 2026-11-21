@@ -1,0 +1,100 @@
+
+B03: Youth Leagues
+
+Introduction
+
+Youth Leagues offer competitive league formats outside of the Senior League, and provide a valuable venue for developing young players. Currently, three Youth Leagues are available - the U18 League, U21 League and U23 League. In these Leagues teams compete in divisions of 12, playing each opponent both at home and away during the course of a 22-game season. Four League seasons are played each calendar year.
+
+Season Tickets
+
+To participate in an Extra League you will need a season ticket. Season tickets can be bought in the Youth League page. After a ticket is purchased, you can opt in/out of all Leagues for the next season (one season ticket grants entry to the U18, U21 and the U23 League for one season).
+
+Once you have entered a League, you will stay in that League until you opt out or run out of season tickets.
+
+Season Day 2 is the last day to sign up for all Youth Leagues.
+
+Table Screen
+
+You can see your team's current position in your division in the Table screen, as well as their recently-completed and upcoming matches.
+
+In the league table the following columns are presented, in addition to a team's position and name:
+
+M | Matches played |
+
+W | Wins |
+
+D | Draws |
+
+L | Losses |
+
++ | Goals scored |
+
+- | Goals conceded |
+
+= | Goal difference |
+
+P | Points |
+
+Last 6 | The results in the last six league games (green = win, yellow = draw, red = loss) |
+
+Three points are awarded for a win, one point for a draw and no points for a defeat. When two teams finish the season on the same number of points, their positions are calculated using a number of "tie breakers" in the following order of importance: goal difference, goals scored, most victories, results between the two tied teams, random draw.
+
+Promotion and Relegation
+
+Promotion and relegation works slightly different in the Youth Leagues compared to the Senior League. There are no playoffs in the Youth Leagues. Only the winner of each division is guaranteed promotion, but more teams have a chance to advance, depending on how many teams sign up for the league next season.
+
+In the same way four teams risk relegation, but could in some cases remain in their present division.
+
+Walk Overs
+
+If a team loses on walk over, they will not earn any income from the match(for further information see section "Line-Up Requirements" in [link:./?p=manual_faq&cat_id=728] A04: Tactics. It is easy to check if your your players are eligible for a tournament by visiting the [link:./?p=manual_faq&cat_id=2645] Availability screen.
+
+League Schedule Screen
+
+View the matches, both completed and upcoming, played by all the teams in your division.
+
+Top Scorers Screen
+
+View the current season's top goal scorers (to view only your team's scorers, click the MY TEAM button at the top of the screen).In addition to the place in the list, name of the player and team abbreviation, the table contain the following columns:
+
+GP | Number of league games the players have participated in |
+
+G | Number of goals scored |
+
+A | Number of assists produced |
+
+P | Number of points (goals + assists) |
+
++/- | Number of goals scored minus number of goals conceded while the player was on the ice |
+
+PIM | Number of penalty minutes |
+
+FOL | Number of face-offs lost |
+
+FOW | Number of face-offs won |
+
+S | Number of shots the player has taken |
+
+Sft | Number of shifts |
+
+TOI | The player's time on the ice in minutes |
+
+All these 11 columns are sortable.
+
+Message Board
+
+View messages from other managers in your division and type your own by using the text box at the bottom of the screen and clicking the POST button.
+
+Prize Money
+
+For each home Match played in the U18, U21 and U23 Leagues you will earn Team Money. You can earn additional Team Money if you finish as one of the top four in your division (see below; amounts are displayed in EUR):
+
+Position | Top Division | Div 1.x | Div 2.x | Div 3.x | Div 4.x | Div 5.x |
+
+1st | 72 799 | 58 239 | 53 386 | 43 679 | 33 973 | 24 267 |
+
+2nd | 58 239 | 53 386 | 43 679 | 33 973 | 24 267 | 14 560 |
+
+3rd | 48 533 | 38 826 | 33 973 | 24 267 | 14 560 | 9707 |
+
+4th | 38 826 | 29 120 | 24 267 | 19 413 | 9707 | 4854 |

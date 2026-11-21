@@ -1,0 +1,6 @@
+
+C05: Ranking
+
+Every team in ManagerZone has a ranking in order to give managers an idea of how they are progressing in comparison to fellow bosses around the world. Rankings are calculated from points awarded for a variety of different achievements in the game over the previous eight weeks. You can view your team's current MZ Ranking on the [link:./?p=manual_faq&cat_id=726] My Team screen (hover over the figure to see your points total).
+
+The Ranking screen displays the top 100 teams in the game, including their point totals. This list can be customised by using the dropdowns in the top-right of the screen to sort by nationality and division. To view [link:./?p=manual_faq&cat_id=744] National Team points and rankings, select NATIONAL RANKING in the Ranking sub-menu.

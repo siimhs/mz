@@ -1,0 +1,10 @@
+
+B07: Challenges
+
+Introduction
+
+ManagerZone's Challenges feature allows managers to instantly take on their pick of the game's best teams. Because of their popularity and commitments, it's almost impossible to invite some clubs to a [link:./?p=manual_faq&cat_id=738] Friendly, so the only way to play them is via a Challenge. The Challenges screens give you a choice of teams to play, from clubs in all the top divisions to senior and under-21 [link:./?p=manual_faq&cat_id=744] National Teams to the Crew's own team, ManagerZone Crew.
+
+Challenging a Team
+
+To select a top-division club to take on, click TOP TEAM CHALLENGE in the Challenges sub-menu, select its nationality by clicking a flag, then choose a team from that country. To play ManagerZone Crew, click CREW TEAM CHALLENGE. To play a senior National Team, click SENIOR NATIONAL TEAM CHALLENGE and use the dropdown on the right of the screen to choose one. To play an under-21 National Team, click U21 NATIONAL TEAM CHALLENGE and follow the same process as for senior National Teams. You can view recent results involving your prospective opponents at the bottom of each screen. When you've selected an opponent, click the CHALLENGE button.

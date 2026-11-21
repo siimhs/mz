@@ -1,0 +1,28 @@
+
+F01: Help
+
+Introduction
+
+ManagerZone provides a suite of tools and guides to help managers of all levels of experience, no matter what their question. As well as this manual, new managers can follow an interactive tutorial that takes them through the core features of the game and there's a separate Wiki that provides a manager's perspective. For any issues that aren't covered in either of these guides, there's also a helpful Support team waiting to answer any questions by e-mail. Plus, there's a Questions & Answers Forum devoted to answering game-related queries (see "Forum Categories" in [link:./?p=manual_faq&cat_id=757] Forum).
+
+Beginners guide
+
+The Beginners guide is a short introduction to ManagerZone that every manager should read. It covers all the vital parts of the game with special focus on the first season of a manager's career.
+
+Manual
+
+ManagerZone's Manual is a comprehensive guide to every area of the game. It is divided into sections based on the main menu options: Clubhouse, Matches, Office, Community, Store and Help. Each section can be reached by clicking on the links on the right-hand side of the screen.
+
+Support
+
+For all those queries that you can't find answers to in the Manual or on the [link:./?p=manual_faq&cat_id=757] Forums, you can send a message to our Support team by selecting SUPPORT in the Help menu. To send your query, select an appropriate category from the dropdown and then fill in any other required information, including a clear explanation of your issue, and click SEND.
+
+You can also send your query by e-mail (to find a country's Support team address, select it in the MZ World screen – see [link:./?p=manual_faq&cat_id=756] Community). A member of the ManagerZone Support team will reply to your query using your registered e-mail address as soon as possible. Remember not to include any sensitive personal information in your message (e.g. your password). Note that there is separate support for managers requiring the installation of certain fonts under the LANGUAGE SUPPORT option.
+
+Rules
+
+Before seeking help, it's important to have a firm idea of the rules all ManagerZone managers must abide by. By clicking the buttons on the left of the Rules screen you can view the game's General Rules, those guidelines that govern the smooth running of the [link:./?p=manual_faq&cat_id=757] Forum and the regulations that all [link:./?p=manual_faq&cat_id=744] National Team managers must follow. If you intend on using the Forum, it's vital that you read at least the first two sets of rules before playing the game as, if you break any, you could be punished and even banned from ManagerZone.
+
+Search
+
+ManagerZone's Search tool helps managers find users, clubs, players and Leagues. To perform a search, type a name or ManagerZone ID into the text box. Leave the Auto* radio button selected to have the tool perform a smart search or, to make absolutely sure, select one of the others to confirm whether you are looking specifically for a name or ID. Finally, select what you want to search for on the right of the screen and click SEARCH. The search results appear at the bottom of the screen. There's also a Quick Search tool situated permanently on the left-hand side of every ManagerZone screen.

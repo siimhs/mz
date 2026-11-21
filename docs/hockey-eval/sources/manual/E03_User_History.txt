@@ -1,0 +1,4 @@
+
+E03: User History
+
+The User History screen displays your [link:./?p=manual_faq&cat_id=758] Club Member and Account histories since joining ManagerZone. Your Club Member history shows your subscription purchases and renewals while your Account history details every payment and purchase you've made in the game. To display a different month, select one using the dropdowns at the bottom of the screen.

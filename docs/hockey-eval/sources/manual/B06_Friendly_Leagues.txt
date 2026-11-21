@@ -1,0 +1,42 @@
+
+B06: Friendly Leagues
+
+Introduction
+
+As well as being able to create your own [link:./?p=manual_faq&cat_id=739] cups, you can also build your own league competitions – and join those of other managers. Friendly Leagues let managers set up their own customised championships, which can be played purely for glory or for [link:./?p=manual_faq&cat_id=759] Power Token prizes.
+
+Friendly Leagues Home Screen
+
+In the Friendly Leagues Home screen, you can view all the leagues you have created, those you have outstanding invites to and those you are currently participating in. You can also look back over the Friendly Leagues you've contested in the past and check out all those currently in progress.
+
+Creating a Friendly League
+
+To create your own Friendly League, click the CREATE FRIENDLY LEAGUE button in the Friendly Leagues sub-menu. Decide whether to offer a prize to the top four teams by clicking the appropriate Prize Fund radio button (doing so will increase the entry fees). Use the Payment radio buttons to choose whether you want to pay for all the participants or whether each should pay their own fee. Enter your league's name and description into the text boxes, choose a trophy to play for and use the tick box to decide whether you want your league to be seen by all managers or just those taking part in it.
+
+Decide whether you want your new league to have an age limit (see "Uxx and Oxx Cups" in [link:./?p=manual_faq&cat_id=739] Cups, for more information on eligibility rules) using the lower limit and upper limit sliders on the Player Age Limit bar. Select its match days by ticking the boxes and use the dropdowns to set the number of matches per day to be played by each team, their kick-off times and the amount of times the teams will play each other. You can then calculate how long your league will last based on the information you have entered by selecting a number of teams from the Calculate Duration dropdown.
+
+Finally, use the dropdown and search box in the Invitations section to find prospective participants (you can search for specific teams and managers by entering their names or IDs in a comma-separated list or quickly input your [link:./?p=manual_faq&cat_id=752] Friends' teams or those you've faced in previous Friendly Leagues). They will appear in the Search Results box. To add them to the Invite to Your Friendly League box, click the plus icon next to them (or, to select all the teams in the Search Results box, click INVITE ALL). To remove teams from the Invite to Your Friendly League box, click the minus icon next to them (or, to remove all the teams, click REMOVE ALL). When you're happy with the teams you are inviting, click CREATE AND SEND INVITES and pay your entry fee by clicking GET IT.
+
+Once you've purchased your Friendly League, your team is automatically added as a participant. When other teams accept your invites, they are labelled as "Participating" in the Invite to Your Friendly League box. To make changes to your league's set-up or send further invites, follow the process above and then click the SAVE CHANGES button.
+
+When you're happy with the number of teams in your league (there must be a minimum of four and a maximum of sixteen, including yours), click the START THE LEAGUE button. If you selected to pay for all the participants, the cost will be deducted from your account.
+
+If you fail to click the START THE LEAGUE button, the league will start automatically one month after its creation date. However if, after that time, there are less than the minimum required participants, it will be cancelled. You can then contact payments@powerchallenge.com to claim a Power Token refund.
+
+Joining a Friendly League
+
+When another manager has invited you to a Friendly League, the friends icon will light up in the Shortcut Bar at the top-right of the screen (see [link:./?p=manual_faq&cat_id=721] Navigating ManagerZone). To view the invite, click the icon or click FRIENDLY LEAGUES in the Matches secondary menu, find it using the My FL Invitations dropdown and review its format and eligibility rules, including Player Age Limits and whether there's a Prize Fund (this will increase the cost of entry). If you wish to join it, click JOIN (or click YES when joining a Friendly League in which the creator has paid for all the participants). If you don't wish to accept the invite, click DECLINE INVITATION at the bottom of the screen.
+
+Other Friendly League Screens
+
+Click the INFORMATION link on the right-hand side of any Friendly League to view its description, participants and match times or click MESSAGE BOARD to chat to the managers taking part. If the competition has started, you can also view the current league table (TABLE), fixtures and results (MATCH SCHEDULE) and highest goal scorers (TOP SCORERS) by clicking the appropriate link on the right of the screen.
+
+Friendly Leagues Pools
+
+Friendly League Pools are an easy way to automatically join a Friendly League and begin to play matches as quickly as possible.
+
+The Friendly League Pool will automatically accept and add you to a Friendly League along with other teams in the Pool and those Friendly Leagues will then start as soon as they are full.
+
+In addition to the Senior Pool it is possible to join Friendly League Pools for U18, U21 and U23-teams.
+
+Once it is starting, a Club Notification will be sent!

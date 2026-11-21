@@ -1,0 +1,42 @@
+
+A02: My Team
+
+Introduction
+
+The My Team screens display all the latest information on your club, allowing you to personalise various elements, from your kit to your badge.
+
+My Team Home Screen
+
+The My Team Home screen displays your current MZ Rank (see [link:./?p=manual_faq&cat_id=749] Ranking) and your squad's current Form trend (for more information on Form, see "Form and Experience" in [link:./?p=manual_faq&cat_id=729] Training) as well as providing information on the [link:./?p=manual_faq&cat_id=736] League you are participating in and showing all the [link:./?p=manual_faq&cat_id=739] cup competitions you have entered and the trophies you have won so far (see [link:./?p=manual_faq&cat_id=751] Team History). It also shows all your latest Team News (when you have a new item to view, the fax icon will light up in the Shortcut Bar at the top-right of the screen - see [link:./?p=manual_faq&cat_id=721] Navigating ManagerZone).
+
+Edit Team Info Screen
+
+Here, you can pay team money to change your club's Name and Abbreviation (the shortened form of the name used in score flashes etc.) and write a message to other managers, which will appear on your My Team Home screen. You can format your message by choosing a background colour or uploading an image.
+
+Design Badge Screen
+
+Use the editing tool to create your own badge, using the BACKGROUND, IMAGES and TEXT buttons to amend various areas and then fine-tuning the look to produce a unique crest. You can also import your own designs by clicking the ARCHIVE button, pasting your XML code into the text box and selecting IMPORT XML. Once you've created your new badge, you can save it for future use but only [link:./?p=manual_faq&cat_id=758] Club Members can display it on their My Team Home screen.
+
+Change Kit Screen
+
+You can customise your home, away and goalkeeping kits in the Change Kit screen by selecting the strip you want to change (Home, Away, Keeper Home or Keeper Away) and choosing an available kit (only Club Members have access to premium kits marked with the Club Member logo).
+
+To change your selected kit's colour, click a box beneath the garment you wish to change (Shirt, Shorts or Socks) and then select a colour from the resulting swatch. The first box changes the item's primary colour and the second adjusts its secondary colour. To ensure you use the same colour across all the kit items, click on the box containing your chosen colour and drag it across to another box. Note that you cannot use the same selection for both primary and secondary colours. When you're happy with your new kit, click SAVE.
+
+Change Sponsor Screen
+
+The Change Sponsor screen lists all the companies interested in sponsoring your club, along with short descriptions of their operations. To choose your team's sponsor, select one using the dropdown in the bottom right-hand corner of the screen and click SAVE. Your club will receive identical incomes from all the sponsors listed so your selection should be based on personal preference.
+
+Sponsorship Income
+
+Below is a list of how much income your sponsor will provide each week (Team Money amounts in EURO).
+
+Division | Income |
+
+Premier League | 101,200 |
+
+Div 1.x | 89,320 |
+
+Div 2.x | 77,220 |
+
+Div 3.x and down | 64,900 |

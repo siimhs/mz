@@ -1,0 +1,8 @@
+
+C10: Guestbook
+
+Guestbooks give managers the opportunity to communicate directly with each other. When another manager has written on your Guestbook, the book icon will light up in the Shortcut Bar at the top-right of the screen (see [link:./?p=manual_faq&cat_id=721] Navigating ManagerZone).
+
+To see the message, click the icon or select GUESTBOOK in the Office secondary menu. To leave messages on other managers' Guestbooks either click the GUESTBOOK icon on their [link:./?p=manual_faq&cat_id=753] Profile or click the REPLY icon on the right-hand side of one of their messages. Then type your message into the text box and click WRITE.
+
+To delete a message, click the dustbin icon next to it. To clear your Guestbook completely, click the DELETE ALL button at the top of the screen. Remember that all Guestbooks are public and can be seen by every manager in ManagerZone.
